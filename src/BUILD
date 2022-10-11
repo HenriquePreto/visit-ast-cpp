@@ -9,7 +9,6 @@ cc_binary(
         "@absl//absl/status",
         "@absl//absl/status:statusor",
         "@absl//absl/strings",
-#        "@crubit//common:file_io",
         "@llvm-project//llvm:Support",
     ],
 )

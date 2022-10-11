@@ -4,7 +4,7 @@
 #include "absl/status/status.h"
 #include "absl/status/statusor.h"
 #include "absl/strings/string_view.h"
-// #include "common/file_io.h"
+#include "llvm/Support/MemoryBuffer.h"
 #include "llvm/Support/FileSystem.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
@@ -26,9 +26,16 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  // auto status_or_cc_file_content = crubit::GetFileContents(cc_in);
-  // CHECK(status_or_cc_file_content.ok());
-  // std::string cc_file_content = std::move(*status_or_cc_file_content);
+  absl::StatusOr<std::string> status_or_cc_file_content;
+  llvm::ErrorOr<std::unique_ptr<llvm::MemoryBuffer>> err_or_buffer =
+      llvm::MemoryBuffer::getFileOrSTDIN(cc_in.data(), true);
+  if (std::error_code err = err_or_buffer.getError()) {
+    status_or_cc_file_content = absl::Status(absl::StatusCode::kInternal, err.message());
+  } else {
+    status_or_cc_file_content = std::string((*err_or_buffer)->getBuffer());
+  }
+  CHECK(status_or_cc_file_content.ok());
+  std::string cc_file_content = std::move(*status_or_cc_file_content);
 
   // absl::StatusOr<std::string> rs_code = crubit_rs_from_cc::RsFromCc(
       // cc_file_content, cc_in,
