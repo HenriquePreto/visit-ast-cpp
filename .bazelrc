@@ -1,0 +1,2 @@
+build:generic_clang --cxxopt=-std=c++17 --host_cxxopt=-std=c++17
+build --config=generic_clang
