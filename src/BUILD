@@ -4,6 +4,7 @@ cc_binary(
     visibility = ["//visibility:public"],
     deps = [
         ":frontend_action",
+        ":casts_visitor",
         "@absl//absl/flags:flag",
         "@absl//absl/flags:parse",
         "@absl//absl/log:check",
@@ -17,7 +18,6 @@ cc_binary(
 
 cc_library(
     name = "frontend_action",
-    srcs = ["frontend_action.cc"],
     hdrs = ["frontend_action.h"],
     deps = [
         ":ast_consumer",
@@ -28,10 +28,8 @@ cc_library(
 
 cc_library(
     name = "ast_consumer",
-    srcs = ["ast_consumer.cc"],
     hdrs = ["ast_consumer.h"],
     deps = [
-        ":casts_visitor",
         "@absl//absl/log:check",
         "@llvm-project//clang:ast",
     ],

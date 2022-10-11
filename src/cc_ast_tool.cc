@@ -8,6 +8,7 @@
 #include "llvm/Support/FileSystem.h"
 #include "clang/Tooling/Tooling.h"
 #include "src/frontend_action.h"
+#include "src/casts_visitor.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");
@@ -39,7 +40,7 @@ int main(int argc, char* argv[]) {
   CHECK(status_or_cc_file_content.ok());
   std::string cc_file_content = std::move(*status_or_cc_file_content);
 
-  clang::tooling::runToolOnCode(std::make_unique<FrontendAction>(), cc_file_content);
+  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(), cc_file_content);
 
   // absl::StatusOr<std::string> rs_code = crubit_rs_from_cc::RsFromCc(
       // cc_file_content, cc_in,
