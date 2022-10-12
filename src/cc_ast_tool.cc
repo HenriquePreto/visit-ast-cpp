@@ -1,14 +1,8 @@
+#include "absl/log/check.h"
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
-#include "absl/log/check.h"
-#include "absl/status/status.h"
 #include "absl/status/statusor.h"
-#include "absl/strings/string_view.h"
-#include "llvm/Support/MemoryBuffer.h"
-#include "llvm/Support/FileSystem.h"
-#include "clang/Tooling/Tooling.h"
-#include "src/frontend_action.h"
-#include "src/casts_visitor.h"
+#include "src/cc_ast_tool_lib.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");
@@ -29,19 +23,13 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  absl::StatusOr<std::string> status_or_cc_file_content;
-  llvm::ErrorOr<std::unique_ptr<llvm::MemoryBuffer>> err_or_buffer =
-      llvm::MemoryBuffer::getFileOrSTDIN(cc_in.data(), true);
-  if (std::error_code err = err_or_buffer.getError()) {
-    status_or_cc_file_content = absl::Status(absl::StatusCode::kInternal, err.message());
-  } else {
-    status_or_cc_file_content = std::string((*err_or_buffer)->getBuffer());
-  }
+  absl::StatusOr<std::string> status_or_cc_file_content = GetFileContents(cc_in);
   CHECK(status_or_cc_file_content.ok());
   std::string cc_file_content = std::move(*status_or_cc_file_content);
 
-  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(), cc_file_content);
+  VisitASTOnCode(cc_file_content, cc_tool);
 
+  // TODO: missing status or of visit ast on code
   // absl::StatusOr<std::string> rs_code = crubit_rs_from_cc::RsFromCc(
       // cc_file_content, cc_in,
       // std::vector<absl::string_view>(argv, argv + argc));

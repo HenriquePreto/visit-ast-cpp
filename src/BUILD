@@ -3,16 +3,11 @@ cc_binary(
     srcs = ["cc_ast_tool.cc"],
     visibility = ["//visibility:public"],
     deps = [
-        ":frontend_action",
-        ":casts_visitor",
+        ":cc_ast_tool_lib",
         "@absl//absl/flags:flag",
         "@absl//absl/flags:parse",
         "@absl//absl/log:check",
-        "@absl//absl/status",
         "@absl//absl/status:statusor",
-        "@absl//absl/strings",
-        "@llvm-project//llvm:Support",
-        "@llvm-project//clang:tooling",
     ],
 )
 
@@ -30,7 +25,6 @@ cc_library(
     name = "ast_consumer",
     hdrs = ["ast_consumer.h"],
     deps = [
-        "@absl//absl/log:check",
         "@llvm-project//clang:ast",
     ],
 )
@@ -40,7 +34,22 @@ cc_library(
     srcs = ["casts_visitor.cc"],
     hdrs = ["casts_visitor.h"],
     deps = [
-        "@absl//absl/log:check",
         "@llvm-project//clang:ast",
+    ],
+)
+
+cc_library(
+    name = "cc_ast_tool_lib",
+    srcs = ["cc_ast_tool_lib.cc"],
+    hdrs = ["cc_ast_tool_lib.h"],
+    deps = [
+        ":frontend_action",
+        ":casts_visitor",
+        "@absl//absl/status",
+        "@absl//absl/status:statusor",
+        "@absl//absl/strings",
+        "@llvm-project//clang:ast",
+        "@llvm-project//llvm:Support",
+        "@llvm-project//clang:tooling",
     ],
 )

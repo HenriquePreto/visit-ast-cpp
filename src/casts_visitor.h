@@ -9,7 +9,7 @@ public:
   explicit CastsVisitor(clang::ASTContext *Context)
     : Context(Context) {}
 
-  bool VisitCXXRecordDecl(clang::CXXRecordDecl *Declaration);
+  bool VisitCastExpr(clang::CastExpr *Expr);
 
 private:
   clang::ASTContext *Context;
