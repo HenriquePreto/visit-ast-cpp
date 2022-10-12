@@ -1,7 +1,7 @@
 int GLOB = 0.3 + 3.4;
 
 namespace hello_world {
-  int foo() {
+  int foo(int aaa, int bbb) {
       int i = 0;
     int j = 4;
     int k = i + j;
@@ -21,6 +21,6 @@ int main() {
   float y = 4.4;
   int z = x + y;
   double w = y + z;
-  hello_world::foo();
+  hello_world::foo(10, 11);
   return 0;
 }

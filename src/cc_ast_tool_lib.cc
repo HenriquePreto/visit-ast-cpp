@@ -7,6 +7,7 @@
 #include "src/cc_ast_tool_lib.h"
 #include "src/frontend_action.h"
 #include "src/casts_visitor.h"
+#include <iostream>
 
 absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
   llvm::ErrorOr<std::unique_ptr<llvm::MemoryBuffer>> err_or_buffer =
@@ -19,5 +20,7 @@ absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
 }
 
 void VisitASTOnCode(const absl::string_view cc_file_content, const absl::string_view cc_tool) {
-  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(), cc_file_content);
+  CastsVisitor::Collector collector;
+  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(collector), cc_file_content);
+  std::cout << collector << std::endl;
 }
