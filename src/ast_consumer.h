@@ -11,6 +11,7 @@ class ASTConsumer : public clang::ASTConsumer {
       : Visitor(Context) {}
 
     void HandleTranslationUnit(clang::ASTContext &Context) override;
+  
   private:
     T Visitor;
 };

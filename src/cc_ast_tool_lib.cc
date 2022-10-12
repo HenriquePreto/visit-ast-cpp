@@ -19,7 +19,5 @@ absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
 }
 
 void VisitASTOnCode(const absl::string_view cc_file_content, const absl::string_view cc_tool) {
-  if (cc_tool == "Casts") {
-    clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(), cc_file_content);
-  }
+  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(), cc_file_content);
 }
