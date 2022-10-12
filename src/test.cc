@@ -11,6 +11,12 @@ namespace hello_world {
     double w = y + z;
     return 0;
   }
+
+  namespace cool {
+    int foo(int aaa, int bbb) {
+      // empty
+    }
+  }
 }
 
 int main() {
