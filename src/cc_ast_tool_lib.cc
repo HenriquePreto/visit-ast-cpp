@@ -19,8 +19,8 @@ absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
   return std::string((*err_or_buffer)->getBuffer());
 }
 
-void VisitASTOnCode(const absl::string_view cc_file_content, const absl::string_view cc_tool) {
+void VisitASTOnCode(const std::string& cc_in, const absl::string_view cc_file_content, const absl::string_view cc_tool) {
   CastsVisitor::Collector collector;
-  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(collector), cc_file_content);
+  clang::tooling::runToolOnCode(std::make_unique<FrontendAction<CastsVisitor>>(collector), cc_file_content, cc_in);
   std::cout << collector << std::endl;
 }

@@ -1,11 +1,18 @@
 #include "src/casts_visitor.h"
+#include "clang/Basic/SourceManager.h"
 
 bool CastsVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
-  auto function_name = decl->getQualifiedNameAsString();
-  auto src_range = decl->getSourceRange();
-  current_function_ = 
-    src_range.printToString(ctx_.getSourceManager()) + "#" + function_name;
-  collector_.function_info_[current_function_] = CastsInfo();
+  if (decl->hasBody()) {
+    auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
+    auto fname = ctx_.getSourceManager().getFilename(full_location).str();
+    auto line_num = full_location.getSpellingLineNumber();
+    auto col_num = full_location.getSpellingColumnNumber();
+    auto function_name = decl->getQualifiedNameAsString();
+
+    current_function_ = 
+      fname + "#" + std::to_string(line_num) + ":" + std::to_string(col_num)  + "#" + function_name;
+    collector_.function_info_[current_function_] = CastsInfo();
+  }
   return true;
 }
 

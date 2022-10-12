@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
   CHECK(status_or_cc_file_content.ok());
   std::string cc_file_content = std::move(*status_or_cc_file_content);
 
-  VisitASTOnCode(cc_file_content, cc_tool);
+  VisitASTOnCode(cc_in, cc_file_content, cc_tool);
 
   // TODO: missing status or of visit ast on code
   // absl::StatusOr<std::string> rs_code = crubit_rs_from_cc::RsFromCc(
