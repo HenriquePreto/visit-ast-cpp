@@ -7,7 +7,7 @@
 template <typename T>
 class ASTConsumer : public clang::ASTConsumer {
   public:
-    explicit ASTConsumer(clang::ASTContext *Context)
+    explicit ASTConsumer(clang::ASTContext& Context)
       : Visitor(Context) {}
 
     void HandleTranslationUnit(clang::ASTContext &Context) override;
