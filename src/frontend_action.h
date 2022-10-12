@@ -10,9 +10,9 @@
 
 template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
-public:
-  std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
-    clang::CompilerInstance &Compiler, llvm::StringRef InFile) override;
+  public:
+    std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
+      clang::CompilerInstance &Compiler, llvm::StringRef InFile) override;
 };
 
 template <typename T>
