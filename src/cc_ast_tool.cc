@@ -5,6 +5,7 @@
 #include "src/cc_ast_tool_lib.h"
 #include "src/casts_visitor.h"
 #include "src/goto_visitor.h"
+#include "src/nobreak_visitor.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");
@@ -29,12 +30,16 @@ int main(int argc, char* argv[]) {
   CHECK(status_or_cc_file_content.ok());
   std::string cc_file_content = std::move(*status_or_cc_file_content);
 
-  if (cc_tool == "cast") { 
+  if (cc_tool == "cast") {
     auto status_or_collector = VisitASTOnCode<CastsVisitor>(cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
     std::cout << *status_or_collector << std::endl;
   } else if (cc_tool == "goto") {
     auto status_or_collector = VisitASTOnCode<GotoVisitor>(cc_file_content, cc_in);
+    CHECK(status_or_collector.ok());
+    std::cout << *status_or_collector << std::endl;
+  } else if (cc_tool == "nobreak") {
+    auto status_or_collector = VisitASTOnCode<NoBreakVisitor>(cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
     std::cout << *status_or_collector << std::endl;
   } else {

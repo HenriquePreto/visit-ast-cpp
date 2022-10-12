@@ -6,6 +6,7 @@ cc_binary(
         ":cc_ast_tool_lib",
         ":casts_visitor",
         ":goto_visitor",
+        ":nobreak_visitor",
         "@absl//absl/flags:flag",
         "@absl//absl/flags:parse",
         "@absl//absl/log:check",
@@ -44,6 +45,15 @@ cc_library(
     name = "goto_visitor",
     srcs = ["goto_visitor.cc"],
     hdrs = ["goto_visitor.h"],
+    deps = [
+        "@llvm-project//clang:ast",
+    ],
+)
+
+cc_library(
+    name = "nobreak_visitor",
+    srcs = ["nobreak_visitor.cc"],
+    hdrs = ["nobreak_visitor.h"],
     deps = [
         "@llvm-project//clang:ast",
     ],
