@@ -2,7 +2,7 @@
 
 bool CastsVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
   auto function_name = decl->getQualifiedNameAsString();
-  auto src_range = decl->getNameInfo().getSourceRange();
+  auto src_range = decl->getSourceRange();
   current_function_ = 
     src_range.printToString(ctx_.getSourceManager()) + function_name;
   function_info_[current_function_] = CastsInfo();

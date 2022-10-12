@@ -12,14 +12,14 @@ template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
   public:
     std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
-      clang::CompilerInstance &Compiler, llvm::StringRef InFile) override;
+      clang::CompilerInstance& instance, llvm::StringRef) override;
 };
 
 template <typename T>
 std::unique_ptr<clang::ASTConsumer> FrontendAction<T>::CreateASTConsumer(
-    clang::CompilerInstance &Compiler, llvm::StringRef InFile) {
-  Compiler.getDiagnostics().setClient(new clang::IgnoringDiagConsumer(), /* ShouldOwnClient = */ true);
-  return std::make_unique<ASTConsumer<T>>(Compiler.getASTContext());
+    clang::CompilerInstance& instance, llvm::StringRef) {
+  instance.getDiagnostics().setClient(new clang::IgnoringDiagConsumer(), /* ShouldOwnClient = */ true);
+  return std::make_unique<ASTConsumer<T>>(instance.getASTContext());
 }
 
 #endif // CC_AST_TOOL_FRONTEND_ACTION_H_

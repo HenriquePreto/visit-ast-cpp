@@ -7,18 +7,18 @@
 template <typename T>
 class ASTConsumer : public clang::ASTConsumer {
   public:
-    explicit ASTConsumer(clang::ASTContext& Context)
-      : Visitor(Context) {}
+    explicit ASTConsumer(clang::ASTContext& ctx)
+      : visitor_(ctx) {}
 
-    void HandleTranslationUnit(clang::ASTContext &Context) override;
+    void HandleTranslationUnit(clang::ASTContext& ctx) override;
   
   private:
-    T Visitor;
+    T visitor_;
 };
 
 template <typename T>
-void ASTConsumer<T>::HandleTranslationUnit(clang::ASTContext &Context) {
-  Visitor.TraverseDecl(Context.getTranslationUnitDecl());
+void ASTConsumer<T>::HandleTranslationUnit(clang::ASTContext& ctx) {
+  visitor_.TraverseDecl(ctx.getTranslationUnitDecl());
 }
 
 #endif // CC_AST_TOOL_AST_CONSUMER_H_
