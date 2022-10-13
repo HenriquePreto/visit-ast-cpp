@@ -3,7 +3,7 @@
 #include "llvm/Support/raw_ostream.h"
 
 std::ostream& operator<<(std::ostream& os, const NoBreakVisitor::Collector& collector) {
-  os << "CastVisitorInfo {" << std::endl;
+  os << "NoBreakVisitorInfo {" << std::endl;
   for (auto const& [key, val] : collector.function_info_) {
     os << "\t"
         << key
@@ -39,18 +39,50 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
   return true;
 }
 
+// If the case statement has just a break statement, then the BreakStmt node is child of 
+// CaseStmt node. Otherwise (i.e. case statement has more than one break statement) the
+// BreakStmt node is (not right) below the CaseStmt node in the AST, before the next case
+// statement (i.e before the next CaseStmt node).
 bool NoBreakVisitor::hasBreaks(const clang::SwitchStmt* stmt) {
   size_t num_cases = 0; 
   size_t num_breaks = 0;
-  for (auto switch_case = stmt->getSwitchCaseList(); switch_case; switch_case = switch_case->getNextSwitchCase()) {
-    num_cases++;
-    std::cout << "-----" << std::endl;
-    for (clang::Stmt::const_child_iterator it = switch_case->child_begin(), end = switch_case->child_end(); it != end; it++) {
-      it->dump();
+  auto switch_body = stmt->getBody();
+  bool found = false;
+  for (clang::Stmt::const_child_iterator it = switch_body->child_begin(), end = switch_body->child_end(); it != end; it++) {
+    std::string stmt_classname = it->getStmtClassName();
+    // llvm::outs() << stmt_classname << "\n";
+    if (stmt_classname == "CaseStmt") {
+      num_cases++;
+      // Case where BreakStmt is child of CaseStmt
+      for (clang::Stmt::const_child_iterator it_case = it->child_begin(), end_case = it->child_end(); it_case != end_case; it_case++) {
+        std::string case_child_classname = it_case->getStmtClassName(); 
+        // llvm::outs() << "\t" << case_child_classname << "\n";
+        if (case_child_classname == "BreakStmt") {
+          found = true;
+          break;
+        }
+      }
+      // Case where BreakStmt node is below of CaseStmt node
+      if (!found) {
+        clang::Stmt::const_child_iterator it_prev;
+        for (it_prev = it++; it != end; it_prev = it, it++) {
+          std::string case_below_classname = it->getStmtClassName();
+          // llvm::outs() << "\t\t" << case_below_classname << "\n";
+          if (case_below_classname == "CaseStmt") {
+            break;
+          } else if (case_below_classname == "BreakStmt") {
+            found = true;
+            break;
+          }
+        }
+        it = it_prev;
+      }
+      if (found) {
+        num_breaks++;
+        found = false;
+      }
     }
-    // if () {
-    //   num_breaks++;
-    // }
   }
+  // llvm::outs() << num_cases << " " << num_breaks << "\n";
   return num_cases == num_breaks;
 }

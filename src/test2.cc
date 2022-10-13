@@ -2,7 +2,7 @@
 #include <iostream>
 
 int foo(int z, std::string s) {
-  return s.len() + z;
+  return s.size() + z;
 }
 
 void checkEvenOrNot(int num)
@@ -24,6 +24,7 @@ odd:
 
 void switch_breaks(int c) {
   switch (c) {
+  int z;
   case 0:
     c++;
     break;
@@ -32,27 +33,43 @@ void switch_breaks(int c) {
     break;
   case 2:
     c++;
+    c++;
     break;
   case 3:
     break;
   case 4:
+    break;
+    c++;
+    break;
+  case 5:
+    c++;
+    break;
+    break;
+  case 6:
+    while (true) {
+      ;
+    }
+    break;
+  case 7:
+    c++;
+    c++;
     c++;
     break;
   }
 }
 
-// void switch_nobreaks(char c) {
-//   switch (c) {
-//   case 'a':
-//     c++;
-//   case 'e':
-//   case 'i':
-//     c++;
-//   case 'o':
-//   case 'u':
-//     break;
-//   }
-// }
+void switch_nobreaks(char c) {
+  switch (c) {
+  case 'a':
+    c++;
+  case 'e':
+  case 'i':
+    c++;
+  case 'o':
+  case 'u':
+    break;
+  }
+}
 
 int main() {
   int x = 3;

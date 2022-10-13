@@ -3,7 +3,7 @@
 #include "llvm/Support/raw_ostream.h"
 
 std::ostream& operator<<(std::ostream& os, const GotoVisitor::Collector& collector) {
-  os << "CastVisitorInfo {" << std::endl;
+  os << "GotoVisitorInfo {" << std::endl;
   for (auto const& [key, val] : collector.function_info_) {
     os << "\t"
         << key
