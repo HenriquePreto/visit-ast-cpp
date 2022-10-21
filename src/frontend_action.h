@@ -12,15 +12,17 @@
 
 template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
+  using VisitorInfo = typename T::VisitorInfo; 
+
   public:
-    explicit FrontendAction(typename T::VisitorInfo& visitor_info)
+    explicit FrontendAction(VisitorInfo& visitor_info)
       : visitor_info_(visitor_info) {}
 
     std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
       clang::CompilerInstance& instance, llvm::StringRef) override;
     
   private:
-    typename T::VisitorInfo& visitor_info_;
+    VisitorInfo& visitor_info_;
 };
 
 template <typename T>
