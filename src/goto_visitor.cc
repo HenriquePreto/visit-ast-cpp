@@ -3,14 +3,14 @@
 #include "llvm/Support/raw_ostream.h"
 
 std::ostream& operator<<(std::ostream& os, 
-                         const GotoVisitor::Collector& collector) {
+                         const GotoVisitor::VisitorInfo& visitor_info) {
   os << "GotoVisitorInfo {" << std::endl;
-  for (auto const& [key, val] : collector.function_info_) {
+  for (auto const& [key, val] : visitor_info.function_info_) {
     os << "\t"
-        << key
-        << " ->\n"
-        << val
-        << "\n";
+       << key
+       << " ->\n"
+       << val
+       << "\n";
   }
   return os << "}";  
 }
@@ -36,7 +36,7 @@ bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt* stmt) {
     llvm::raw_string_ostream body_stream(body);
     current_function_decl_->printPretty(body_stream, 
       nullptr, clang::PrintingPolicy(clang::LangOptions()));
-    collector_.function_info_[current_function_] = body;
+    visitor_info_.function_info_[current_function_] = body;
   }
   return true;
 }

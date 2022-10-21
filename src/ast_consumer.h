@@ -8,8 +8,8 @@ template <typename T>
 class ASTConsumer : public clang::ASTConsumer {
   public:
     explicit ASTConsumer(clang::ASTContext& ctx, 
-                         typename T::Collector& collector)
-      : visitor_(ctx, collector) {}
+                         typename T::VisitorInfo& visitor_info)
+      : visitor_(ctx, visitor_info) {}
 
     void HandleTranslationUnit(clang::ASTContext& ctx) override;
   

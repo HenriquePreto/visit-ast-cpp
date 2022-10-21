@@ -8,16 +8,17 @@
 
 class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
   public:
-    class Collector {
+    class VisitorInfo {
       public:
         std::unordered_map<std::string, std::string> function_info_;
         
         friend std::ostream& operator<<(
-          std::ostream& os, const Collector& collector);
+          std::ostream& os, const VisitorInfo& visitor_info);
     };
 
-    explicit GotoVisitor(clang::ASTContext& ctx, Collector& collector)
-      : ctx_(ctx), collector_(collector), current_function_decl_(nullptr) {}
+    explicit GotoVisitor(clang::ASTContext& ctx, VisitorInfo& visitor_info)
+      : ctx_(ctx), visitor_info_(visitor_info), 
+        current_function_decl_(nullptr) {}
 
     bool VisitFunctionDecl(const clang::FunctionDecl* decl);
     
@@ -26,7 +27,7 @@ class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
   private:
     clang::ASTContext& ctx_;
     std::string current_function_;
-    Collector& collector_;
+    VisitorInfo& visitor_info_;
     clang::Stmt* current_function_decl_;
 };
 

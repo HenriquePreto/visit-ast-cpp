@@ -17,16 +17,16 @@ class CastsVisitor : public clang::RecursiveASTVisitor<CastsVisitor> {
           std::ostream& os, const CastsInfo& casts_info);
     };
 
-    class Collector {
+    class VisitorInfo {
       public:
         std::unordered_map<std::string, CastsInfo> function_info_;
         
         friend std::ostream& operator<<(
-          std::ostream& os, const Collector& collector);
+          std::ostream& os, const VisitorInfo& visitor_info);
     };
 
-    explicit CastsVisitor(clang::ASTContext& ctx, Collector& collector)
-      : ctx_(ctx), collector_(collector) {}
+    explicit CastsVisitor(clang::ASTContext& ctx, VisitorInfo& visitor_info)
+      : ctx_(ctx), visitor_info_(visitor_info) {}
 
     bool VisitFunctionDecl(const clang::FunctionDecl* decl);
 
@@ -37,7 +37,7 @@ class CastsVisitor : public clang::RecursiveASTVisitor<CastsVisitor> {
   private:
     clang::ASTContext& ctx_;
     std::string current_function_;
-    Collector& collector_;
+    VisitorInfo& visitor_info_;
 };
 
 #endif // CC_AST_TOOL_CASTS_VISITOR_H_

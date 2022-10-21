@@ -11,21 +11,23 @@
 template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
   public:
-    explicit FrontendAction(typename T::Collector& collector)
-      : collector_(collector) {}
+    explicit FrontendAction(typename T::VisitorInfo& visitor_info)
+      : visitor_info_(visitor_info) {}
 
     std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
       clang::CompilerInstance& instance, llvm::StringRef) override;
     
   private:
-    typename T::Collector& collector_;
+    typename T::VisitorInfo& visitor_info_;
 };
 
 template <typename T>
 std::unique_ptr<clang::ASTConsumer> FrontendAction<T>::CreateASTConsumer(
     clang::CompilerInstance& instance, llvm::StringRef) {
-  instance.getDiagnostics().setClient(new clang::IgnoringDiagConsumer(), /* ShouldOwnClient = */ true);
-  return std::make_unique<ASTConsumer<T>>(instance.getASTContext(), collector_);
+  instance.getDiagnostics().setClient(new clang::IgnoringDiagConsumer(), 
+                                      /* ShouldOwnClient = */ true);
+  return std::make_unique<ASTConsumer<T>>(instance.getASTContext(), 
+                                          visitor_info_);
 }
 
 #endif // CC_AST_TOOL_FRONTEND_ACTION_H_

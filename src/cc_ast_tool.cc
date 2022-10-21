@@ -1,12 +1,14 @@
+#include "src/cc_ast_tool_lib.h"
+
+#include "src/casts_visitor.h"
+#include "src/goto_visitor.h"
+#include "src/nobreak_visitor.h"
+
 #include "absl/log/check.h"
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
 #include "absl/flags/usage.h"
 #include "absl/status/statusor.h"
-#include "src/cc_ast_tool_lib.h"
-#include "src/casts_visitor.h"
-#include "src/goto_visitor.h"
-#include "src/nobreak_visitor.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");

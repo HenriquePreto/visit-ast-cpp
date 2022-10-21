@@ -1,5 +1,7 @@
-#include "llvm/Support/FileSystem.h"
 #include "src/cc_ast_tool_lib.h"
+
+#include "llvm/Support/FileSystem.h"
+#include "llvm/Support/MemoryBuffer.h"
 
 absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
   llvm::ErrorOr<std::unique_ptr<llvm::MemoryBuffer>> err_or_buffer =

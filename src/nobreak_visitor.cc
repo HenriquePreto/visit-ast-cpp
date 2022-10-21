@@ -3,14 +3,14 @@
 #include "llvm/Support/raw_ostream.h"
 
 std::ostream& operator<<(std::ostream& os, 
-                         const NoBreakVisitor::Collector& collector) {
+                         const NoBreakVisitor::VisitorInfo& visitor_info) {
   os << "NoBreakVisitorInfo {" << std::endl;
-  for (auto const& [key, val] : collector.function_info_) {
+  for (auto const& [key, val] : visitor_info.function_info_) {
     os << "\t"
-        << key
-        << " ->\n"
-        << val
-        << "\n";
+       << key
+       << " ->\n"
+       << val
+       << "\n";
   }
   return os << "}";  
 }
@@ -31,13 +31,13 @@ bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
 }
 
 bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
-  if (!current_function_.empty() && current_function_decl_ != nullptr 
-      && !hasBreaks(stmt)) {
+  if (!current_function_.empty() && current_function_decl_ != nullptr &&
+      !hasBreaks(stmt)) {
     std::string body;
     llvm::raw_string_ostream body_stream(body);
     current_function_decl_->printPretty(body_stream, 
       nullptr, clang::PrintingPolicy(clang::LangOptions()));
-    collector_.function_info_[current_function_] = body;
+    visitor_info_.function_info_[current_function_] = body;
   }
   return true;
 }
