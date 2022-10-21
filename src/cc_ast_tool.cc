@@ -1,6 +1,7 @@
 #include "absl/log/check.h"
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
+#include "absl/flags/usage.h"
 #include "absl/status/statusor.h"
 #include "src/cc_ast_tool_lib.h"
 #include "src/casts_visitor.h"
@@ -13,6 +14,7 @@ ABSL_FLAG(std::string, cc_in, "",
           "input path for the C++ source file (it may or may not be a header)");
 
 int main(int argc, char* argv[]) {
+  absl::SetProgramUsageMessage("Usage: --cc_tool=cast --cc_in=hello_world.cc");
   auto args = absl::ParseCommandLine(argc, argv);
 
   auto cc_tool = absl::GetFlag(FLAGS_cc_tool);
@@ -26,8 +28,7 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  auto status_or_cc_file_content = 
-    GetFileContents(cc_in);
+  auto status_or_cc_file_content = GetFileContents(cc_in);
   CHECK(status_or_cc_file_content.ok());
   auto cc_file_content = std::move(*status_or_cc_file_content);
 

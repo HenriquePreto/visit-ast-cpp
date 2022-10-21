@@ -9,6 +9,7 @@ cc_binary(
         ":nobreak_visitor",
         "@absl//absl/flags:flag",
         "@absl//absl/flags:parse",
+        "@absl//absl/flags:usage",
         "@absl//absl/log:check",
         "@absl//absl/status:statusor",
     ],

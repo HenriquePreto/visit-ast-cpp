@@ -1,6 +1,6 @@
 benchmarks/
 bazel-bin
-bazel-cc_ast_tool
+bazel-cc-ast-tool
 bazel-out
 bazel-testlogs
 out/
