@@ -61,7 +61,7 @@ function run_tools_on_benchmark () {
 
 # list of tuples: (git repository, build commands)
 declare -a BENCHMARKS_LIST=(
-  "https://github.com/Z3Prover/z3.git","python3 scripts/mk_make.py; cd build; make; sudo make install"
+  "https://github.com/Z3Prover/z3.git","./configure; cd build; make -j8"
   #"https://github.com/redis/redis.git","make"
 )
 

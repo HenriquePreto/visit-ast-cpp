@@ -26,20 +26,24 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  absl::StatusOr<std::string> status_or_cc_file_content = GetFileContents(cc_in);
+  auto status_or_cc_file_content = 
+    GetFileContents(cc_in);
   CHECK(status_or_cc_file_content.ok());
-  std::string cc_file_content = std::move(*status_or_cc_file_content);
+  auto cc_file_content = std::move(*status_or_cc_file_content);
 
   if (cc_tool == "cast") {
-    auto status_or_collector = VisitASTOnCode<CastsVisitor>(cc_file_content, cc_in);
+    auto status_or_collector = VisitASTOnCode<CastsVisitor>(
+      cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
     std::cout << *status_or_collector << std::endl;
   } else if (cc_tool == "goto") {
-    auto status_or_collector = VisitASTOnCode<GotoVisitor>(cc_file_content, cc_in);
+    auto status_or_collector = VisitASTOnCode<GotoVisitor>(
+      cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
     std::cout << *status_or_collector << std::endl;
   } else if (cc_tool == "nobreak") {
-    auto status_or_collector = VisitASTOnCode<NoBreakVisitor>(cc_file_content, cc_in);
+    auto status_or_collector = VisitASTOnCode<NoBreakVisitor>(
+      cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
     std::cout << *status_or_collector << std::endl;
   } else {

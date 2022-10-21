@@ -2,17 +2,17 @@
 #include "clang/Basic/SourceManager.h"
 #include "llvm/Support/raw_ostream.h"
 
-std::ostream& operator<<(std::ostream& os, const NoBreakVisitor::Collector& collector) {
+std::ostream& operator<<(std::ostream& os, 
+                         const NoBreakVisitor::Collector& collector) {
   os << "NoBreakVisitorInfo {" << std::endl;
   for (auto const& [key, val] : collector.function_info_) {
     os << "\t"
         << key
         << " ->\n"
         << val
-        << std::endl;
+        << "\n";
   }
-  os << "}";  
-  return os;
+  return os << "}";  
 }
 
 bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
@@ -23,17 +23,20 @@ bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
     auto col_num = full_location.getSpellingColumnNumber();
     auto function_name = decl->getQualifiedNameAsString();
     current_function_ = 
-      fname + "#" + std::to_string(line_num) + ":" + std::to_string(col_num)  + "#" + function_name;
+      fname + "#" + std::to_string(line_num) + ":" 
+      + std::to_string(col_num)  + "#" + function_name;
     current_function_decl_ = decl->getBody();
   }
   return true;
 }
 
 bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
-  if (current_function_ != "" && current_function_decl_ != nullptr && !hasBreaks(stmt)) {
+  if (!current_function_.empty() && current_function_decl_ != nullptr 
+      && !hasBreaks(stmt)) {
     std::string body;
     llvm::raw_string_ostream body_stream(body);
-    current_function_decl_->printPretty(body_stream, nullptr, clang::PrintingPolicy(clang::LangOptions()));
+    current_function_decl_->printPretty(body_stream, 
+      nullptr, clang::PrintingPolicy(clang::LangOptions()));
     collector_.function_info_[current_function_] = body;
   }
   return true;

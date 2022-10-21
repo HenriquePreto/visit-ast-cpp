@@ -2,9 +2,9 @@
 #define CC_AST_TOOL_CASTS_VISITOR_H_
 
 #include "clang/AST/RecursiveASTVisitor.h"
-#include <iostream>
+#include <ostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 class CastsVisitor : public clang::RecursiveASTVisitor<CastsVisitor> {
   public:
@@ -13,14 +13,16 @@ class CastsVisitor : public clang::RecursiveASTVisitor<CastsVisitor> {
         int num_casts = 0;
         int num_vars = 0;
 
-        friend std::ostream& operator<<(std::ostream& os, const CastsInfo& casts_info);
+        friend std::ostream& operator<<(
+          std::ostream& os, const CastsInfo& casts_info);
     };
 
     class Collector {
       public:
-        std::map<std::string, CastsInfo> function_info_;
+        std::unordered_map<std::string, CastsInfo> function_info_;
         
-        friend std::ostream& operator<<(std::ostream& os, const Collector& collector);
+        friend std::ostream& operator<<(
+          std::ostream& os, const Collector& collector);
     };
 
     explicit CastsVisitor(clang::ASTContext& ctx, Collector& collector)

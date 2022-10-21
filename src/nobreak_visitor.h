@@ -4,15 +4,16 @@
 #include "clang/AST/RecursiveASTVisitor.h"
 #include <iostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
   public:
     class Collector {
       public:
-        std::map<std::string, std::string> function_info_;
+        std::unordered_map<std::string, std::string> function_info_;
         
-        friend std::ostream& operator<<(std::ostream& os, const Collector& collector);
+        friend std::ostream& operator<<(
+          std::ostream& os, const Collector& collector);
     };
 
     explicit NoBreakVisitor(clang::ASTContext& ctx, Collector& collector)

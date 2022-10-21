@@ -3,7 +3,7 @@
 
 absl::StatusOr<std::string> GetFileContents(absl::string_view path) {
   llvm::ErrorOr<std::unique_ptr<llvm::MemoryBuffer>> err_or_buffer =
-      llvm::MemoryBuffer::getFileOrSTDIN(path.data(), true);
+    llvm::MemoryBuffer::getFileOrSTDIN(path.data(), true);
   if (std::error_code err = err_or_buffer.getError()) {
     return absl::Status(absl::StatusCode::kInternal, err.message());
   }
