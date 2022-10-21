@@ -1,6 +1,6 @@
 #include "src/cc_ast_tool_lib.h"
 
-#include "src/casts_visitor.h"
+#include "src/cast_visitor.h"
 #include "src/goto_visitor.h"
 #include "src/nobreak_visitor.h"
 
@@ -9,6 +9,7 @@
 #include "absl/flags/parse.h"
 #include "absl/flags/usage.h"
 #include "absl/status/statusor.h"
+#include "rapidjson/PrettyWriter.h"
 
 ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");
@@ -34,24 +35,28 @@ int main(int argc, char* argv[]) {
   CHECK(status_or_cc_file_content.ok());
   auto cc_file_content = std::move(*status_or_cc_file_content);
 
+  rapidjson::StringBuffer string_buffer;
+  rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(string_buffer);
   if (cc_tool == "cast") {
-    auto status_or_collector = VisitASTOnCode<CastsVisitor>(
+    auto status_or_collector = VisitASTOnCode<CastVisitor>(
       cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
-    std::cout << *status_or_collector << std::endl;
+    status_or_collector->to_json(writer);
   } else if (cc_tool == "goto") {
     auto status_or_collector = VisitASTOnCode<GotoVisitor>(
       cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
-    std::cout << *status_or_collector << std::endl;
+    status_or_collector->to_json(writer);
   } else if (cc_tool == "nobreak") {
     auto status_or_collector = VisitASTOnCode<NoBreakVisitor>(
       cc_file_content, cc_in);
     CHECK(status_or_collector.ok());
-    std::cout << *status_or_collector << std::endl;
+    status_or_collector->to_json(writer);
   } else {
     CHECK(false && "Not supported tool.");
   }
+  std::cout << string_buffer.GetString() << std::endl;
+  
   // TODO: 
   // std::vector<absl::string_view>(argv, argv + argc));
   // CHECK(crubit::SetFileContents(rs_out, *rs_code).ok());

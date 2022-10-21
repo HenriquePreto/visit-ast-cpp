@@ -33,6 +33,18 @@ new_git_repository(
     remote = "https://github.com/llvm/llvm-project.git",
 )
 
-load("@llvm-raw//utils/bazel:configure.bzl", "llvm_configure", "llvm_disable_optional_support_deps")
+load("@llvm-raw//utils/bazel:configure.bzl", 
+     "llvm_configure", "llvm_disable_optional_support_deps")
 llvm_configure(name = "llvm-project")
 llvm_disable_optional_support_deps()
+
+# From https://github.com/Tencent/rapidjson.git
+http_archive(
+    name = "rapidjson",
+    urls = [
+        "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz",
+    ],
+    sha256 = "bf7ced29704a1e696fbccf2a2b4ea068e7774fa37f6d7dd4039d0787f8bed98e",
+    strip_prefix = "rapidjson-1.1.0",
+    build_file = "//bazel:rapidjson.BUILD",
+)

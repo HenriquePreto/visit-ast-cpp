@@ -2,17 +2,14 @@
 #include "clang/Basic/SourceManager.h"
 #include "llvm/Support/raw_ostream.h"
 
-std::ostream& operator<<(std::ostream& os, 
-                         const NoBreakVisitor::VisitorInfo& visitor_info) {
-  os << "NoBreakVisitorInfo {" << std::endl;
-  for (auto const& [key, val] : visitor_info.function_info_) {
-    os << "\t"
-       << key
-       << " ->\n"
-       << val
-       << "\n";
+void NoBreakVisitor::VisitorInfo::to_json(
+    rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
+  writer.StartObject();
+  for (auto const& [key, value] : function_info_) {
+    writer.String(key);
+    writer.String(value);
   }
-  return os << "}";  
+  writer.EndObject();
 }
 
 bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {

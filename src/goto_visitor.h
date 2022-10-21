@@ -1,10 +1,17 @@
 #ifndef CC_AST_TOOL_GOTO_VISITOR_H_
 #define CC_AST_TOOL_GOTO_VISITOR_H_
 
+#ifndef RAPIDJSON_HAS_STDSTRING
+#define RAPIDJSON_HAS_STDSTRING 1
+#endif
+
 #include "clang/AST/RecursiveASTVisitor.h"
+
 #include <iostream>
 #include <string>
 #include <unordered_map>
+
+#include "rapidjson/PrettyWriter.h"
 
 class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
   public:
@@ -12,8 +19,8 @@ class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
       public:
         std::unordered_map<std::string, std::string> function_info_;
         
-        friend std::ostream& operator<<(
-          std::ostream& os, const VisitorInfo& visitor_info);
+        void to_json(
+          rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
     };
 
     explicit GotoVisitor(clang::ASTContext& ctx, VisitorInfo& visitor_info)

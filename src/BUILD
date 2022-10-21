@@ -4,7 +4,7 @@ cc_binary(
     visibility = ["//visibility:public"],
     deps = [
         ":cc_ast_tool_lib",
-        ":casts_visitor",
+        ":cast_visitor",
         ":goto_visitor",
         ":nobreak_visitor",
         "@absl//absl/flags:flag",
@@ -12,6 +12,7 @@ cc_binary(
         "@absl//absl/flags:usage",
         "@absl//absl/log:check",
         "@absl//absl/status:statusor",
+        "@rapidjson",
     ],
 )
 
@@ -34,11 +35,12 @@ cc_library(
 )
 
 cc_library(
-    name = "casts_visitor",
-    srcs = ["casts_visitor.cc"],
-    hdrs = ["casts_visitor.h"],
+    name = "cast_visitor",
+    srcs = ["cast_visitor.cc"],
+    hdrs = ["cast_visitor.h"],
     deps = [
         "@llvm-project//clang:ast",
+        "@rapidjson",
     ],
 )
 
@@ -48,6 +50,7 @@ cc_library(
     hdrs = ["goto_visitor.h"],
     deps = [
         "@llvm-project//clang:ast",
+        "@rapidjson",
     ],
 )
 
@@ -57,6 +60,7 @@ cc_library(
     hdrs = ["nobreak_visitor.h"],
     deps = [
         "@llvm-project//clang:ast",
+        "@rapidjson",
     ],
 )
 
