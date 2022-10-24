@@ -86,7 +86,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 3);
 
-  auto function_name = "src/test.cc#31:1#main";
+  auto function_name = "input.cc#31:1#main";
   EXPECT_EQ(visitor.GetNumCasts(function_name), 6);
   EXPECT_EQ(visitor.GetNumVars(function_name), 7);
   ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
@@ -96,14 +96,14 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     clang::CastKind::CK_FloatingToIntegral
   ));
 
-  function_name = "src/test.cc#20:3#hello_world::bar";
+  function_name = "input.cc#20:3#hello_world::bar";
   EXPECT_EQ(visitor.GetNumCasts(function_name), 1);
   EXPECT_EQ(visitor.GetNumVars(function_name), 0);
   ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
     clang::CastKind::CK_FloatingToIntegral
   ));
 
-  function_name = "src/test.cc#8:3#hello_world::foo";
+  function_name = "input.cc#8:3#hello_world::foo";
   EXPECT_EQ(visitor.GetNumCasts(function_name), 6);
   EXPECT_EQ(visitor.GetNumVars(function_name), 8);
   ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
@@ -228,7 +228,7 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
 
-  auto function_name = "src/test.cc#7:1#checkEvenOrNot";
+  auto function_name = "input.cc#7:1#checkEvenOrNot";
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
 
@@ -256,10 +256,10 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 2);
 
-  auto function_name = "src/test.cc#2:1#foo::f";
+  auto function_name = "input.cc#2:1#foo::f";
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 
-  function_name = "src/test.cc#10:1#g";
+  function_name = "input.cc#10:1#g";
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
 
