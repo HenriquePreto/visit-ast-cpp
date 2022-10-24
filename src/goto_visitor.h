@@ -18,6 +18,14 @@ class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
     class VisitorInfo {
       public:
         std::unordered_map<std::string, std::string> function_info_;
+
+        inline bool ContainsFunction(const std::string& function_name) const {
+          return function_info_.contains(function_name);
+        }
+
+        inline int GetNumFunctions() const {
+          return function_info_.size();
+        }
         
         void ToJson(
           rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;

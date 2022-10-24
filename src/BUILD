@@ -85,6 +85,7 @@ cc_test(
     deps = [
         ":cc_ast_tool_lib",
         ":cast_visitor",
+        ":goto_visitor",
         "@com_google_googletest//:gtest_main",
     ],
 )
