@@ -78,3 +78,13 @@ cc_library(
         "@llvm-project//clang:tooling",
     ],
 )
+
+cc_test(
+    name = "cc_ast_tool_lib_test",
+    srcs = ["cc_ast_tool_lib_test.cc"],
+    deps = [
+        ":cc_ast_tool_lib",
+        ":cast_visitor",
+        "@com_google_googletest//:gtest_main",
+    ],
+)

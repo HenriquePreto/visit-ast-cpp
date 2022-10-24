@@ -19,7 +19,7 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
       public:
         std::unordered_map<std::string, std::string> function_info_;
         
-        void to_json(
+        void ToJson(
           rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
     };
 

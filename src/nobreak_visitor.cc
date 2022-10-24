@@ -2,7 +2,7 @@
 #include "clang/Basic/SourceManager.h"
 #include "llvm/Support/raw_ostream.h"
 
-void NoBreakVisitor::VisitorInfo::to_json(
+void NoBreakVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
   writer.StartObject();
   for (auto const& [key, value] : function_info_) {

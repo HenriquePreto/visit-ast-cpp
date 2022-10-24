@@ -7,6 +7,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <unordered_set>
 
 #include "clang/AST/RecursiveASTVisitor.h"
 #include "rapidjson/PrettyWriter.h"
@@ -17,16 +18,32 @@ class CastVisitor : public clang::RecursiveASTVisitor<CastVisitor> {
       public:
         int num_casts_ = 0;
         int num_vars_ = 0;
-
-        void to_json(
-          rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
+        std::unordered_set<clang::CastKind> cast_kinds_;
     };
 
     class VisitorInfo {
       public:
         std::unordered_map<std::string, CastInfo> function_info_;
         
-        void to_json(
+        inline int GetNumCasts(const std::string& function_name) const {
+          return function_info_.at(function_name).num_casts_;
+        }
+
+        inline int GetNumVars(const std::string& function_name) const {
+          return function_info_.at(function_name).num_vars_;
+        }
+
+        inline std::vector<clang::CastKind> GetCastKinds(
+          const std::string& function_name) const {
+            auto& ck_set = function_info_.at(function_name).cast_kinds_;
+            return std::vector(ck_set.cbegin(), ck_set.cend());
+        }
+
+        inline int GetNumFunctions() const {
+          return function_info_.size();
+        }
+
+        void ToJson(
           rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
     };
 
@@ -35,9 +52,11 @@ class CastVisitor : public clang::RecursiveASTVisitor<CastVisitor> {
 
     bool VisitFunctionDecl(const clang::FunctionDecl* decl);
 
-    bool VisitCastExpr(const clang::CastExpr* expr);
+    bool VisitImplicitCastExpr(const clang::ImplicitCastExpr* expr);
 
     bool VisitVarDecl(const clang::VarDecl* decl);
+
+    bool IsValidImplicitCast(const clang::CastKind& cast_kind) const;
 
   private:
     clang::ASTContext& ctx_;

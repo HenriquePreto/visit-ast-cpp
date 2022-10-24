@@ -38,20 +38,20 @@ int main(int argc, char* argv[]) {
   rapidjson::StringBuffer string_buffer;
   rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(string_buffer);
   if (cc_tool == "cast") {
-    auto status_or_collector = VisitASTOnCode<CastVisitor>(
-      cc_file_content, cc_in);
-    CHECK(status_or_collector.ok());
-    status_or_collector->to_json(writer);
+    auto status_or_visitor = VisitASTOnCode<CastVisitor>(
+      cc_file_content, cc_in, cc_tool);
+    CHECK(status_or_visitor.ok());
+    status_or_visitor->ToJson(writer);
   } else if (cc_tool == "goto") {
-    auto status_or_collector = VisitASTOnCode<GotoVisitor>(
-      cc_file_content, cc_in);
-    CHECK(status_or_collector.ok());
-    status_or_collector->to_json(writer);
+    auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
+      cc_file_content, cc_in, cc_tool);
+    CHECK(status_or_visitor.ok());
+    status_or_visitor->ToJson(writer);
   } else if (cc_tool == "nobreak") {
-    auto status_or_collector = VisitASTOnCode<NoBreakVisitor>(
-      cc_file_content, cc_in);
-    CHECK(status_or_collector.ok());
-    status_or_collector->to_json(writer);
+    auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+      cc_file_content, cc_in, cc_tool);
+    CHECK(status_or_visitor.ok());
+    status_or_visitor->ToJson(writer);
   } else {
     CHECK(false && "Not supported tool.");
   }
