@@ -48,9 +48,9 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
  * next CaseStmt node). 
  */
 // TODO: compound stmt as only child inside case
-// TODO: return stmts inside case are just like break stmts
 // TODO: fall through case stmts are normal - case stmt works
 // TODO: default are also cases
+// TODO: last does not count
 bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   auto num_cases = 0; 
   auto num_breaks = 0;
@@ -88,6 +88,7 @@ bool NoBreakVisitor::IsBreakBelow(
       break;
     }
   }
+  break_found = break_found || it == end;
   it = it_prev;
   return break_found;
 }

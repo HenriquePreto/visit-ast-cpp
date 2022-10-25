@@ -258,28 +258,28 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
 
-TEST(VisitASTOnCodeTest, SwitchNoop) {
+TEST(VisitASTOnCodeTest, NoBreakNoop) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
-TEST(VisitASTOnCodeTest, SwitchComment) {
+TEST(VisitASTOnCodeTest, NoBreakComment) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("// A comment in c++");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
-TEST(VisitASTOnCodeTest, SwitchEmptyFunction) {
+TEST(VisitASTOnCodeTest, NoBreakEmptyFunction) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
-TEST(VisitASTOnCodeTest, SwitchFunctionValues) {
+TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
   auto cc_file_content = "#include <string>\n"
     "#include <iostream>\n"
     "int foo(int z, std::string s) {\n"
@@ -373,38 +373,7 @@ TEST(VisitASTOnCodeTest, SwitchFunctionValues) {
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 } 
 
-// TEST(VisitASTOnCodeTest, SwitchFunctions) {
-//   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-//     "namespace foo {\n"
-//     "int f(int x) {\n"
-//     "   if (x % 2 == 0)\n"
-//     "     goto f_goto;\n"
-//     "   return x + 1;\n"
-//     "f_goto:\n"
-//     "   return x - 1;\n"
-//     "}\n"
-//     "}\n"
-//     "int g(int x) {\n"
-//     "   if (x % 2 == 0)\n"
-//     "     goto g_goto;\n"
-//     "   return x - 1;\n"
-//     "g_goto:\n"
-//     "   return x + 1;\n"
-//     "}\n"
-//   );
-//   EXPECT_TRUE(status_or_visitor.ok());
-
-//   auto visitor = std::move(*status_or_visitor);
-//   EXPECT_EQ(visitor.GetNumFunctions(), 2);
-
-//   auto function_name = "input.cc#2:1#foo::f";
-//   EXPECT_TRUE(visitor.ContainsFunction(function_name));
-
-//   function_name = "input.cc#10:1#g";
-//   EXPECT_TRUE(visitor.ContainsFunction(function_name));
-// }
-
-TEST(VisitASTOnCodeTest, SwitchReturnChild) {
+TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
     "int f(int x) {\n"
     "   switch(x) {\n"
@@ -424,7 +393,7 @@ TEST(VisitASTOnCodeTest, SwitchReturnChild) {
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
-TEST(VisitASTOnCodeTest, SwitchReturnBelow) {
+TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
     "int f(int x) {\n"
     "   switch(x) {\n"
@@ -437,6 +406,80 @@ TEST(VisitASTOnCodeTest, SwitchReturnBelow) {
     "     case 3:\n"
     "       x = x + x;\n"
     "       return x + x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakDefault) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "       return x + 1;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       return x - 1;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "       return x + x;\n"
+    "     default:\n"
+    "       return x;\n"
+    "   }\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "       return x + 1;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       return x - 1;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "       return x + x;\n"
+    "     default:\n"
+    "       x = x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "       return x + 1;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       return x - 1;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "       return x + x;\n"
+    "     case 4:\n"
+    "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
     "}\n"
