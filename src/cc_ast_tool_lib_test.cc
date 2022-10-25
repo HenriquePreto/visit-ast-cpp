@@ -588,4 +588,102 @@ TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
 
+TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "      {\n"
+    "        x++;\n"
+    "        x++;\n"
+    "        break;\n"
+    "      }\n"
+    "     case 2:\n"
+    "      {\n"
+    "        x++;\n"
+    "        break;\n"
+    "      }\n"
+    "     case 3:\n"
+    "      {\n"
+    "        break;\n"
+    "      }\n"
+    "     case 4:\n"
+    "      {\n"
+    "        break;\n"
+    "      }\n"
+    "     case 5:\n"
+    "     case 6:\n"
+    "     case 7:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "      {\n"
+    "        x++;\n"
+    "        x++;\n"
+    "      }\n"
+    "     case 2:\n"
+    "      {\n"
+    "        x++;\n"
+    "        break;\n"
+    "      }\n"
+    "     case 3:\n"
+    "     case 4:\n"
+    "      {\n"
+    "        break;\n"
+    "      }\n"
+    "     case 5:\n"
+    "     case 6:\n"
+    "      {\n"
+    "      }\n"
+    "     case 7:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+    "int g(int x) {\n"
+    "   while (1) {\n"
+    "     switch(x) {\n"
+    "       case 1:\n"
+    "         x++;\n"
+    "       case 2:\n"
+    "         x++;\n"
+    "         break;\n"
+    "       case 3:\n"
+    "         x++;\n"
+    "       case 4:\n"
+    "         x++;\n"
+    "         return x;\n"
+    "       case 5:\n"
+    "         return x;\n"
+    "       default:\n"
+    "         return -1;\n"
+    "   }\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 2);
+
+  auto function_name = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+
+  function_name = "input.cc#27:1#g";
+  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+}
+
+
 }

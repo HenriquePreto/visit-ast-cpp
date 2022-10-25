@@ -47,8 +47,6 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
  * CaseStmt node in the AST, before the next case statement (i.e before the 
  * next CaseStmt node). 
  */
-// TODO: compound stmt as only child inside case
-// TODO: fall through case stmts are normal - case stmt works
 bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   auto num_cases = 0; 
   auto num_breaks = 0;
@@ -57,7 +55,8 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
       it != end; it++) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
       num_cases++;
-      if (HasBreakChild(it) || IsBreakBelow(it, end) || IsFallThroughCase(it)) {
+      if (HasBreakChild(it) || IsBreakBelow(it, end) || 
+          IsFallThroughCase(it) || IsCompoundStmt(it)) {
         num_breaks++;
       }
     }
@@ -110,4 +109,14 @@ bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
     return true;
   }
   return false;
+}
+
+bool NoBreakVisitor::IsCompoundStmt(const clang::ConstStmtIterator& it) const {
+  auto it_compound_stmt = std::find_if(it->child_begin(), it->child_end(), 
+    [](auto child) {
+      return child->getStmtClass() == clang::Stmt::CompoundStmtClass;
+    });
+  if (it_compound_stmt == it->child_end())
+    return false;
+  return HasBreakChild(it_compound_stmt);
 }

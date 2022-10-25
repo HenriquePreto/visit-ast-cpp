@@ -51,6 +51,8 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
 
     bool AssignIfHasCaseChild(clang::ConstStmtIterator& it) const;
 
+    bool IsCompoundStmt(const clang::ConstStmtIterator& it) const;
+
     clang::ASTContext& ctx_;
     std::string current_function_;
     VisitorInfo& visitor_info_;
