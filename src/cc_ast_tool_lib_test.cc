@@ -490,4 +490,102 @@ TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
+TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "     case 2:\n"
+    "     case 3:\n"
+    "       return x + 1;\n"
+    "     case 4:\n"
+    "     case 5:\n"
+    "     case 6:\n"
+    "       return x - 1;\n"
+    "     case 7:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "     case 2:\n"
+    "     case 3:\n"
+    "     case 4:\n"
+    "     case 5:\n"
+    "     case 6:\n"
+    "     case 7:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       c++;\n"
+    "     case 2:\n"
+    "     case 3:\n"
+    "     case 4:\n"
+    "     case 5:\n"
+    "     case 6:\n"
+    "     case 7:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_name = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+}
+
+TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       break;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "     case 4:\n"
+    "       x = x * x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_name = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+}
+
 }

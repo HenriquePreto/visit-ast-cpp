@@ -49,8 +49,6 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
  */
 // TODO: compound stmt as only child inside case
 // TODO: fall through case stmts are normal - case stmt works
-// TODO: default are also cases
-// TODO: last does not count
 bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   auto num_cases = 0; 
   auto num_breaks = 0;
@@ -59,7 +57,7 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
       it != end; it++) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
       num_cases++;
-      if (HasBreakChild(it) || IsBreakBelow(it, end)) {
+      if (HasBreakChild(it) || IsBreakBelow(it, end) || IsFallThroughCase(it)) {
         num_breaks++;
       }
     }
@@ -91,4 +89,25 @@ bool NoBreakVisitor::IsBreakBelow(
   break_found = break_found || it == end;
   it = it_prev;
   return break_found;
+}
+
+bool NoBreakVisitor::IsFallThroughCase(clang::ConstStmtIterator it) const {
+  while (AssignIfHasCaseChild(it)) {
+    if (HasBreakChild(it)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
+  auto it_case_child = std::find_if(it->child_begin(), it->child_end(), 
+    [](auto child) {
+      return child->getStmtClass() == clang::Stmt::CaseStmtClass;
+    });
+  if (it_case_child != it->child_end()) {
+    it = it_case_child;
+    return true;
+  }
+  return false;
 }

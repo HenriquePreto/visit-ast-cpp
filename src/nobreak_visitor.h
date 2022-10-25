@@ -47,6 +47,10 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
     bool IsBreakBelow(
       clang::ConstStmtIterator& it, const clang::ConstStmtIterator& end) const;
 
+    bool IsFallThroughCase(clang::ConstStmtIterator it) const;
+
+    bool AssignIfHasCaseChild(clang::ConstStmtIterator& it) const;
+
     clang::ASTContext& ctx_;
     std::string current_function_;
     VisitorInfo& visitor_info_;
