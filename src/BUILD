@@ -86,6 +86,7 @@ cc_test(
         ":cc_ast_tool_lib",
         ":cast_visitor",
         ":goto_visitor",
+        ":nobreak_visitor",
         "@com_google_googletest//:gtest_main",
     ],
 )

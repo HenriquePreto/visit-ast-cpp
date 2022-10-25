@@ -1,6 +1,7 @@
 #include "src/cc_ast_tool_lib.h"
 #include "src/cast_visitor.h"
 #include "src/goto_visitor.h"
+#include "src/nobreak_visitor.h"
 
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
@@ -8,6 +9,12 @@
 namespace {
 
 using ::testing::UnorderedElementsAre;
+
+// TODO: fix runToolOnCode's arguments and this test!
+// TEST(RsFromCcTest, ErrorOnInvalidInput) {
+//   ASSERT_THAT(RsFromCc("int foo(); But this is not C++"),
+//               StatusIs(absl::StatusCode::kInvalidArgument));
+// }
 
 TEST(VisitASTOnCodeTest, CastNoop) {
   auto status_or_visitor = VisitASTOnCode<CastVisitor>(" ");
@@ -29,12 +36,6 @@ TEST(VisitASTOnCodeTest, CastEmptyFunction) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
-
-// TODO: fix runToolOnCode's arguments and this test!
-// TEST(RsFromCcTest, ErrorOnInvalidInput) {
-//   ASSERT_THAT(RsFromCc("int foo(); But this is not C++"),
-//               StatusIs(absl::StatusCode::kInvalidArgument));
-// }
 
 TEST(VisitASTOnCodeTest, CastFunctionValues) {
   auto cc_file_content = "#include <stdio.h>\n"
@@ -134,12 +135,6 @@ TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
-
-// TODO: fix runToolOnCode's arguments and this test!
-// TEST(RsFromCcTest, ErrorOnInvalidInput) {
-//   ASSERT_THAT(RsFromCc("int foo(); But this is not C++"),
-//               StatusIs(absl::StatusCode::kInvalidArgument));
-// }
 
 TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   auto cc_file_content = "#include <string>\n"
@@ -262,5 +257,151 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
   function_name = "input.cc#10:1#g";
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
+
+TEST(VisitASTOnCodeTest, SwitchNoop) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ");
+  EXPECT_TRUE(status_or_visitor.ok());
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, SwitchComment) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("// A comment in c++");
+  EXPECT_TRUE(status_or_visitor.ok());
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, SwitchEmptyFunction) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}");
+  EXPECT_TRUE(status_or_visitor.ok());
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, SwitchFunctionValues) {
+  auto cc_file_content = "#include <string>\n"
+    "#include <iostream>\n"
+    "int foo(int z, std::string s) {\n"
+    "   return s.size() + z;\n"
+    "}\n"
+    "\n"
+    "void checkEvenOrNot(int num)\n"
+    "{\n"
+    "   if (num % 2 == 0)\n"
+    "       // jump to even\n"
+    "       goto even;\n"
+    "   else\n"
+    "       // jump to odd\n"
+    "       goto odd;\n"
+    "\n"
+    "even:\n"
+    "   printf(\"\%d is even\", num);\n"
+    "   // return if even\n"
+    "   return;\n"
+    "odd:\n"
+    "   printf(\"\%d is odd\", num);\n"
+    "}\n"
+    "\n"
+    "void switch_breaks(int c) {\n"
+    "   switch (c) {\n"
+    "     int z;\n"
+    "     case 0:\n"
+    "       c++;\n"
+    "       break;\n"
+    "     case 1:\n"
+    "       c++;\n"
+    "       break;\n"
+    "     case 2:\n"
+    "       c++;\n"
+    "       c++;\n"
+    "       break;\n"
+    "     case 3:\n"
+    "       break;\n"
+    "     case 4:\n"
+    "       break;\n"
+    "       c++;\n"
+    "       break;\n"
+    "     case 5:\n"
+    "       c++;\n"
+    "       break;\n"
+    "       break;\n"
+    "     case 6:\n"
+    "       while (true) {\n"
+    "         ;\n"
+    "       }\n"
+    "       break;\n"
+    "     case 7:\n"
+    "       c++;\n"
+    "       c++;\n"
+    "       c++;\n"
+    "       break;\n"
+    "   }\n"
+    "}\n"
+    "\n"
+    "void switch_nobreaks(char c) {\n"
+    "   switch (c) {\n"
+    "     case 'a':\n"
+    "       c++;\n"
+    "     case 'e':\n"
+    "       break;\n"
+    "     case 'i':\n"
+    "       c++;\n"
+    "     case 'o':\n"
+    "       c++;\n"
+    "     case 'u':\n"
+    "       c++;\n"
+    "       break;\n"
+    "   }\n"
+    "}\n"
+    "\n"
+    "int main() {\n"
+    "  int x = 3;\n"
+    "  int y = foo(5, \"hello_world\");\n"
+    "  checkEvenOrNot(y);\n"
+    "  int z = y + 5;\n"
+    "  return 0;\n"
+    "}";
+
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(cc_file_content);
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_name = "input.cc#60:1#switch_nobreaks";
+  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+} 
+
+// TEST(VisitASTOnCodeTest, SwitchFunctions) {
+//   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+//     "namespace foo {\n"
+//     "int f(int x) {\n"
+//     "   if (x % 2 == 0)\n"
+//     "     goto f_goto;\n"
+//     "   return x + 1;\n"
+//     "f_goto:\n"
+//     "   return x - 1;\n"
+//     "}\n"
+//     "}\n"
+//     "int g(int x) {\n"
+//     "   if (x % 2 == 0)\n"
+//     "     goto g_goto;\n"
+//     "   return x - 1;\n"
+//     "g_goto:\n"
+//     "   return x + 1;\n"
+//     "}\n"
+//   );
+//   EXPECT_TRUE(status_or_visitor.ok());
+
+//   auto visitor = std::move(*status_or_visitor);
+//   EXPECT_EQ(visitor.GetNumFunctions(), 2);
+
+//   auto function_name = "input.cc#2:1#foo::f";
+//   EXPECT_TRUE(visitor.ContainsFunction(function_name));
+
+//   function_name = "input.cc#10:1#g";
+//   EXPECT_TRUE(visitor.ContainsFunction(function_name));
+// }
 
 }

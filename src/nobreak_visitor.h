@@ -19,6 +19,14 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
       public:
         std::unordered_map<std::string, std::string> function_info_;
         
+        inline bool ContainsFunction(const std::string& function_name) const {
+          return function_info_.contains(function_name);
+        }
+
+        inline int GetNumFunctions() const {
+          return function_info_.size();
+        }
+
         void ToJson(
           rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
     };
@@ -32,7 +40,12 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
     bool VisitSwitchStmt(const clang::SwitchStmt* stmt);
 
   private:
-    bool hasBreaks(const clang::SwitchStmt* stmt);
+    bool IsOkSwitch(const clang::SwitchStmt* stmt) const;
+
+    bool HasBreakChild(const clang::ConstStmtIterator& it) const;
+    
+    bool IsBreakBelow(
+      clang::ConstStmtIterator& it, const clang::ConstStmtIterator& end) const;
 
     clang::ASTContext& ctx_;
     std::string current_function_;
