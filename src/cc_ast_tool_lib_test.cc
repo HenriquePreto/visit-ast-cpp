@@ -404,4 +404,47 @@ TEST(VisitASTOnCodeTest, SwitchFunctionValues) {
 //   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 // }
 
+TEST(VisitASTOnCodeTest, SwitchReturnChild) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       return x + 1;\n"
+    "     case 2:\n"
+    "       return x - 1;\n"
+    "     case 3:\n"
+    "       return x + x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, SwitchReturnBelow) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "       return x + 1;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       return x - 1;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "       return x + x;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
 }
