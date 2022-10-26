@@ -42,7 +42,13 @@ read -r -d '' BUILD_LIBXML2 <<- EOM
   make -j8 CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
-# redis
+# redis: https://github.com/redis/redis
+GIT_REDIS="https://github.com/redis/redis.git"
+read -r -d '' BUILD_REDIS <<- EOM
+  make -j8 clean;
+  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+EOM
+
 # bzip2
 # php
 # llvm
@@ -54,7 +60,8 @@ EOM
 export BENCHMARKS_LIST=(
   # "${GIT_Z3}","${BUILD_Z3}"
   # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
-  "${GIT_LIBXML2}","${BUILD_LIBXML2}"
+  # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
+  "${GIT_REDIS}","${BUILD_REDIS}"
 )
 
 # PATH to store all git repositories 
