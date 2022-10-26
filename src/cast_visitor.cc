@@ -5,6 +5,8 @@ void CastVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
   writer.StartObject();
   for (auto const& [key, value] : function_info_) {
+    if (value.num_casts_ == 0)
+      continue;
     writer.String(key);
     writer.StartObject();
     writer.String("casts");
@@ -54,5 +56,8 @@ bool CastVisitor::VisitVarDecl(const clang::VarDecl* decl) {
 }
 
 bool CastVisitor::IsValidImplicitCast(const clang::CastKind& cast_kind) const {
-  return cast_kind != clang::CastKind::CK_LValueToRValue;
+  return cast_kind != clang::CastKind::CK_LValueToRValue &&
+         cast_kind != clang::CastKind::CK_FunctionToPointerDecay &&
+         cast_kind != clang::CastKind::CK_NoOp &&
+         cast_kind != clang::CastKind::CK_ArrayToPointerDecay;
 }

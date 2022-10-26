@@ -43,7 +43,9 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
     bool IsOkSwitch(const clang::SwitchStmt* stmt) const;
 
     bool HasBreakChild(const clang::ConstStmtIterator& it) const;
-    
+
+    bool HasNullChild(const clang::ConstStmtIterator& it) const;
+
     bool IsBreakBelow(
       clang::ConstStmtIterator& it, const clang::ConstStmtIterator& end) const;
 

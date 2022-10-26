@@ -56,7 +56,8 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
       num_cases++;
       if (HasBreakChild(it) || IsBreakBelow(it, end) || 
-          IsFallThroughCase(it) || IsCompoundStmt(it)) {
+          IsFallThroughCase(it) || IsCompoundStmt(it) ||
+          HasNullChild(it)) {
         num_breaks++;
       }
     }
@@ -64,10 +65,22 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   return num_cases == num_breaks;
 }
 
+bool IsBreakStmt(const clang::Stmt* stmt) {
+  auto stmt_class = stmt->getStmtClass();
+  return stmt_class == clang::Stmt::BreakStmtClass ||
+         stmt_class == clang::Stmt::ReturnStmtClass ||
+         stmt_class == clang::Stmt::CXXThrowExprClass;
+}
+
 bool NoBreakVisitor::HasBreakChild(const clang::ConstStmtIterator& it) const {
   return std::any_of(it->child_begin(), it->child_end(), [](auto child) { 
-      return child->getStmtClass() == clang::Stmt::BreakStmtClass ||
-             child->getStmtClass() == clang::Stmt::ReturnStmtClass; 
+      return IsBreakStmt(child);
+  });
+}
+
+bool NoBreakVisitor::HasNullChild(const clang::ConstStmtIterator& it) const {
+  return std::any_of(it->child_begin(), it->child_end(), [](auto child) { 
+    return child->getStmtClass() == clang::Stmt::NullStmtClass;
   });
 }
 
@@ -79,8 +92,7 @@ bool NoBreakVisitor::IsBreakBelow(
   for (; it != end; it_prev = it, it++) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
       break;
-    } else if (it->getStmtClass() == clang::Stmt::BreakStmtClass ||
-        it->getStmtClass() == clang::Stmt::ReturnStmtClass) {
+    } else if (IsBreakStmt(*it)) {
       break_found = true;
       break;
     }

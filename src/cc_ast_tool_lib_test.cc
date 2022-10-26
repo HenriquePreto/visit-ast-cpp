@@ -49,7 +49,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "    int i = 0;\n"
     "    int j = 4;\n"
     "    int k = i + j;\n"
-    "    int p = bar();\n" // 1
+    "    int p = bar();\n" // 0 function to pointer decay
     "    double x = 3.3;\n"
     "    float y = 4.4f;\n"
     "    int z = x + y;\n" // 2
@@ -76,7 +76,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "  float y = 4.4f;\n"
     "  int z = x + y;\n" // 2
     "  double w = y + z;\n" // 2
-    "  hello_world::foo(10, 11);\n" // 1
+    "  hello_world::foo(10, 11);\n" // 0 function to pointer decay
     "  printf(\"\%f\", x + y);\n" // 1
     "  return 0;\n"
     "}\n";
@@ -88,10 +88,9 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   EXPECT_EQ(visitor.GetNumFunctions(), 3);
 
   auto function_name = "input.cc#31:1#main";
-  EXPECT_EQ(visitor.GetNumCasts(function_name), 6);
+  EXPECT_EQ(visitor.GetNumCasts(function_name), 5);
   EXPECT_EQ(visitor.GetNumVars(function_name), 7);
   ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
-    clang::CastKind::CK_FunctionToPointerDecay,
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
@@ -105,10 +104,9 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   ));
 
   function_name = "input.cc#8:3#hello_world::foo";
-  EXPECT_EQ(visitor.GetNumCasts(function_name), 6);
+  EXPECT_EQ(visitor.GetNumCasts(function_name), 5);
   EXPECT_EQ(visitor.GetNumVars(function_name), 8);
   ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
-    clang::CastKind::CK_FunctionToPointerDecay,
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
@@ -266,7 +264,9 @@ TEST(VisitASTOnCodeTest, NoBreakNoop) {
 }
 
 TEST(VisitASTOnCodeTest, NoBreakComment) {
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("// A comment in c++");
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "// A comment in c++"
+  );
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
@@ -541,7 +541,7 @@ TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
     "int f(int x) {\n"
     "   switch(x) {\n"
     "     case 1:\n"
-    "       c++;\n"
+    "       x++;\n"
     "     case 2:\n"
     "     case 3:\n"
     "     case 4:\n"
@@ -685,5 +685,53 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
   EXPECT_TRUE(visitor.ContainsFunction(function_name));
 }
 
+TEST(VisitASTOnCodeTest, NoBreakThrow) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "       x = x + 1;\n"
+    "       break;\n"
+    "     case 2:\n"
+    "       x = x - 1;\n"
+    "       break;\n"
+    "     case 3:\n"
+    "       x = x + x;\n"
+    "       throw 1;\n"
+    "     case 4:\n"
+    "       x = x * x;\n"
+    "       throw \"error\";\n"
+    "     case 5:\n"
+    "       x = x - 1;\n"
+    "   }\n"
+    "   return x;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
+TEST(VisitASTOnCodeTest, NoBreakFallUntilEnd) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "           ;\n"
+    "     case 2:\n"
+    "           ;\n"
+    "     case 3:\n"
+    "     case 4:\n"
+    "     case 5:\n"
+    "   }\n"
+    "   return x + 1;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
 
 }
