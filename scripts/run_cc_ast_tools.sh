@@ -50,5 +50,6 @@ for i in "${BENCHMARKS_LIST[@]}"; do
   run_tools_on_benchmark ${1} ${2}
 done
 
+# TODO: count all files and matched files
 # Delete all files with less than 4 bytes: '{}\n' empty json is 2 bytes + '\n'
 find "${OUTPUT_PATH}" -name "*.txt" -type f -size -4c -delete

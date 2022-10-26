@@ -50,6 +50,14 @@ read -r -d '' BUILD_REDIS <<- EOM
 EOM
 
 # bzip2
+GIT_BZIP2="https://github.com/libarchive/bzip2.git"
+read -r -d '' BUILD_BZIP2 <<- EOM
+  mkdir -p build && cd build;
+  make clean;
+  CC=${MY_CC} CXX=${MY_CXX} cmake ..
+  CC=${MY_CC} CXX=${MY_CXX} cmake --build . -j8 --config Release
+EOM
+
 # php
 # llvm
 # pytorch
@@ -61,7 +69,8 @@ export BENCHMARKS_LIST=(
   # "${GIT_Z3}","${BUILD_Z3}"
   # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
   # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
-  "${GIT_REDIS}","${BUILD_REDIS}"
+  # "${GIT_REDIS}","${BUILD_REDIS}"
+  "${GIT_BZIP2}","${BUILD_BZIP2}"
 )
 
 # PATH to store all git repositories 
