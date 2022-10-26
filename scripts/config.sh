@@ -32,7 +32,16 @@ read -r -d '' BUILD_SQLITE3 <<- EOM
   make -j8 CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
-# libxml2
+# libxml2: https://github.com/GNOME/libxml2
+PYTHON_CFLAGS="$(python3-config --cflags)"
+PYTHON_CLIBS="$(python3-config --libs)"
+GIT_LIBXML2="https://github.com/GNOME/libxml2.git"
+read -r -d '' BUILD_LIBXML2 <<- EOM
+  ./autogen.sh PYTHON_CFLAGS="${PYTHON_CFLAGS}" PYTHON_LIBS="${PYTHON_CLIBS}";
+  make -j8 clean;
+  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+EOM
+
 # redis
 # bzip2
 # php
@@ -44,7 +53,8 @@ EOM
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
   # "${GIT_Z3}","${BUILD_Z3}"
-  "${GIT_SQLITE3}","${BUILD_SQLITE3}"
+  # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
+  "${GIT_LIBXML2}","${BUILD_LIBXML2}"
 )
 
 # PATH to store all git repositories 
