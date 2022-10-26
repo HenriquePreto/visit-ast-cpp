@@ -10,19 +10,41 @@ export CC_TOOLS=("cast" "goto" "nobreak")
 
 # This compiler call clang's tool and the compiler
 export MY_CC="${SCRIPT_PATH}/my_cc.sh"
+export MY_CXX="${SCRIPT_PATH}/my_cxx.sh"
 
-# Z3: https://github.com/Z3Prover/z3.git
-Z3_GIT="https://github.com/Z3Prover/z3.git"
-read -r -d '' Z3_BUILD <<- EOM
-  mkdir build;
+# # z3: https://github.com/Z3Prover/z3.git
+GIT_Z3="https://github.com/Z3Prover/z3.git"
+read -r -d '' BUILD_Z3 <<- EOM
+  mkdir -p build;
   cd build;
-  CC=${MY_CC} CXX=${MY_CC} cmake -G "Unix Makefiles" ../;
+  make -j8 clean;
+  CC=${MY_CC} CXX=${MY_CXX} cmake -G "Unix Makefiles" ../;
   make -j8;
 EOM
 
+# sqlite3: https://github.com/sqlite/sqlite
+GIT_SQLITE3="https://github.com/sqlite/sqlite.git"
+read -r -d '' BUILD_SQLITE3 <<- EOM
+  mkdir -p build;
+  cd build;
+  ../configure;
+  make -j8 clean;
+  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+EOM
+
+# libxml2
+# redis
+# bzip2
+# php
+# llvm
+# pytorch
+# unreal
+# blender
+
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
-  "${Z3_GIT}","${Z3_BUILD}"
+  # "${GIT_Z3}","${BUILD_Z3}"
+  "${GIT_SQLITE3}","${BUILD_SQLITE3}"
 )
 
 # PATH to store all git repositories 
