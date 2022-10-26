@@ -734,4 +734,43 @@ TEST(VisitASTOnCodeTest, NoBreakThrow) {
 //   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 // }
 
+TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    "int f(int x) {\n"
+    "   switch(x) {\n"
+    "     case 1:\n"
+    "     case 2:\n"
+    "     {       \n"
+    "       x++;  \n"
+    "       break;\n"
+    "     }       \n"
+    "     case 3:\n"
+    "     case 4:\n"
+    "     case 5:\n"
+    "     {       \n"
+    "       x--;  \n"
+    "       break;\n"
+    "     }       \n" 
+    "     case 6:\n"
+    "     {       \n"
+    "       x--;  \n"
+    "       x--;  \n"
+    "       x--;  \n"
+    "       break;\n"
+    "     }       \n" 
+    "     case 7:\n"
+    "     case 8:\n"
+    "     case 9:\n"
+    "     case 10:\n"
+    "       ;    \n"
+    "   }\n"
+    "   return x + 1;\n"
+    "}\n"
+  );
+  EXPECT_TRUE(status_or_visitor.ok());
+
+  auto visitor = std::move(*status_or_visitor);
+  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+}
+
 }

@@ -98,10 +98,13 @@ bool NoBreakVisitor::IsBreakBelow(
 }
 
 bool NoBreakVisitor::IsFallThroughCase(clang::ConstStmtIterator it) const {
+  auto end = it->child_end();
   while (AssignIfHasCaseChild(it)) {
-    if (HasBreakChild(it)) {
+    if (HasBreakChild(it) || IsBreakBelow(it, end) 
+        || IsCompoundStmt(it)) { // last fall through case
       return true;
     }
+    end = it->child_end();
   }
   return false;
 }
