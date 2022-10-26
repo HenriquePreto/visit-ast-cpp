@@ -25,7 +25,6 @@ function run_tools_on_benchmark () {
   local repository_path="${BENCHMARKS_PATH}/${project_name}"
   
   clone_repository "${git_path}" "${repository_path}" "${project_name}"
-  echo $repository_path
   build_repository "${project_name}" "${build_command}" "${repository_path}"
   
   # for cc_tool in ${CC_TOOLS[@]}; do

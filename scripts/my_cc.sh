@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# source ./config.sh
+SCRIPT=$(realpath "$0")
+SCRIPT_PATH=$(dirname "$SCRIPT")
+
+source "${SCRIPT_PATH}"/config.sh
 
 clang++ "$@"
 
-# regular_expression="\S*\.cpp(\s|$)"
-# cc_in="$(grep -oE ${regular_expression} <<< "$@")"
+cc_in="$(grep -oE "\S*\.cpp(\s|$)" <<< "$*")"
 
 # for cc_tool in ${CC_TOOLS[@]}; do
 #   bname="$(basename ${cc_in})"

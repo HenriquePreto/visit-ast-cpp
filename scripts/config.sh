@@ -3,10 +3,10 @@
 SCRIPT=$(realpath "$0")
 SCRIPT_PATH=$(dirname "$SCRIPT")
 
-BAZEL_DIR="${SCRIPT_PATH}/.."
+export BAZEL_DIR="${SCRIPT_PATH}/.."
 
 # All available tools
-CC_TOOLS=("cast" "goto" "nobreak")
+export CC_TOOLS=("cast" "goto" "nobreak")
 
 # This compiler call clang's tool and the compiler
 export MY_CC="${SCRIPT_PATH}/my_cc.sh"
