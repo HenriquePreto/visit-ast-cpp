@@ -56,9 +56,6 @@ int main(int argc, char* argv[]) {
     CHECK(false && "Not supported tool.");
   }
   std::cout << string_buffer.GetString() << std::endl;
-  
-  // TODO: 
-  // std::vector<absl::string_view>(argv, argv + argc));
-  // CHECK(crubit::SetFileContents(rs_out, *rs_code).ok());
+
   return 0;
 }

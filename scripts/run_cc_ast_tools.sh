@@ -27,11 +27,11 @@ function run_tools_on_benchmark () {
   clone_repository "${git_path}" "${repository_path}" "${project_name}"
   build_repository "${project_name}" "${build_command}" "${repository_path}"
   
-  # for cc_tool in ${CC_TOOLS[@]}; do
-  #   project_out_path="${OUTPUT_PATH}/${cc_tool}/${project_name}"
-  #   mkdir -p "${project_out_path}"
-  #   mv "${OUTPUT_PATH}/${cc_tool}/*.txt" "${project_out_path}"
-  # done
+  for cc_tool in ${CC_TOOLS[@]}; do
+    project_out_path="${OUTPUT_PATH}/${cc_tool}/${project_name}"
+    mkdir -p "${project_out_path}"
+    mv "${OUTPUT_PATH}/${cc_tool}/"*.txt "${project_out_path}"
+  done
 }
 
 source ./config.sh
