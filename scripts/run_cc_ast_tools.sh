@@ -47,3 +47,6 @@ for i in "${BENCHMARKS_LIST[@]}"; do
   echo -e "Git repository: ${1}\nBuild command: ${2}"
   run_tools_on_benchmark ${1} ${2}
 done
+
+# Delete all files with less than 3 bytes: '{}' empty json is 2 bytes
+find "${OUTPUT_PATH}" -name "*.txt" -type f -size -3c -delete
