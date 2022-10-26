@@ -36,6 +36,8 @@ function run_tools_on_benchmark () {
 
 source ./config.sh
 
+(cd ${BAZEL_DIR}; bazel build //src:cc_ast_tool)
+
 mkdir -p ${BENCHMARKS_PATH}
 mkdir -p "${OUTPUT_PATH}"
 for cc_tool in ${CC_TOOLS[@]}; do
