@@ -49,7 +49,7 @@ read -r -d '' BUILD_REDIS <<- EOM
   make -j8 CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
-# bzip2
+# bzip2: https://github.com/libarchive/bzip2
 GIT_BZIP2="https://github.com/libarchive/bzip2.git"
 read -r -d '' BUILD_BZIP2 <<- EOM
   mkdir -p build && cd build;
@@ -58,11 +58,19 @@ read -r -d '' BUILD_BZIP2 <<- EOM
   CC=${MY_CC} CXX=${MY_CXX} cmake --build . -j8 --config Release
 EOM
 
-# php
+# php: https://github.com/php/php-src
+# GIT_PHP="https://github.com/php/php-src.git"
+# read -r -d '' BUILD_PHP <<- EOM
+#   ./buildconf;
+#   ./configure --with-iconv=$(brew --prefix libiconv) --enable-debug;
+#   make -j8 clean;
+#   make -j8 CC=${MY_CC} CXX=${MY_CXX};
+# EOM
+
+# blender
+# unreal
 # llvm
 # pytorch
-# unreal
-# blender
 
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
@@ -70,7 +78,8 @@ export BENCHMARKS_LIST=(
   # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
   # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
   # "${GIT_REDIS}","${BUILD_REDIS}"
-  "${GIT_BZIP2}","${BUILD_BZIP2}"
+  # "${GIT_BZIP2}","${BUILD_BZIP2}"
+  "${GIT_PHP}","${BUILD_PHP}"
 )
 
 # PATH to store all git repositories 

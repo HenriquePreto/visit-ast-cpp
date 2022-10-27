@@ -36,7 +36,7 @@ function run_tools_on_benchmark () {
 
 source ./config.sh
 
-(cd ${BAZEL_DIR}; bazel build //src:cc_ast_tool)
+# (cd ${BAZEL_DIR}; bazel build //src:cc_ast_tool)
 
 mkdir -p ${BENCHMARKS_PATH}
 mkdir -p "${OUTPUT_PATH}"
@@ -50,6 +50,4 @@ for i in "${BENCHMARKS_LIST[@]}"; do
   run_tools_on_benchmark ${1} ${2}
 done
 
-# TODO: count all files and matched files
-# Delete all files with less than 4 bytes: '{}\n' empty json is 2 bytes + '\n'
-find "${OUTPUT_PATH}" -name "*.txt" -type f -size -4c -delete
+./print_statistics.sh

@@ -6,7 +6,7 @@ void GotoVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
   writer.StartObject();
   for (auto const& [key, value] : function_info_) {
-    writer.String(key);
+    writer.Key(key);
     writer.String(value);
   }
   writer.EndObject();

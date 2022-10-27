@@ -3,17 +3,18 @@
 
 void CastVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
-  writer.StartObject();
+  writer.StartArray();
   for (auto const& [key, value] : function_info_) {
     if (value.num_casts_ == 0)
       continue;
-    writer.String(key);
     writer.StartObject();
-    writer.String("casts");
+    writer.Key("filename");
+    writer.String(key);
+    writer.Key("casts");
     writer.Uint(value.num_casts_);
-    writer.String("vars");
+    writer.Key("vars");
     writer.Uint(value.num_vars_); 
-    writer.String("cast kinds");
+    writer.Key("cast kinds");
     writer.StartArray();
     for (auto const& cast_kind: value.cast_kinds_) {
       writer.String(std::string(clang::CastExpr::getCastKindName(cast_kind)));
@@ -21,7 +22,7 @@ void CastVisitor::VisitorInfo::ToJson(
     writer.EndArray();
     writer.EndObject();
   }
-  writer.EndObject();
+  writer.EndArray();
 }
 
 bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
