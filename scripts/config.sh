@@ -59,18 +59,28 @@ read -r -d '' BUILD_BZIP2 <<- EOM
 EOM
 
 # php: https://github.com/php/php-src
-# GIT_PHP="https://github.com/php/php-src.git"
-# read -r -d '' BUILD_PHP <<- EOM
-#   ./buildconf;
-#   ./configure --with-iconv=$(brew --prefix libiconv) --enable-debug;
-#   make -j8 clean;
-#   make -j8 CC=${MY_CC} CXX=${MY_CXX};
-# EOM
+GIT_PHP="https://github.com/php/php-src.git"
+read -r -d '' BUILD_PHP <<- EOM
+  ./buildconf;
+  ./configure --with-iconv=$(brew --prefix libiconv) --enable-debug;
+  make -j8 clean;
+  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+EOM
 
-# blender
-# unreal
+# blender: https://github.com/blender/blender
+GIT_BLENDER="https://github.com/blender/blender.git"
+read -r -d '' BUILD_BLENDER <<- EOM
+  rm -rf ../blender-git;
+  mkdir ../blender-git; 
+  cd ..;
+  mv blender/ blender-git/;
+  cd blender-git/blender/;
+  make -j8 clean;
+  make update;
+  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+EOM
+
 # llvm
-# pytorch
 
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
@@ -79,7 +89,8 @@ export BENCHMARKS_LIST=(
   # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
   # "${GIT_REDIS}","${BUILD_REDIS}"
   # "${GIT_BZIP2}","${BUILD_BZIP2}"
-  "${GIT_PHP}","${BUILD_PHP}"
+  # "${GIT_PHP}","${BUILD_PHP}"
+  # "${GIT_BLENDER}","${BUILD_BLENDER}"
 )
 
 # PATH to store all git repositories 
