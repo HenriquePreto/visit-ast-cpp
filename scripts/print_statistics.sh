@@ -2,8 +2,6 @@
 
 source ./config.sh
 
-NTOP=10
-
 # cast statistics
 CAST_DIR="${OUTPUT_PATH}"/cast
 echo "-----------------------------------------"
@@ -21,15 +19,19 @@ for repository_path in ${CAST_DIR}/*; do
   printf "%s\t|\t%s\t|\t%s\t|\n" ${repository_name} ${count_all} ${count_ok} 
 done
 
-# cast_files_out=$(find ${CAST_DIR} -name "*.txt")
-# IFS=$'\n' read -rd '' -a cast_files <<<"${cast_files_out}"
-# rm -f ${OUTPUT_PATH}/cast/all.json
-# for file in "${cast_files[@]}"; do
-#   cat ${file} >> ${OUTPUT_PATH}/cast/all.json
-# done
-# cat ${OUTPUT_PATH}/cast/all.json | \
-#   jq -s -c 'sort_by(.casts, .vars) | .[]' | \
-#   jq . > ${OUTPUT_PATH}/cast/sort_all.json
+cast_files_out=$(find ${CAST_DIR} -name "*.txt")
+IFS=$'\n' read -rd '' -a cast_files <<<"${cast_files_out}"
+all=${OUTPUT_PATH}/cast/all.json
+sorted=${OUTPUT_PATH}/cast/sort_all.json
+rm -f ${all} ${sorted}
+echo '[' > ${all}
+for file in "${cast_files[@]}"; do
+  tail -n +2 ${file} | sed '$d' >> ${all}
+  printf ',' >> ${all}
+done
+truncate -s -1 ${all}
+echo ']' >> ${all}
+cat ${all} | jq -c 'sort_by(.casts, .vars) | reverse | .[]' > ${sorted}
 
 # goto statistics
 GOTO_DIR="${OUTPUT_PATH}"/goto

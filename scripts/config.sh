@@ -93,10 +93,10 @@ export BENCHMARKS_LIST=(
   # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
   # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
   # "${GIT_REDIS}","${BUILD_REDIS}"
-  # "${GIT_BZIP2}","${BUILD_BZIP2}"
-  # "${GIT_PHP}","${BUILD_PHP}"
-  # "${GIT_BLENDER}","${BUILD_BLENDER}"
-  "${GIT_LLVM}","${BUILD_LLVM}"
+  "${GIT_BZIP2}","${BUILD_BZIP2}"
+  # "${GIT_PHP}","${BUILD_PHP}"         # TODO
+  # "${GIT_BLENDER}","${BUILD_BLENDER}" # TODO
+  # "${GIT_LLVM}","${BUILD_LLVM}"       # TODO
 )
 
 # PATH to store all git repositories 
