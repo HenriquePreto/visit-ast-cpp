@@ -17,9 +17,9 @@ GIT_Z3="https://github.com/Z3Prover/z3.git"
 read -r -d '' BUILD_Z3 <<- EOM
   mkdir -p build;
   cd build;
-  make -j8 clean;
+  make -j$(nproc) clean;
   CC=${MY_CC} CXX=${MY_CXX} cmake -G "Unix Makefiles" ../;
-  make -j8;
+  make -j$(nproc);
 EOM
 
 # sqlite3: https://github.com/sqlite/sqlite
@@ -28,8 +28,8 @@ read -r -d '' BUILD_SQLITE3 <<- EOM
   mkdir -p build;
   cd build;
   ../configure;
-  make -j8 clean;
-  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+  make -j$(nproc) clean;
+  make -j$(nproc) CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
 # libxml2: https://github.com/GNOME/libxml2
@@ -38,15 +38,15 @@ PYTHON_CLIBS="$(python3-config --libs)"
 GIT_LIBXML2="https://github.com/GNOME/libxml2.git"
 read -r -d '' BUILD_LIBXML2 <<- EOM
   ./autogen.sh PYTHON_CFLAGS="${PYTHON_CFLAGS}" PYTHON_LIBS="${PYTHON_CLIBS}";
-  make -j8 clean;
-  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+  make -j$(nproc) clean;
+  make -j$(nproc) CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
 # redis: https://github.com/redis/redis
 GIT_REDIS="https://github.com/redis/redis.git"
 read -r -d '' BUILD_REDIS <<- EOM
-  make -j8 clean;
-  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+  make -j$(nproc) clean;
+  make -j$(nproc) CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
 # bzip2: https://github.com/libarchive/bzip2
@@ -55,7 +55,7 @@ read -r -d '' BUILD_BZIP2 <<- EOM
   mkdir -p build && cd build;
   make clean;
   CC=${MY_CC} CXX=${MY_CXX} cmake ..
-  CC=${MY_CC} CXX=${MY_CXX} cmake --build . -j8 --config Release
+  CC=${MY_CC} CXX=${MY_CXX} cmake --build . -j$(nproc) --config Release
 EOM
 
 # php: https://github.com/php/php-src
@@ -63,8 +63,8 @@ GIT_PHP="https://github.com/php/php-src.git"
 read -r -d '' BUILD_PHP <<- EOM
   ./buildconf;
   ./configure --with-iconv=$(brew --prefix libiconv) --enable-debug;
-  make -j8 clean;
-  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+  make -j$(nproc) clean;
+  make -j$(nproc) CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
 # blender: https://github.com/blender/blender
@@ -75,12 +75,17 @@ read -r -d '' BUILD_BLENDER <<- EOM
   cd ..;
   mv blender/ blender-git/;
   cd blender-git/blender/;
-  make -j8 clean;
+  make -j$(nproc) clean;
   make update;
-  make -j8 CC=${MY_CC} CXX=${MY_CXX};
+  make -j$(nproc) CC=${MY_CC} CXX=${MY_CXX};
 EOM
 
-# llvm
+# llvm: https://github.com/llvm/llvm-project
+GIT_LLVM="https://github.com/llvm/llvm-project.git"
+read -r -d '' BUILD_LLVM <<- EOM
+  cmake -S llvm -B build -G "Unix Makefiles";
+  cmake --build build -j$(nproc)
+EOM
 
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
@@ -91,6 +96,7 @@ export BENCHMARKS_LIST=(
   # "${GIT_BZIP2}","${BUILD_BZIP2}"
   # "${GIT_PHP}","${BUILD_PHP}"
   # "${GIT_BLENDER}","${BUILD_BLENDER}"
+  "${GIT_LLVM}","${BUILD_LLVM}"
 )
 
 # PATH to store all git repositories 
