@@ -5,7 +5,7 @@
 void GotoVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
   writer.StartObject();
-  for (auto const& [key, value] : function_info_) {
+  for (auto const &[key, value] : function_info_) {
     writer.Key(key);
     writer.String(value);
   }
@@ -15,12 +15,12 @@ void GotoVisitor::VisitorInfo::ToJson(
 bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
   if (decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
-    auto fname = ctx_.getSourceManager().getFilename(full_location).str();
+    auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
     auto line_num = full_location.getSpellingLineNumber();
     auto column_num = full_location.getSpellingColumnNumber();
     auto function_name = decl->getQualifiedNameAsString();
     current_function_ = 
-      fname + "#" + std::to_string(line_num) + ":" 
+      file_name + "#" + std::to_string(line_num) + ":" 
       + std::to_string(column_num)  + "#" + function_name;
     current_function_decl_ = decl->getBody();
   }

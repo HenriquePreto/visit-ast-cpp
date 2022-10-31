@@ -6,7 +6,7 @@
 void NoBreakVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
   writer.StartObject();
-  for (auto const& [key, value] : function_info_) {
+  for (auto const &[key, value] : function_info_) {
     writer.Key(key);
     writer.String(value);
   }
@@ -16,12 +16,12 @@ void NoBreakVisitor::VisitorInfo::ToJson(
 bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
   if (decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
-    auto fname = ctx_.getSourceManager().getFilename(full_location).str();
+    auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
     auto line_num = full_location.getSpellingLineNumber();
     auto col_num = full_location.getSpellingColumnNumber();
     auto function_name = decl->getQualifiedNameAsString();
     current_function_ = 
-      fname + "#" + std::to_string(line_num) + ":" 
+      file_name + "#" + std::to_string(line_num) + ":" 
       + std::to_string(col_num)  + "#" + function_name;
     current_function_decl_ = decl->getBody();
   }
@@ -50,7 +50,7 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
 bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   auto num_cases = 0; 
   auto num_breaks = 0;
-  auto body = stmt->getBody();
+  auto *body = stmt->getBody();
   for (auto it = body->child_begin(), end = body->child_end(); 
       it != end; ++it) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
@@ -74,7 +74,7 @@ bool IsBreakStmt(const clang::Stmt* stmt) {
 }
 
 bool NoBreakVisitor::HasBreakChild(const clang::ConstStmtIterator& it) const {
-  return std::any_of(it->child_begin(), it->child_end(), [](auto child) { 
+  return std::any_of(it->child_begin(), it->child_end(), [](auto *child) { 
       return IsBreakStmt(child);
   });
 }
@@ -111,7 +111,7 @@ bool NoBreakVisitor::IsFallThroughCase(clang::ConstStmtIterator it) const {
 
 bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
   auto it_case_child = std::find_if(it->child_begin(), it->child_end(), 
-    [](auto child) {
+    [](auto *child) {
       return child->getStmtClass() == clang::Stmt::CaseStmtClass;
     });
   if (it_case_child != it->child_end()) {
@@ -123,7 +123,7 @@ bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
 
 bool NoBreakVisitor::IsCompoundStmt(const clang::ConstStmtIterator& it) const {
   auto it_compound_stmt = std::find_if(it->child_begin(), it->child_end(), 
-    [](auto child) {
+    [](auto *child) {
       return child->getStmtClass() == clang::Stmt::CompoundStmtClass;
     });
   if (it_compound_stmt == it->child_end())
