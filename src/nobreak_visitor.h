@@ -19,7 +19,7 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
       public:
         std::unordered_map<std::string, std::string> function_info_;
         
-        inline bool ContainsFunction(const std::string& function_name) const {
+        inline bool ContainsFunction(const std::string &function_name) const {
           return function_info_.contains(function_name);
         }
 
@@ -28,35 +28,35 @@ class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
         }
 
         void ToJson(
-          rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
+          rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
     };
 
-    explicit NoBreakVisitor(clang::ASTContext& ctx, VisitorInfo& visitor_info)
+    explicit NoBreakVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
       : ctx_(ctx), visitor_info_(visitor_info), 
         current_function_decl_(nullptr) {}
 
-    bool VisitFunctionDecl(const clang::FunctionDecl* decl);
+    bool VisitFunctionDecl(const clang::FunctionDecl *decl);
     
-    bool VisitSwitchStmt(const clang::SwitchStmt* stmt);
+    bool VisitSwitchStmt(const clang::SwitchStmt *stmt);
 
   private:
-    bool IsOkSwitch(const clang::SwitchStmt* stmt) const;
+    bool IsOkSwitch(const clang::SwitchStmt *stmt) const;
 
-    bool HasBreakChild(const clang::ConstStmtIterator& it) const;
+    bool HasBreakChild(const clang::ConstStmtIterator &it) const;
 
     bool IsBreakBelow(
-      clang::ConstStmtIterator& it, const clang::ConstStmtIterator& end) const;
+      clang::ConstStmtIterator &it, const clang::ConstStmtIterator &end) const;
 
     bool IsFallThroughCase(clang::ConstStmtIterator it) const;
 
-    bool AssignIfHasCaseChild(clang::ConstStmtIterator& it) const;
+    bool AssignIfHasCaseChild(clang::ConstStmtIterator &it) const;
 
-    bool IsCompoundStmt(const clang::ConstStmtIterator& it) const;
+    bool IsCompoundStmt(const clang::ConstStmtIterator &it) const;
 
-    clang::ASTContext& ctx_;
+    clang::ASTContext &ctx_;
     std::string current_function_;
-    VisitorInfo& visitor_info_;
-    clang::Stmt* current_function_decl_;
+    VisitorInfo &visitor_info_;
+    clang::Stmt *current_function_decl_;
 };
 
 #endif // CC_AST_TOOL_NOBREAK_VISITOR_H_

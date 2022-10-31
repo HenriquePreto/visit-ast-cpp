@@ -3,7 +3,7 @@
 #include "llvm/Support/raw_ostream.h"
 
 void GotoVisitor::VisitorInfo::ToJson(
-    rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
+    rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   writer.StartObject();
   for (auto const &[key, value] : function_info_) {
     writer.Key(key);
@@ -12,7 +12,7 @@ void GotoVisitor::VisitorInfo::ToJson(
   writer.EndObject();
 }
 
-bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
+bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
   if (decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
     auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
@@ -27,7 +27,7 @@ bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
   return true;
 }
 
-bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt* stmt) {
+bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt *stmt) {
   if (!current_function_.empty() && current_function_decl_ != nullptr) {
     std::string body;
     llvm::raw_string_ostream body_stream(body);

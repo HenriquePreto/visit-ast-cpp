@@ -16,7 +16,7 @@ ABSL_FLAG(std::string, cc_tool, "",
 ABSL_FLAG(std::string, cc_in, "",
           "input path for the C++ source file (it may or may not be a header)");
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
   absl::SetProgramUsageMessage("Usage: --cc_tool=cast --cc_in=hello_world.cc");
   auto args = absl::ParseCommandLine(argc, argv);
 

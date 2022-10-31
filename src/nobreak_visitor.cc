@@ -4,7 +4,7 @@
 #include <algorithm>
 
 void NoBreakVisitor::VisitorInfo::ToJson(
-    rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const {
+    rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   writer.StartObject();
   for (auto const &[key, value] : function_info_) {
     writer.Key(key);
@@ -13,7 +13,7 @@ void NoBreakVisitor::VisitorInfo::ToJson(
   writer.EndObject();
 }
 
-bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
+bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
   if (decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
     auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
@@ -28,7 +28,7 @@ bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl* decl) {
   return true;
 }
 
-bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
+bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt *stmt) {
   if (!current_function_.empty() && current_function_decl_ != nullptr &&
       !IsOkSwitch(stmt)) {
     std::string body;
@@ -47,7 +47,7 @@ bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt* stmt) {
  * CaseStmt node in the AST, before the next case statement (i.e before the 
  * next CaseStmt node). 
  */
-bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
+bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt *stmt) const {
   auto num_cases = 0; 
   auto num_breaks = 0;
   auto *body = stmt->getBody();
@@ -64,7 +64,7 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   return num_cases == num_breaks;
 }
 
-bool IsBreakStmt(const clang::Stmt* stmt) {
+bool IsBreakStmt(const clang::Stmt *stmt) {
   auto stmt_class = stmt->getStmtClass();
   return stmt_class == clang::Stmt::BreakStmtClass ||
          stmt_class == clang::Stmt::ReturnStmtClass ||
@@ -73,15 +73,15 @@ bool IsBreakStmt(const clang::Stmt* stmt) {
         // (stmt_class == clang::Stmt::CallExprClass && );
 }
 
-bool NoBreakVisitor::HasBreakChild(const clang::ConstStmtIterator& it) const {
+bool NoBreakVisitor::HasBreakChild(const clang::ConstStmtIterator &it) const {
   return std::any_of(it->child_begin(), it->child_end(), [](auto *child) { 
       return IsBreakStmt(child);
   });
 }
 
 bool NoBreakVisitor::IsBreakBelow(
-    clang::ConstStmtIterator& it, 
-    const clang::ConstStmtIterator& end) const {
+    clang::ConstStmtIterator &it, 
+    const clang::ConstStmtIterator &end) const {
   auto break_found = false;
   auto it_prev = it++;
   for (; it != end; it_prev = it++) {
@@ -109,7 +109,7 @@ bool NoBreakVisitor::IsFallThroughCase(clang::ConstStmtIterator it) const {
   return false;
 }
 
-bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
+bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator &it) const {
   auto it_case_child = std::find_if(it->child_begin(), it->child_end(), 
     [](auto *child) {
       return child->getStmtClass() == clang::Stmt::CaseStmtClass;
@@ -121,7 +121,7 @@ bool NoBreakVisitor::AssignIfHasCaseChild(clang::ConstStmtIterator& it) const {
   return false;
 }
 
-bool NoBreakVisitor::IsCompoundStmt(const clang::ConstStmtIterator& it) const {
+bool NoBreakVisitor::IsCompoundStmt(const clang::ConstStmtIterator &it) const {
   auto it_compound_stmt = std::find_if(it->child_begin(), it->child_end(), 
     [](auto *child) {
       return child->getStmtClass() == clang::Stmt::CompoundStmtClass;

@@ -19,7 +19,7 @@ class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
       public:
         std::unordered_map<std::string, std::string> function_info_;
 
-        inline bool ContainsFunction(const std::string& function_name) const {
+        inline bool ContainsFunction(const std::string &function_name) const {
           return function_info_.contains(function_name);
         }
 
@@ -28,22 +28,22 @@ class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
         }
         
         void ToJson(
-          rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) const;
+          rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
     };
 
-    explicit GotoVisitor(clang::ASTContext& ctx, VisitorInfo& visitor_info)
+    explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
       : ctx_(ctx), visitor_info_(visitor_info), 
         current_function_decl_(nullptr) {}
 
-    bool VisitFunctionDecl(const clang::FunctionDecl* decl);
+    bool VisitFunctionDecl(const clang::FunctionDecl *decl);
     
-    bool VisitGotoStmt(const clang::GotoStmt* stmt);
+    bool VisitGotoStmt(const clang::GotoStmt *stmt);
 
   private:
-    clang::ASTContext& ctx_;
+    clang::ASTContext &ctx_;
     std::string current_function_;
-    VisitorInfo& visitor_info_;
-    clang::Stmt* current_function_decl_;
+    VisitorInfo &visitor_info_;
+    clang::Stmt *current_function_decl_;
 };
 
 #endif // CC_AST_TOOL_GOTO_VISITOR_H_

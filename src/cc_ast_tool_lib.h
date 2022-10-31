@@ -15,8 +15,8 @@ absl::StatusOr<std::string> GetFileContents(absl::string_view path);
 template <typename T>
 absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
     const absl::string_view cc_file_content, 
-    const std::string& cc_in = "input.cc",
-    const std::string& tool_name = "clang-tool") {
+    const std::string &cc_in = "input.cc",
+    const std::string &tool_name = "clang-tool") {
   typename T::VisitorInfo visitor_info;
   // TODO: fix these clang -cc1 args, no error with #include directive
   std::vector<std::string> args = { 
