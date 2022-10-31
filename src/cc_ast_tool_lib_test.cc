@@ -34,7 +34,12 @@ TEST(VisitASTOnCodeTest, CastEmptyFunction) {
   auto status_or_visitor = VisitASTOnCode<CastVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
+  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
+  EXPECT_EQ(visitor.GetFunctionSize(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, CastFunctionValues) {
@@ -61,6 +66,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "    return 0.0;\n" // 1
     "  }\n"
     "\n"  
+    "  int GLOB2 = 0.3 + 3.4;\n"
     "  namespace mynamespace {\n"
     "    int foo(int aaa, int bbb) {\n"
     "      return 0;\n" // 0
@@ -85,32 +91,41 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 3);
+  EXPECT_EQ(visitor.GetNumFunctions(), 4);
 
-  auto function_name = "input.cc#31:1#main";
-  EXPECT_EQ(visitor.GetNumCasts(function_name), 5);
-  EXPECT_EQ(visitor.GetNumVars(function_name), 7);
-  ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
+  auto function_id = "input.cc#32:1#main";
+  EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
+  EXPECT_EQ(visitor.GetNumVars(function_id), 7);
+  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
   ));
+  EXPECT_EQ(visitor.GetFunctionSize(function_id), 12);
 
-  function_name = "input.cc#20:3#hello_world::bar";
-  EXPECT_EQ(visitor.GetNumCasts(function_name), 1);
-  EXPECT_EQ(visitor.GetNumVars(function_name), 0);
-  ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
+  function_id = "input.cc#26:5#hello_world::mynamespace::foo";
+  EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
+  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
+  EXPECT_EQ(visitor.GetFunctionSize(function_id), 3);
+
+  function_id = "input.cc#20:3#hello_world::bar";
+  EXPECT_EQ(visitor.GetNumCasts(function_id), 1);
+  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_FloatingToIntegral
   ));
+  EXPECT_EQ(visitor.GetFunctionSize(function_id), 3);
 
-  function_name = "input.cc#8:3#hello_world::foo";
-  EXPECT_EQ(visitor.GetNumCasts(function_name), 5);
-  EXPECT_EQ(visitor.GetNumVars(function_name), 8);
-  ASSERT_THAT(visitor.GetCastKinds(function_name), UnorderedElementsAre(
+  function_id = "input.cc#8:3#hello_world::foo";
+  EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
+  EXPECT_EQ(visitor.GetNumVars(function_id), 8);
+  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
   ));
+  EXPECT_EQ(visitor.GetFunctionSize(function_id), 11);
 }
 
 TEST(VisitASTOnCodeTest, GotoNoop) {
@@ -221,8 +236,8 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
 
-  auto function_name = "input.cc#7:1#checkEvenOrNot";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#7:1#checkEvenOrNot";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctions) {
@@ -249,11 +264,11 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 2);
 
-  auto function_name = "input.cc#2:1#foo::f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#2:1#foo::f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 
-  function_name = "input.cc#10:1#g";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  function_id = "input.cc#10:1#g";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoop) {
@@ -369,8 +384,8 @@ TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
 
-  auto function_name = "input.cc#60:1#switch_nobreaks";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#60:1#switch_nobreaks";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 } 
 
 TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
@@ -558,8 +573,8 @@ TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
 
-  auto function_name = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
@@ -584,8 +599,8 @@ TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
 
-  auto function_name = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 }
 
 TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
@@ -678,11 +693,11 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 2);
 
-  auto function_name = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 
-  function_name = "input.cc#27:1#g";
-  EXPECT_TRUE(visitor.ContainsFunction(function_name));
+  function_id = "input.cc#27:1#g";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
 }
 
 TEST(VisitASTOnCodeTest, NoBreakThrow) {

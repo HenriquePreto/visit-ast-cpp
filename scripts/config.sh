@@ -83,9 +83,10 @@ EOM
 # llvm: https://github.com/llvm/llvm-project
 GIT_LLVM="https://github.com/llvm/llvm-project.git"
 read -r -d '' BUILD_LLVM <<- EOM
-  cmake -S llvm -B build -G "Unix Makefiles";
-  cmake --build build -j$(nproc)
-EOM
+  cmake -S llvm -B build -G Ninja;
+  cd build;
+  ninja;
+EOM # ninja
 
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
@@ -97,6 +98,7 @@ export BENCHMARKS_LIST=(
   # "${GIT_PHP}","${BUILD_PHP}"         # TODO
   # "${GIT_BLENDER}","${BUILD_BLENDER}" # TODO
   # "${GIT_LLVM}","${BUILD_LLVM}"       # TODO
+  # Tensorflow, Modern C++ Libs
 )
 
 # PATH to store all git repositories 
