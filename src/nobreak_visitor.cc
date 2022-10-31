@@ -52,12 +52,12 @@ bool NoBreakVisitor::IsOkSwitch(const clang::SwitchStmt* stmt) const {
   auto num_breaks = 0;
   auto body = stmt->getBody();
   for (auto it = body->child_begin(), end = body->child_end(); 
-      it != end; it++) {
+      it != end; ++it) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
-      num_cases++;
+      ++num_cases;
       if (HasBreakChild(it) || IsBreakBelow(it, end) || 
           IsFallThroughCase(it) || IsCompoundStmt(it)) {
-        num_breaks++;
+        ++num_breaks;
       }
     }
   }
@@ -84,7 +84,7 @@ bool NoBreakVisitor::IsBreakBelow(
     const clang::ConstStmtIterator& end) const {
   auto break_found = false;
   auto it_prev = it++;
-  for (; it != end; it_prev = it, it++) {
+  for (; it != end; it_prev = it++) {
     if (it->getStmtClass() == clang::Stmt::CaseStmtClass) {
       break;
     } else if (IsBreakStmt(*it)) {
