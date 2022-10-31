@@ -6,15 +6,15 @@
 
 template <typename T>
 class ASTConsumer : public clang::ASTConsumer {
-  public:
-    explicit ASTConsumer(clang::ASTContext &ctx, 
-                         typename T::VisitorInfo &visitor_info)
-      : visitor_(ctx, visitor_info) {}
+public:
+  explicit ASTConsumer(clang::ASTContext &ctx, 
+                        typename T::VisitorInfo &visitor_info)
+    : visitor_(ctx, visitor_info) {}
 
-    void HandleTranslationUnit(clang::ASTContext &ctx) override;
-  
-  private:
-    T visitor_;
+  void HandleTranslationUnit(clang::ASTContext &ctx) override;
+
+private:
+  T visitor_;
 };
 
 template <typename T>

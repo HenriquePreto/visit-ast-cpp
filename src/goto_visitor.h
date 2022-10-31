@@ -14,36 +14,35 @@
 #include "rapidjson/PrettyWriter.h"
 
 class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
-  public:
-    class VisitorInfo {
-      public:
-        std::unordered_map<std::string, std::string> function_info_;
+public:
+  struct VisitorInfo {
+    std::unordered_map<std::string, std::string> function_info_;
 
-        inline bool ContainsFunction(const std::string &function_name) const {
-          return function_info_.contains(function_name);
-        }
+    inline bool ContainsFunction(const std::string &function_name) const {
+      return function_info_.contains(function_name);
+    }
 
-        inline int GetNumFunctions() const {
-          return function_info_.size();
-        }
-        
-        void ToJson(
-          rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
-    };
-
-    explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-      : ctx_(ctx), visitor_info_(visitor_info), 
-        current_function_decl_(nullptr) {}
-
-    bool VisitFunctionDecl(const clang::FunctionDecl *decl);
+    inline unsigned GetNumFunctions() const {
+      return function_info_.size();
+    }
     
-    bool VisitGotoStmt(const clang::GotoStmt *stmt);
+    void ToJson(
+      rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
+  };
 
-  private:
-    clang::ASTContext &ctx_;
-    std::string current_function_;
-    VisitorInfo &visitor_info_;
-    clang::Stmt *current_function_decl_;
+  explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
+    : ctx_(ctx), visitor_info_(visitor_info), 
+      current_function_decl_(nullptr) {}
+
+  bool VisitFunctionDecl(const clang::FunctionDecl *decl);
+  
+  bool VisitGotoStmt(const clang::GotoStmt *stmt);
+
+private:
+  clang::ASTContext &ctx_;
+  std::string current_function_;
+  VisitorInfo &visitor_info_;
+  clang::Stmt *current_function_decl_;
 };
 
 #endif // CC_AST_TOOL_GOTO_VISITOR_H_
