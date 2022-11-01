@@ -299,7 +299,11 @@ TEST(VisitASTOnCodeTest, NoBreakEmptyFunction) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
@@ -390,11 +394,28 @@ TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor.GetNumFunctions(), 5);
 
-  auto function_id = "input.cc#60:1#switch_nobreaks";
+  auto function_id = "input.cc#3:1#foo";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
-} 
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+
+  function_id = "input.cc#7:1#checkEvenOrNot";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+
+  function_id = "input.cc#24:1#switch_breaks";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+
+  function_id = "input.cc#60:1#switch_nobreaks";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+
+  function_id = "input.cc#76:1#main";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+}
 
 TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
@@ -413,7 +434,11 @@ TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
@@ -436,7 +461,11 @@ TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakDefault) {
@@ -460,7 +489,11 @@ TEST(VisitASTOnCodeTest, NoBreakDefault) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
@@ -485,7 +518,11 @@ TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
@@ -510,7 +547,11 @@ TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
@@ -534,7 +575,11 @@ TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
@@ -556,7 +601,11 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
@@ -583,6 +632,7 @@ TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
 
   auto function_id = "input.cc#1:1#f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
@@ -609,6 +659,7 @@ TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
 
   auto function_id = "input.cc#1:1#f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
@@ -645,7 +696,11 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
@@ -703,9 +758,11 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
 
   auto function_id = "input.cc#1:1#f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
 
   function_id = "input.cc#27:1#g";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakThrow) {
@@ -733,7 +790,11 @@ TEST(VisitASTOnCodeTest, NoBreakThrow) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 // TEST(VisitASTOnCodeTest, NoBreakFallUntilEnd) {
@@ -793,7 +854,11 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
 }

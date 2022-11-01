@@ -15,15 +15,24 @@
 
 class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
 public:
+  struct NoBreakInfo {
+    unsigned num_nobreaks_ = 0;
+    clang::Stmt *stmt_;
+  };
+
   struct VisitorInfo {
-    std::unordered_map<std::string, std::string> function_info_;
+    std::unordered_map<std::string, NoBreakInfo> function_info_;
     
-    inline bool ContainsFunction(const std::string &function_name) const {
-      return function_info_.contains(function_name);
+    inline bool ContainsFunction(const std::string &function_id) const {
+      return function_info_.contains(function_id);
+    }
+
+    inline unsigned GetNumNoBreaks(const std::string &function_id) const {
+      return function_info_.at(function_id).num_nobreaks_;
     }
 
     inline int GetNumFunctions() const {
-      return function_info_.size();
+      return function_info_.size() - 1; // remove the global context;
     }
 
     void ToJson(
@@ -32,7 +41,7 @@ public:
 
   explicit NoBreakVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
     : ctx_(ctx), visitor_info_(visitor_info), 
-      current_function_decl_(nullptr) {}
+      current_nobreak_info_(&visitor_info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
   
@@ -53,9 +62,8 @@ private:
   bool IsCompoundStmt(const clang::ConstStmtIterator &it) const;
 
   clang::ASTContext &ctx_;
-  std::string current_function_;
   VisitorInfo &visitor_info_;
-  clang::Stmt *current_function_decl_;
+  NoBreakInfo *current_nobreak_info_;
 };
 
 #endif // CC_AST_TOOL_NOBREAK_VISITOR_H_
