@@ -35,6 +35,7 @@ TEST(VisitASTOnCodeTest, CastEmptyFunction) {
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
   auto function_id = "input.cc#1:1#f";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
   EXPECT_EQ(visitor.GetNumVars(function_id), 0);
@@ -146,7 +147,11 @@ TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
   auto status_or_visitor = VisitASTOnCode<GotoVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+
+  auto function_id = "input.cc#1:1#f";
+  EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumGotos(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctionValues) {
@@ -234,10 +239,11 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor.GetNumFunctions(), 5);
 
   auto function_id = "input.cc#7:1#checkEvenOrNot";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumGotos(function_id), 2);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctions) {
@@ -266,9 +272,11 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
 
   auto function_id = "input.cc#2:1#foo::f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
 
   function_id = "input.cc#10:1#g";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
+  EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoop) {

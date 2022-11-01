@@ -15,15 +15,24 @@
 
 class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
 public:
-  struct VisitorInfo {
-    std::unordered_map<std::string, std::string> function_info_;
+  struct GotoInfo {
+    unsigned num_gotos_ = 0;
+    clang::Stmt *stmt_;
+  };
 
-    inline bool ContainsFunction(const std::string &function_name) const {
-      return function_info_.contains(function_name);
+  struct VisitorInfo {
+    std::unordered_map<std::string, GotoInfo> function_info_;
+
+    inline bool ContainsFunction(const std::string &function_id) const {
+      return function_info_.contains(function_id);
+    }
+
+    inline unsigned GetNumGotos(const std::string &function_id) const {
+      return function_info_.at(function_id).num_gotos_;
     }
 
     inline unsigned GetNumFunctions() const {
-      return function_info_.size();
+      return function_info_.size() - 1; // remove the global context;
     }
     
     void ToJson(
@@ -32,7 +41,7 @@ public:
 
   explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
     : ctx_(ctx), visitor_info_(visitor_info), 
-      current_function_decl_(nullptr) {}
+      current_goto_info_(&visitor_info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
   
@@ -40,9 +49,8 @@ public:
 
 private:
   clang::ASTContext &ctx_;
-  std::string current_function_;
   VisitorInfo &visitor_info_;
-  clang::Stmt *current_function_decl_;
+  GotoInfo *current_goto_info_;
 };
 
 #endif // CC_AST_TOOL_GOTO_VISITOR_H_

@@ -57,7 +57,7 @@ public:
 
   explicit CastVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
     : ctx_(ctx), visitor_info_(visitor_info),
-      current_function_(&visitor_info.function_info_[""]) {}
+      current_cast_info_(&visitor_info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
 
@@ -72,7 +72,7 @@ public:
 private:
   clang::ASTContext &ctx_;
   VisitorInfo &visitor_info_;
-  CastInfo *current_function_;
+  CastInfo *current_cast_info_;
 };
 
 #endif // CC_AST_TOOL_CAST_VISITOR_H_

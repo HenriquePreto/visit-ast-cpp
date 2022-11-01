@@ -8,7 +8,7 @@ void CastVisitor::VisitorInfo::ToJson(
     if (value.num_casts_ == 0)
       continue;
     writer.StartObject();
-    writer.Key("filename");
+    writer.Key("id");
     writer.String(key);
     writer.Key("casts");
     writer.Uint(value.num_casts_);
@@ -20,7 +20,7 @@ void CastVisitor::VisitorInfo::ToJson(
       writer.String(std::string(clang::CastExpr::getCastKindName(cast_kind)));
     }
     writer.EndArray();
-    writer.Key("function size");
+    writer.Key("size");
     writer.Uint(value.CalculateFunctionSize());
     writer.EndObject();
   }
@@ -37,12 +37,12 @@ bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
     auto function_id = 
       file_name + "#" + std::to_string(line_num) + 
       ":" + std::to_string(column_num)  + "#" + function_name;
-    current_function_ = &visitor_info_.function_info_[function_id];
+    current_cast_info_ = &visitor_info_.function_info_[function_id];
     auto *body = decl->getBody();
     auto body_begin_loc = ctx_.getFullLoc(body->getBeginLoc());
     auto body_end_loc = ctx_.getFullLoc(body->getEndLoc());
-    current_function_->begin_line_ = body_begin_loc.getSpellingLineNumber();
-    current_function_->end_line_ = body_end_loc.getSpellingLineNumber();
+    current_cast_info_->begin_line_ = body_begin_loc.getSpellingLineNumber();
+    current_cast_info_->end_line_ = body_end_loc.getSpellingLineNumber();
   }
   return true;
 }
@@ -50,15 +50,15 @@ bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
 bool CastVisitor::VisitImplicitCastExpr(const clang::ImplicitCastExpr *expr) {
   auto cast_kind = expr->getCastKind();
   if (IsLocalStmt(expr) && IsValidImplicitCast(cast_kind)) {
-    ++current_function_->num_casts_;
-    current_function_->cast_kinds_.emplace(cast_kind);
+    ++current_cast_info_->num_casts_;
+    current_cast_info_->cast_kinds_.emplace(cast_kind);
   }
   return true;
 }
 
 bool CastVisitor::VisitVarDecl(const clang::VarDecl *decl) {
   if (decl->isLocalVarDecl()) {
-    ++current_function_->num_vars_;
+    ++current_cast_info_->num_vars_;
   }
   return true;
 }
@@ -73,6 +73,6 @@ bool CastVisitor::IsValidImplicitCast(const clang::CastKind &cast_kind) const {
 bool CastVisitor::IsLocalStmt(const clang::Stmt *stmt) const {
   auto full_location = ctx_.getFullLoc(stmt->getBeginLoc());
   auto line_num = full_location.getSpellingLineNumber();
-  return current_function_->begin_line_ <= line_num && 
-         line_num <= current_function_->end_line_;
+  return current_cast_info_->begin_line_ <= line_num && 
+         line_num <= current_cast_info_->end_line_;
 }
