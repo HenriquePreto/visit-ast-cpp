@@ -14,18 +14,16 @@ void GotoVisitor::VisitorInfo::ToJson(
     writer.Key("gotos");
     writer.Uint(value.num_gotos_);
     writer.Key("body");
-    std::string body;
-    llvm::raw_string_ostream body_stream(body);
-    value.stmt_->printPretty(body_stream, nullptr,
-      clang::PrintingPolicy(clang::LangOptions()));
-    writer.String(body);
+    writer.String(value.body_);
     writer.EndObject();
   }
   writer.EndArray();
 }
 
 bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
-  if (decl->isThisDeclarationADefinition()) {
+  // Expr `decl->hasBody()` is needed because a default definition 
+  // doesn't have body: `virtual ~SomeClass() = default`;
+  if (decl->isThisDeclarationADefinition() && decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
     auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
     auto line_num = full_location.getSpellingLineNumber();
@@ -35,12 +33,16 @@ bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
       file_name + "#" + std::to_string(line_num) + ":" 
       + std::to_string(column_num)  + "#" + function_name;
     current_goto_info_ = &visitor_info_.function_info_[function_id];
-    current_goto_info_->stmt_ = decl->getBody();
+    stmt_ = decl->getBody();
   }
   return true;
 }
 
 bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt *stmt) {
-  ++current_goto_info_->num_gotos_;
+  if (++current_goto_info_->num_gotos_ == 1) {
+    llvm::raw_string_ostream body_stream(current_goto_info_->body_);
+    stmt_->printPretty(body_stream, nullptr,
+      clang::PrintingPolicy(clang::LangOptions()));
+  }
   return true;
 }

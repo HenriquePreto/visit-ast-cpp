@@ -15,18 +15,16 @@ void NoBreakVisitor::VisitorInfo::ToJson(
     writer.Key("nobreaks");
     writer.Uint(value.num_nobreaks_);
     writer.Key("body");
-    std::string body;
-    llvm::raw_string_ostream body_stream(body);
-    value.stmt_->printPretty(body_stream, 
-      nullptr, clang::PrintingPolicy(clang::LangOptions()));
-    writer.String(body);
+    writer.String(value.body_);
     writer.EndObject();
   }
   writer.EndArray();
 }
 
 bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
-  if (decl->isThisDeclarationADefinition()) {
+  // Expr `decl->hasBody()` is needed because a default definition 
+  // doesn't have body: `virtual ~SomeClass() = default`;
+  if (decl->isThisDeclarationADefinition() && decl->hasBody()) {
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
     auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
     auto line_num = full_location.getSpellingLineNumber();
@@ -36,14 +34,18 @@ bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
       file_name + "#" + std::to_string(line_num) + ":" 
       + std::to_string(col_num)  + "#" + function_name;
     current_nobreak_info_ = &visitor_info_.function_info_[function_id];
-    current_nobreak_info_->stmt_ = decl->getBody();
+    stmt_ = decl->getBody();
   }
   return true;
 }
 
 bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt *stmt) {
   if (!IsOkSwitch(stmt)) {
-    ++current_nobreak_info_->num_nobreaks_;
+    if (++current_nobreak_info_->num_nobreaks_ == 1) {
+      llvm::raw_string_ostream body_stream(current_nobreak_info_->body_);
+      stmt_->printPretty(body_stream, 
+        nullptr, clang::PrintingPolicy(clang::LangOptions()));
+    }
   }
   return true;
 }

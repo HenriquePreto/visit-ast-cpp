@@ -35,25 +35,28 @@ int main(int argc, char *argv[]) {
   CHECK(status_or_cc_file_content.ok());
   auto cc_file_content = std::move(*status_or_cc_file_content);
 
+  std::vector<std::string> args_as_strings(argv + 1, argv + argc);
+
   rapidjson::StringBuffer string_buffer;
   rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(string_buffer);
   if (cc_tool == "cast") {
     auto status_or_visitor = VisitASTOnCode<CastVisitor>(
-      cc_file_content, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else if (cc_tool == "goto") {
     auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
-      cc_file_content, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else if (cc_tool == "nobreak") {
     auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-      cc_file_content, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else {
     CHECK(false && "Not supported tool.");
+    return 1;
   }
   std::cout << string_buffer.GetString() << std::endl;
 

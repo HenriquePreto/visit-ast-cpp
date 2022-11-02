@@ -8,7 +8,6 @@
 #include "clang/AST/ASTConsumer.h"
 #include "clang/Frontend/CompilerInstance.h"
 #include "clang/Frontend/FrontendAction.h"
-#include "clang/Basic/Diagnostic.h"
 
 template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
@@ -28,8 +27,6 @@ private:
 template <typename T>
 std::unique_ptr<clang::ASTConsumer> FrontendAction<T>::CreateASTConsumer(
     clang::CompilerInstance &instance, llvm::StringRef) {
-  instance.getDiagnostics().setClient(
-    new clang::IgnoringDiagConsumer(), /* ShouldOwnClient = */ true);
   return std::make_unique<ASTConsumer<T>>(
     instance.getASTContext(), visitor_info_);
 }

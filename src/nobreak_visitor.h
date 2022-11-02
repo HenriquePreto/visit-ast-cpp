@@ -5,7 +5,7 @@
 #define RAPIDJSON_HAS_STDSTRING 1
 #endif
 
-#include "clang/AST/RecursiveASTVisitor.h"
+#include "src/visitor.h"
 
 #include <iostream>
 #include <string>
@@ -13,11 +13,11 @@
 
 #include "rapidjson/PrettyWriter.h"
 
-class NoBreakVisitor : public clang::RecursiveASTVisitor<NoBreakVisitor> {
+class NoBreakVisitor : public Visitor<NoBreakVisitor> {
 public:
   struct NoBreakInfo {
     unsigned num_nobreaks_ = 0;
-    clang::Stmt *stmt_;
+    std::string body_;
   };
 
   struct VisitorInfo {
@@ -40,7 +40,7 @@ public:
   };
 
   explicit NoBreakVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-    : ctx_(ctx), visitor_info_(visitor_info), 
+    : Visitor(ctx), visitor_info_(visitor_info), 
       current_nobreak_info_(&visitor_info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
@@ -61,9 +61,9 @@ private:
 
   bool IsCompoundStmt(const clang::ConstStmtIterator &it) const;
 
-  clang::ASTContext &ctx_;
   VisitorInfo &visitor_info_;
   NoBreakInfo *current_nobreak_info_;
+  clang::Stmt *stmt_;
 };
 
 #endif // CC_AST_TOOL_NOBREAK_VISITOR_H_

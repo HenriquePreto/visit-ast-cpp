@@ -28,7 +28,9 @@ void CastVisitor::VisitorInfo::ToJson(
 }
 
 bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
-  if (decl->isThisDeclarationADefinition()) {
+  // Expr `decl->hasBody()` is needed because a default definition 
+  // doesn't have body: `virtual ~SomeClass() = default`;
+  if (decl->isThisDeclarationADefinition() && decl->hasBody()) { 
     auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
     auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
     auto line_num = full_location.getSpellingLineNumber();

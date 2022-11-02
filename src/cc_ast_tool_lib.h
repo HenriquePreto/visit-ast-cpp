@@ -4,6 +4,7 @@
 #include "src/frontend_action.h"
 
 #include <string>
+#include <algorithm>
 
 #include "absl/strings/string_view.h"
 #include "absl/status/status.h"
@@ -14,19 +15,23 @@ absl::StatusOr<std::string> GetFileContents(absl::string_view path);
 
 template <typename T>
 absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
-    const absl::string_view cc_file_content, 
+    const absl::string_view &cc_file_content,
+    std::vector<std::string> &args_as_strings,
     const std::string &cc_in = "input.cc",
     const std::string &tool_name = "clang-tool") {
   typename T::VisitorInfo visitor_info;
-  // TODO: fix these clang -cc1 args, no error with #include directive
-  std::vector<std::string> args = { 
-    // "-v",
-    // "-I/usr/local/opt/llvm@14/bin/../include/c++/v1",
-    // "-I/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include",
-  };
+
+  auto ebegin = std::remove_if(args_as_strings.begin(), args_as_strings.end(), 
+    [](auto &arg) {
+      return arg == "--undefok" ||
+             arg.starts_with("--cc_in=") ||
+             arg.starts_with("--cc_tool=");
+    });
+  args_as_strings.erase(ebegin, args_as_strings.end());
+
   if (clang::tooling::runToolOnCodeWithArgs(
           std::make_unique<FrontendAction<T>>(visitor_info),
-          cc_file_content, args, cc_in, tool_name)) {
+          cc_file_content, args_as_strings, cc_in, tool_name)) {
     return visitor_info;
   }
   return absl::Status(absl::StatusCode::kInvalidArgument, 

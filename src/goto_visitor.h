@@ -5,7 +5,7 @@
 #define RAPIDJSON_HAS_STDSTRING 1
 #endif
 
-#include "clang/AST/RecursiveASTVisitor.h"
+#include "src/visitor.h"
 
 #include <iostream>
 #include <string>
@@ -13,11 +13,11 @@
 
 #include "rapidjson/PrettyWriter.h"
 
-class GotoVisitor : public clang::RecursiveASTVisitor<GotoVisitor> {
+class GotoVisitor : public Visitor<GotoVisitor> {
 public:
   struct GotoInfo {
     unsigned num_gotos_ = 0;
-    clang::Stmt *stmt_;
+    std::string body_;
   };
 
   struct VisitorInfo {
@@ -40,7 +40,7 @@ public:
   };
 
   explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-    : ctx_(ctx), visitor_info_(visitor_info), 
+    : Visitor(ctx), visitor_info_(visitor_info), 
       current_goto_info_(&visitor_info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
@@ -48,9 +48,9 @@ public:
   bool VisitGotoStmt(const clang::GotoStmt *stmt);
 
 private:
-  clang::ASTContext &ctx_;
   VisitorInfo &visitor_info_;
   GotoInfo *current_goto_info_;
+  clang::Stmt *stmt_;
 };
 
 #endif // CC_AST_TOOL_GOTO_VISITOR_H_
