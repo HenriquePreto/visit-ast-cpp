@@ -3,21 +3,21 @@
 SCRIPT=$(realpath "$0")
 SCRIPT_PATH=$(dirname "$SCRIPT")
 
-export BAZEL_DIR="${SCRIPT_PATH}/.."
+export BAZEL_DIR="$SCRIPT_PATH"/..
 
 # All available tools
 export CC_TOOLS=("cast" "goto" "nobreak")
 
 # This compiler call clang's tool and the compiler
-export MY_CC="${SCRIPT_PATH}/my_cc.sh"
-export MY_CXX="${SCRIPT_PATH}/my_cxx.sh"
+export MY_CC="$SCRIPT_PATH"/my_cc.sh
+export MY_CXX="$SCRIPT_PATH"/my_cxx.sh
 
-# # z3: https://github.com/Z3Prover/z3.git
+# z3: https://github.com/Z3Prover/z3.git
 GIT_Z3="https://github.com/Z3Prover/z3.git"
 read -r -d '' BUILD_Z3 <<- EOM
-  mkdir -p build;
+  git clean -xfd;
+  mkdir build;
   cd build;
-  make -j$(nproc) clean;
   CC=${MY_CC} CXX=${MY_CXX} cmake -G "Unix Makefiles" ../;
   make -j$(nproc);
 EOM
@@ -86,15 +86,15 @@ read -r -d '' BUILD_LLVM <<- EOM
   cmake -S llvm -B build -G Ninja;
   cd build;
   ninja;
-EOM # ninja
+EOM
 
 # Benchmark info stored in a list of tuples
 export BENCHMARKS_LIST=(
   "${GIT_Z3}","${BUILD_Z3}"
-  "${GIT_SQLITE3}","${BUILD_SQLITE3}"
-  "${GIT_LIBXML2}","${BUILD_LIBXML2}"
-  "${GIT_REDIS}","${BUILD_REDIS}"
-  "${GIT_BZIP2}","${BUILD_BZIP2}"
+  # "${GIT_SQLITE3}","${BUILD_SQLITE3}"
+  # "${GIT_LIBXML2}","${BUILD_LIBXML2}"
+  # "${GIT_REDIS}","${BUILD_REDIS}"
+  # "${GIT_BZIP2}","${BUILD_BZIP2}"
   # "${GIT_PHP}","${BUILD_PHP}"         # TODO
   # "${GIT_BLENDER}","${BUILD_BLENDER}" # TODO
   # "${GIT_LLVM}","${BUILD_LLVM}"       # TODO

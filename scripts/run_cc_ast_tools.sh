@@ -36,12 +36,14 @@ function run_tools_on_benchmark () {
 
 source ./config.sh
 
+set -e
+
 # (cd ${BAZEL_DIR}; bazel build //src:cc_ast_tool)
 
-mkdir -p ${BENCHMARKS_PATH}
-mkdir -p "${OUTPUT_PATH}"
+mkdir -p "$BENCHMARKS_PATH"
+mkdir -p "$OUTPUT_PATH"
 for cc_tool in ${CC_TOOLS[@]}; do
-  mkdir -p "${OUTPUT_PATH}/${cc_tool}"
+  mkdir -p "$OUTPUT_PATH"/"$cc_tool"
 done
 
 for i in "${BENCHMARKS_LIST[@]}"; do
@@ -50,4 +52,4 @@ for i in "${BENCHMARKS_LIST[@]}"; do
   run_tools_on_benchmark ${1} ${2}
 done
 
-./print_statistics.sh
+# ./print_statistics.sh

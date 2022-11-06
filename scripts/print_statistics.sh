@@ -2,6 +2,8 @@
 
 source ./config.sh
 
+set -e
+
 # cast statistics
 CAST_DIR="${OUTPUT_PATH}"/cast
 echo "-----------------------------------------"
