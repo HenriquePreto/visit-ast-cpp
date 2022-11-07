@@ -27,8 +27,6 @@ source ${SCRIPT_PATH}/config.sh
 
 set -e
 
-echo "$@"
-
 declare -a args
 declare -a cc_ins
 for arg in "$@"; do
@@ -52,11 +50,11 @@ if [ ! -z "${cc_ins}" ]; then
     fi
     for cc_tool in ${CC_TOOLS[@]}; do
       cc_out="${OUTPUT_PATH}/${cc_tool}/${base}.txt"
-      # (cd ${BAZEL_DIR}; \
-      #   bazel run //src:cc_ast_tool --\
-      #    --cc_in="${cc_in}" \
-      #    --cc_tool="${cc_tool}" \
-      #    "${args[@]}" > "${cc_out}")
+      (cd ${BAZEL_DIR}; \
+        bazel run //src:cc_ast_tool --\
+         --cc_in="${cc_in}" \
+         --cc_tool="${cc_tool}" \
+         "${args[@]}" > "${cc_out}")
     done
   done
 fi

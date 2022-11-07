@@ -15,9 +15,12 @@ ABSL_FLAG(std::string, cc_tool, "",
           "full class name for the cc abstract syntax tree tool");
 ABSL_FLAG(std::string, cc_in, "",
           "input path for the C++ source file (it may or may not be a header)");
+ABSL_FLAG(bool, ignore_errors, true,
+          "boolean flag to ignore errors (such as include directives missing)");
 
 int main(int argc, char *argv[]) {
-  absl::SetProgramUsageMessage("Usage: --cc_tool=cast --cc_in=hello_world.cc");
+  absl::SetProgramUsageMessage(
+    "Usage: --cc_tool=cast --cc_in=hello_world.cc [--ignore_errors=false]");
   auto args = absl::ParseCommandLine(argc, argv);
 
   auto cc_tool = absl::GetFlag(FLAGS_cc_tool);
@@ -30,6 +33,7 @@ int main(int argc, char *argv[]) {
     std::cerr << "please specify --cc_in" << std::endl;
     return 1;
   }
+  auto ignore_errors = absl::GetFlag(FLAGS_ignore_errors);
 
   auto status_or_cc_file_content = GetFileContents(cc_in);
   CHECK(status_or_cc_file_content.ok());
@@ -41,17 +45,17 @@ int main(int argc, char *argv[]) {
   rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(string_buffer);
   if (cc_tool == "cast") {
     auto status_or_visitor = VisitASTOnCode<CastVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else if (cc_tool == "goto") {
     auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else if (cc_tool == "nobreak") {
     auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool);
+      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
     CHECK(status_or_visitor.ok());
     status_or_visitor->ToJson(writer);
   } else {

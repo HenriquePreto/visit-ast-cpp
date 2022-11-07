@@ -24,6 +24,7 @@ private:
 template <typename T>
 void ASTConsumer<T>::HandleTranslationUnit(clang::ASTContext &ctx) {
   auto *decl = ctx.getTranslationUnitDecl();
+
   auto begin = decl->decls_begin();
   auto end = decl->decls_end();
   auto it = std::find_if(begin, end, [this, &ctx] (auto *child_decl) {
@@ -36,7 +37,7 @@ void ASTConsumer<T>::HandleTranslationUnit(clang::ASTContext &ctx) {
 }
 
 template <typename T>
-bool  ASTConsumer<T>::IsTraversable(clang::ASTContext &ctx,
+bool ASTConsumer<T>::IsTraversable(clang::ASTContext &ctx,
     const clang::SourceLocation &begin_loc) const {
   auto &src_mgr = ctx.getSourceManager();
   return src_mgr.isInMainFile(begin_loc);

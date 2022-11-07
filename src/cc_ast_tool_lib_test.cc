@@ -6,6 +6,8 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
+std::vector<std::string> args;
+
 namespace {
 
 using ::testing::UnorderedElementsAre;
@@ -17,21 +19,22 @@ using ::testing::UnorderedElementsAre;
 // }
 
 TEST(VisitASTOnCodeTest, CastNoop) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>(" ");
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>(" ", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, CastComment) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>("// A comment in c++");
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>(
+    "// A comment in c++", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, CastEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>("void f() {}");
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>("void f() {}", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
@@ -44,7 +47,7 @@ TEST(VisitASTOnCodeTest, CastEmptyFunction) {
 }
 
 TEST(VisitASTOnCodeTest, CastFunctionValues) {
-  auto cc_file_content = "#include <stdio.h>\n"
+  auto cc_file_content = "#include <ostream>\n"
     "\n"
     "int GLOB = 0.3 + 3.4;\n"
     "\n"
@@ -88,7 +91,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "  return 0;\n"
     "}\n";
 
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>(cc_file_content);
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>(cc_file_content, args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -130,21 +133,22 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
 }
 
 TEST(VisitASTOnCodeTest, GotoNoop) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(" ");
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(" ", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoComment) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("// A comment in c++");
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
+    "// A comment in c++", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("void f() {}");
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("void f() {}", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
@@ -156,7 +160,7 @@ TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
 
 TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   auto cc_file_content = "#include <string>\n"
-    "#include <iostream>\n"
+    "#include <ostream>\n"
     "int foo(int z, std::string s) {\n"
     "   return s.size() + z;\n"
     "}\n"
@@ -235,7 +239,7 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
     "  return 0;\n"
     "}";
 
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(cc_file_content);
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(cc_file_content, args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -263,8 +267,7 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
     "   return x - 1;\n"
     "g_goto:\n"
     "   return x + 1;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -280,7 +283,7 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoop) {
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ");
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
@@ -288,15 +291,14 @@ TEST(VisitASTOnCodeTest, NoBreakNoop) {
 
 TEST(VisitASTOnCodeTest, NoBreakComment) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-    "// A comment in c++"
-  );
+    "// A comment in c++", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}");
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}", args);
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
   EXPECT_EQ(visitor.GetNumFunctions(), 1);
@@ -308,7 +310,7 @@ TEST(VisitASTOnCodeTest, NoBreakEmptyFunction) {
 
 TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
   auto cc_file_content = "#include <string>\n"
-    "#include <iostream>\n"
+    "#include <ostream>\n"
     "int foo(int z, std::string s) {\n"
     "   return s.size() + z;\n"
     "}\n"
@@ -390,7 +392,8 @@ TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
     "  return 0;\n"
     "}";
 
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(cc_file_content);
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
+    cc_file_content, args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -429,8 +432,7 @@ TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
     "       return x + x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -456,8 +458,7 @@ TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
     "       return x + x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -484,8 +485,7 @@ TEST(VisitASTOnCodeTest, NoBreakDefault) {
     "     default:\n"
     "       return x;\n"
     "   }\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -513,8 +513,7 @@ TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
     "       x = x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -542,8 +541,7 @@ TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -570,8 +568,7 @@ TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -596,8 +593,7 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -623,8 +619,7 @@ TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -650,8 +645,7 @@ TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -691,8 +685,7 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -748,9 +741,9 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
     "         return x;\n"
     "       default:\n"
     "         return -1;\n"
+    "     }\n"
     "   }\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -785,8 +778,7 @@ TEST(VisitASTOnCodeTest, NoBreakThrow) {
     "       x = x - 1;\n"
     "   }\n"
     "   return x;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -849,8 +841,7 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
     "       ;    \n"
     "   }\n"
     "   return x + 1;\n"
-    "}\n"
-  );
+    "}\n", args);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
@@ -861,4 +852,10 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
   EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
 }
 
+}
+
+int main(int argc, char *argv[]) {
+  testing::InitGoogleTest(&argc, argv);
+  args = std::vector<std::string>(argv + 1, argv + argc);
+  return RUN_ALL_TESTS();
 }

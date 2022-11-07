@@ -18,19 +18,21 @@ absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
     const absl::string_view &cc_file_content,
     std::vector<std::string> &args_as_strings,
     const std::string &cc_in = "input.cc",
-    const std::string &tool_name = "clang-tool") {
+    const std::string &tool_name = "clang-tool",
+    const bool &ignore_errors = true) {
   typename T::VisitorInfo visitor_info;
 
   auto ebegin = std::remove_if(args_as_strings.begin(), args_as_strings.end(), 
     [](auto &arg) {
       return arg == "--undefok" ||
              arg.starts_with("--cc_in=") ||
-             arg.starts_with("--cc_tool=");
+             arg.starts_with("--cc_tool=") ||
+             arg.starts_with("--ignore_errors=");
     });
   args_as_strings.erase(ebegin, args_as_strings.end());
 
   if (clang::tooling::runToolOnCodeWithArgs(
-          std::make_unique<FrontendAction<T>>(visitor_info),
+          std::make_unique<FrontendAction<T>>(visitor_info, ignore_errors),
           cc_file_content, args_as_strings, cc_in, tool_name)) {
     return visitor_info;
   }
