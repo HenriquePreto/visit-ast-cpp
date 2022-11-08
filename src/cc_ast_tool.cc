@@ -16,7 +16,7 @@ ABSL_FLAG(std::string, cc_tool, "",
 ABSL_FLAG(std::string, cc_in, "",
           "input path for the C++ source file (it may or may not be a header)");
 ABSL_FLAG(bool, ignore_errors, true,
-          "boolean flag to ignore errors (such as include directives missing)");
+          "boolean flag to ignore errors (such as missing include directives)");
 
 int main(int argc, char *argv[]) {
   absl::SetProgramUsageMessage(

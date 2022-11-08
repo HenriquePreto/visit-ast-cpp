@@ -27,18 +27,15 @@ function run_tools_on_benchmark () {
   clone_repository "${git_path}" "${repository_path}" "${project_name}"
   build_repository "${project_name}" "${build_command}" "${repository_path}"
   
+  IFS=' '
   for cc_tool in ${CC_TOOLS[@]}; do
-    project_out_path="${OUTPUT_PATH}/${cc_tool}/${project_name}"
-    mkdir -p "${project_out_path}"
-    mv "${OUTPUT_PATH}/${cc_tool}/"*.txt "${project_out_path}"
+    project_out_path="$OUTPUT_PATH"/"$cc_tool"/"$project_name"
+    mkdir -p "$project_out_path"
+    mv "$OUTPUT_PATH"/"$cc_tool"/*.txt "$project_out_path"
   done
 }
 
-source ./config.sh
-
 set -e
-
-# (cd ${BAZEL_DIR}; bazel build //src:cc_ast_tool)
 
 mkdir -p "$BENCHMARKS_PATH"
 mkdir -p "$OUTPUT_PATH"
@@ -46,10 +43,9 @@ for cc_tool in ${CC_TOOLS[@]}; do
   mkdir -p "$OUTPUT_PATH"/"$cc_tool"
 done
 
-for i in "${BENCHMARKS_LIST[@]}"; do
-  IFS=","; set -- $i
-  echo -e "Git repository: ${1}\nBuild command: ${2}"
-  run_tools_on_benchmark ${1} ${2}
+IFS='#'
+for i in $BENCHMARKS_LIST; do
+  IFS=','; set -- $i
+  echo -e "Git repository: $1\nBuild command: $2"
+  run_tools_on_benchmark $1 $2
 done
-
-# ./print_statistics.sh

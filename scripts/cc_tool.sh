@@ -2,7 +2,7 @@
 
 function is_arg () {
   case "$1" in
-    *"my_cxx.sh"* | "-MD" | "-MT" | *".cpp.o"* | "-MF" | "-o" | "-MD" | "-c")
+    *"my_cxx.sh"* | "-MD" | "-MT" | *".cpp.o"* | *".c.o"* | "-MF" | "-o" | "-MD" | "-c")
       echo false;;
     *)
       echo true;;
@@ -19,11 +19,6 @@ function is_cc () {
     echo false
   fi
 }
-
-SCRIPT=$(realpath "$0")
-SCRIPT_PATH=$(dirname "$SCRIPT")
-
-source ${SCRIPT_PATH}/config.sh
 
 set -e
 
@@ -54,6 +49,7 @@ if [ ! -z "${cc_ins}" ]; then
         bazel run //src:cc_ast_tool --\
          --cc_in="${cc_in}" \
          --cc_tool="${cc_tool}" \
+         --ignore_errors="${IGNORE_ERRORS}" \
          "${args[@]}" > "${cc_out}")
     done
   done

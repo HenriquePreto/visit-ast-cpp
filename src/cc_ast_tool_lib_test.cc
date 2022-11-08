@@ -42,6 +42,7 @@ TEST(VisitASTOnCodeTest, CastEmptyFunction) {
   auto function_id = "input.cc#1:1#f";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
   EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre());
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
   EXPECT_EQ(visitor.GetFunctionSize(function_id), 1);
 }
@@ -100,6 +101,13 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   auto function_id = "input.cc#32:1#main";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
   EXPECT_EQ(visitor.GetNumVars(function_id), 7);
+  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+    std::make_pair(38, clang::CastKind::CK_FloatingCast), 
+    std::make_pair(38, clang::CastKind::CK_FloatingToIntegral),
+    std::make_pair(39, clang::CastKind::CK_FloatingCast),
+    std::make_pair(39, clang::CastKind::CK_IntegralToFloating),
+    std::make_pair(41, clang::CastKind::CK_FloatingCast)
+  ));
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
@@ -110,12 +118,16 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   function_id = "input.cc#26:5#hello_world::mynamespace::foo";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
   EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre());
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
   EXPECT_EQ(visitor.GetFunctionSize(function_id), 3);
 
   function_id = "input.cc#20:3#hello_world::bar";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 1);
   EXPECT_EQ(visitor.GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+    std::make_pair(21, clang::CastKind::CK_FloatingToIntegral)
+  ));
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_FloatingToIntegral
   ));
@@ -124,6 +136,13 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   function_id = "input.cc#8:3#hello_world::foo";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
   EXPECT_EQ(visitor.GetNumVars(function_id), 8);
+  // ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+  //   std::make_pair(14, clang::CastKind::CK_FloatingToIntegral),
+  //   std::make_pair(14, clang::CastKind::CK_FloatingCast),
+  //   std::make_pair(15, clang::CastKind::CK_FloatingCast),
+  //   std::make_pair(15, clang::CastKind::CK_FloatingToIntegral),
+  //   std::make_pair(16, clang::CastKind::CK_FloatingCast)
+  // ));
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,

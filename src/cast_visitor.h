@@ -16,10 +16,10 @@
 class CastVisitor : public Visitor<CastVisitor> {
 public:
   struct CastInfo {
-    unsigned num_casts_ = 0;
     unsigned num_vars_ = 0;
     unsigned begin_line_ = 0;
     unsigned end_line_ = 0;
+    std::unordered_multimap<unsigned, clang::CastKind> cast_lines_;
     std::unordered_set<clang::CastKind> cast_kinds_;
 
     inline unsigned CalculateFunctionSize() const {
@@ -31,18 +31,18 @@ public:
     std::unordered_map<std::string, CastInfo> function_info_;
     
     inline unsigned GetNumCasts(const std::string &function_id) const {
-      return function_info_.at(function_id).num_casts_;
+      return function_info_.at(function_id).cast_lines_.size();
     }
 
     inline unsigned GetNumVars(const std::string &function_id) const {
       return function_info_.at(function_id).num_vars_;
     }
 
-    inline std::vector<clang::CastKind> GetCastKinds(
-      const std::string &function_id) const {
-        auto &ck_set = function_info_.at(function_id).cast_kinds_;
-        return std::vector(ck_set.cbegin(), ck_set.cend());
-    }
+    std::vector<std::pair<const unsigned, clang::CastKind>> GetCastLines(
+      const std::string &function_id) const;
+
+    std::vector<clang::CastKind> GetCastKinds(
+      const std::string &function_id) const;
 
     inline unsigned GetFunctionSize(const std::string &function_id) const {
       return function_info_.at(function_id).CalculateFunctionSize();

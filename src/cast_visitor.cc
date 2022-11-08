@@ -5,13 +5,14 @@ void CastVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   writer.StartArray();
   for (auto const &[key, value] : function_info_) {
-    if (value.num_casts_ == 0)
+    auto num_casts = GetNumCasts(key);
+    if (num_casts == 0)
       continue;
     writer.StartObject();
     writer.Key("id");
     writer.String(key);
     writer.Key("casts");
-    writer.Uint(value.num_casts_);
+    writer.Uint(num_casts);
     writer.Key("vars");
     writer.Uint(value.num_vars_);
     writer.Key("cast kinds");
@@ -20,11 +21,34 @@ void CastVisitor::VisitorInfo::ToJson(
       writer.String(std::string(clang::CastExpr::getCastKindName(cast_kind)));
     }
     writer.EndArray();
+    writer.Key("cast lines");
+    writer.StartArray();
+    for (auto const &[cast_line, cast_kind]: value.cast_lines_) {
+      writer.StartObject();
+      writer.Key("cast line");
+      writer.Uint(cast_line);
+      writer.Key("cast kind");
+      writer.String(std::string(clang::CastExpr::getCastKindName(cast_kind)));
+      writer.EndObject();
+    }
+    writer.EndArray();
     writer.Key("size");
     writer.Uint(value.CalculateFunctionSize());
     writer.EndObject();
   }
   writer.EndArray();
+}
+
+std::vector<std::pair<const unsigned, clang::CastKind>>
+CastVisitor::VisitorInfo::GetCastLines(const std::string &function_id) const {
+  auto &cast_lines = function_info_.at(function_id).cast_lines_;
+  return std::vector(cast_lines.cbegin(), cast_lines.cend());
+}
+
+std::vector<clang::CastKind> CastVisitor::VisitorInfo::GetCastKinds(
+  const std::string &function_id) const {
+    auto &cast_kinds = function_info_.at(function_id).cast_kinds_;
+    return std::vector(cast_kinds.cbegin(), cast_kinds.cend());
 }
 
 bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
@@ -52,7 +76,9 @@ bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
 bool CastVisitor::VisitImplicitCastExpr(const clang::ImplicitCastExpr *expr) {
   auto cast_kind = expr->getCastKind();
   if (IsLocalStmt(expr) && IsValidImplicitCast(cast_kind)) {
-    ++current_cast_info_->num_casts_;
+    auto full_location = ctx_.getFullLoc(expr->getBeginLoc());
+    auto line = full_location.getSpellingLineNumber();
+    current_cast_info_->cast_lines_.emplace(std::make_pair(line, cast_kind));
     current_cast_info_->cast_kinds_.emplace(cast_kind);
   }
   return true;

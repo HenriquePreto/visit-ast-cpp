@@ -22,14 +22,19 @@ absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
     const bool &ignore_errors = true) {
   typename T::VisitorInfo visitor_info;
 
-  auto ebegin = std::remove_if(args_as_strings.begin(), args_as_strings.end(), 
-    [](auto &arg) {
-      return arg == "--undefok" ||
-             arg.starts_with("--cc_in=") ||
-             arg.starts_with("--cc_tool=") ||
-             arg.starts_with("--ignore_errors=");
-    });
-  args_as_strings.erase(ebegin, args_as_strings.end());
+  if (ignore_errors) {
+    args_as_strings.clear();
+  } else {
+    auto ebegin = std::remove_if(
+      args_as_strings.begin(), args_as_strings.end(), 
+      [](auto &arg) {
+        return arg == "--undefok" ||
+              arg.starts_with("--cc_in=") ||
+              arg.starts_with("--cc_tool=") ||
+              arg.starts_with("--ignore_errors=");
+      });
+    args_as_strings.erase(ebegin, args_as_strings.end());
+  }
 
   if (clang::tooling::runToolOnCodeWithArgs(
           std::make_unique<FrontendAction<T>>(visitor_info, ignore_errors),
