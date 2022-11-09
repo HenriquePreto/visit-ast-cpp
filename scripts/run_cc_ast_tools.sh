@@ -8,13 +8,7 @@ function clone_repository () {
 }
 
 function build_repository () {
-  # if [ "$(which ${1})" = "" ]; then
-  #   echo "Building ${1} : ${2}"
-    # (cd ${3}; eval ${2})
   (cd ${3}; eval ${2})
-  # else
-  #   echo "${1} built"
-  # fi
 }
 
 function run_tools_on_benchmark () {

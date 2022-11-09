@@ -17,6 +17,7 @@ class GotoVisitor : public Visitor<GotoVisitor> {
 public:
   struct GotoInfo {
     unsigned num_gotos_ = 0;
+    unsigned num_labels_ = 0;
     std::string body_;
   };
 
@@ -29,6 +30,10 @@ public:
 
     inline unsigned GetNumGotos(const std::string &function_id) const {
       return function_info_.at(function_id).num_gotos_;
+    }
+
+    inline unsigned GetNumLabels(const std::string &function_id) const {
+      return function_info_.at(function_id).num_labels_;
     }
 
     inline unsigned GetNumFunctions() const {
@@ -46,6 +51,8 @@ public:
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
   
   bool VisitGotoStmt(const clang::GotoStmt *stmt);
+
+  bool VisitLabelStmt(const clang::LabelStmt *stmt);
 
 private:
   VisitorInfo &visitor_info_;

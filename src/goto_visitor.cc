@@ -4,20 +4,31 @@
 
 void GotoVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
+  unsigned visited = 0;
+  writer.StartObject();
+  writer.Key("functions");
   writer.StartArray();
   for (auto const &[key, value] : function_info_) {
     if (value.num_gotos_ == 0)
       continue;
+    visited++;
     writer.StartObject();
     writer.Key("id");
     writer.String(key);
     writer.Key("gotos");
     writer.Uint(value.num_gotos_);
+    writer.Key("labels");
+    writer.Uint(value.num_labels_);
     writer.Key("body");
     writer.String(value.body_);
     writer.EndObject();
   }
   writer.EndArray();
+  writer.Key("total");
+  writer.Uint(GetNumFunctions());
+  writer.Key("visited");
+  writer.Uint(visited);
+  writer.EndObject();
 }
 
 bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
@@ -44,5 +55,10 @@ bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt *stmt) {
     stmt_->printPretty(body_stream, nullptr,
       clang::PrintingPolicy(clang::LangOptions()));
   }
+  return true;
+}
+
+bool GotoVisitor::VisitLabelStmt(const clang::LabelStmt *stmt) {
+  ++current_goto_info_->num_labels_;
   return true;
 }

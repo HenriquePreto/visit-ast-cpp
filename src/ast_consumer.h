@@ -14,8 +14,9 @@ public:
 
   void HandleTranslationUnit(clang::ASTContext &ctx) override;
 
-  bool IsTraversable(clang::ASTContext &ctx, 
-                     const clang::SourceLocation &begin_loc) const;
+  bool IsFromSystemHeader(clang::SourceManager &src_mgr, 
+                          const clang::Decl *decl) const;
+
 private:
   T visitor_;
 };
@@ -23,23 +24,26 @@ private:
 template <typename T>
 void ASTConsumer<T>::HandleTranslationUnit(clang::ASTContext &ctx) {
   auto *decl = ctx.getTranslationUnitDecl();
+  auto &src_mgr = ctx.getSourceManager();
 
   auto begin = decl->decls_begin();
   auto end = decl->decls_end();
-  auto it = std::find_if(begin, end, [this, &ctx] (auto *child_decl) {
-    return IsTraversable(ctx, child_decl->getBeginLoc());
+  auto it = std::find_if(begin, end, [this, &src_mgr] (auto *child_decl) {
+    return !IsFromSystemHeader(src_mgr, child_decl);
   });
 
   for (auto continue_traversal = true; it != end && continue_traversal; ++it) {
-    continue_traversal = visitor_.TraverseDecl(*it);
+    if (!IsFromSystemHeader(src_mgr, *it)) {
+      continue_traversal = visitor_.TraverseDecl(*it);
+    }
   }
 }
 
 template <typename T>
-bool ASTConsumer<T>::IsTraversable(clang::ASTContext &ctx,
-    const clang::SourceLocation &begin_loc) const {
-  auto &src_mgr = ctx.getSourceManager();
-  return src_mgr.isInMainFile(begin_loc);
+bool ASTConsumer<T>::IsFromSystemHeader(
+  clang::SourceManager &src_mgr, const clang::Decl *decl) const {
+  return src_mgr.isInSystemHeader(decl->getLocation()) ||
+         src_mgr.isInSystemMacro(decl->getLocation());
 }
 
 #endif // CC_AST_TOOL_AST_CONSUMER_H_

@@ -5,10 +5,14 @@
 
 void NoBreakVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
+  unsigned visited = 0;
+  writer.StartObject();
+  writer.Key("functions");
   writer.StartArray();
   for (auto const &[key, value] : function_info_) {
     if (value.num_nobreaks_ == 0)
       continue;
+    visited++;
     writer.StartObject();
     writer.Key("id");
     writer.String(key);
@@ -19,6 +23,11 @@ void NoBreakVisitor::VisitorInfo::ToJson(
     writer.EndObject();
   }
   writer.EndArray();
+  writer.Key("total");
+  writer.Uint(GetNumFunctions());
+  writer.Key("visited");
+  writer.Uint(visited);
+  writer.EndObject();
 }
 
 bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {

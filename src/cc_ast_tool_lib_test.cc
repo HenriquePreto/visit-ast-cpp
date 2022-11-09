@@ -136,13 +136,13 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
   function_id = "input.cc#8:3#hello_world::foo";
   EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
   EXPECT_EQ(visitor.GetNumVars(function_id), 8);
-  // ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
-  //   std::make_pair(14, clang::CastKind::CK_FloatingToIntegral),
-  //   std::make_pair(14, clang::CastKind::CK_FloatingCast),
-  //   std::make_pair(15, clang::CastKind::CK_FloatingCast),
-  //   std::make_pair(15, clang::CastKind::CK_FloatingToIntegral),
-  //   std::make_pair(16, clang::CastKind::CK_FloatingCast)
-  // ));
+  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+    std::make_pair(15, clang::CastKind::CK_FloatingCast), 
+    std::make_pair(15, clang::CastKind::CK_FloatingToIntegral),
+    std::make_pair(16, clang::CastKind::CK_FloatingCast),
+    std::make_pair(16, clang::CastKind::CK_IntegralToFloating),
+    std::make_pair(17, clang::CastKind::CK_FloatingCast)
+  ));
   ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
@@ -175,6 +175,7 @@ TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
   auto function_id = "input.cc#1:1#f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
   EXPECT_EQ(visitor.GetNumGotos(function_id), 0);
+  EXPECT_EQ(visitor.GetNumLabels(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctionValues) {
@@ -267,6 +268,7 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
   auto function_id = "input.cc#7:1#checkEvenOrNot";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
   EXPECT_EQ(visitor.GetNumGotos(function_id), 2);
+  EXPECT_EQ(visitor.GetNumLabels(function_id), 2);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctions) {
@@ -295,10 +297,12 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
   auto function_id = "input.cc#2:1#foo::f";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
   EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
+  EXPECT_EQ(visitor.GetNumLabels(function_id), 1);
 
   function_id = "input.cc#10:1#g";
   EXPECT_TRUE(visitor.ContainsFunction(function_id));
   EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
+  EXPECT_EQ(visitor.GetNumLabels(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoop) {

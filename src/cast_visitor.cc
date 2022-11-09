@@ -3,11 +3,15 @@
 
 void CastVisitor::VisitorInfo::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
+  unsigned visited = 0;
+  writer.StartObject();
+  writer.Key("functions");
   writer.StartArray();
   for (auto const &[key, value] : function_info_) {
     auto num_casts = GetNumCasts(key);
     if (num_casts == 0)
       continue;
+    visited++;
     writer.StartObject();
     writer.Key("id");
     writer.String(key);
@@ -37,6 +41,11 @@ void CastVisitor::VisitorInfo::ToJson(
     writer.EndObject();
   }
   writer.EndArray();
+  writer.Key("total");
+  writer.Uint(GetNumFunctions());
+  writer.Key("visited");
+  writer.Uint(visited);
+  writer.EndObject();
 }
 
 std::vector<std::pair<const unsigned, clang::CastKind>>

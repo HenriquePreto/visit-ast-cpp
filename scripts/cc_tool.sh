@@ -2,7 +2,8 @@
 
 function is_arg () {
   case "$1" in
-    *"my_cxx.sh"* | "-MD" | "-MT" | *".cpp.o"* | *".c.o"* | "-MF" | "-o" | "-MD" | "-c")
+    *"my_cxx.sh"* | "-MD" | "-MT" | *".cpp.o"* | *".c.o"* | "-MF" | "-o" | \
+     "-MD" | "-c")
       echo false;;
     *)
       echo true;;
