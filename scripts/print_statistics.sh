@@ -51,26 +51,31 @@ function print_best_stats () {
   tool="$1"
   attr="$2"
   max=$3
+  attr_out="$4"
   json_file="$(concat_array_files_json "$tool")"
   out_dir="$(dirname $json_file)"
   sorted_output="$out_dir"/"$tool"_top_"$3".txt
   cat "$json_file" | \
-    jq -c "sort_by($attr) | reverse | .[] | .id" | head -$max \
+    jq -c "sort_by($attr) | reverse | .[] | $attr_out" | head -$max \
     > "$sorted_output"
 }
 
-MAX=10
+MAX=1000
 
-print_function_stats "cast"
+print_function_stats "cast"&
 
-print_function_stats "goto"
+print_function_stats "goto"&
 
-print_function_stats "nobreak"
+print_function_stats "nobreak"&
 
-print_best_stats "cast" ".casts, .size, .vars, .id" $MAX&
+print_best_stats "cast" ".casts, .size, .vars, .id" $MAX \
+  ".id + \" \" + (.casts | tostring) + \" \" + (.size | tostring) + \
+  \" \" + (.vars | tostring)"&
 
-print_best_stats "goto" ".gotos, .labels, .id" $MAX&
+print_best_stats "goto" ".gotos, .labels, .id" $MAX \
+  ".id + \" \" + (.gotos | tostring) + \" \" + (.labels | tostring)"&
 
-print_best_stats "nobreak" ".nobreaks, .id" $MAX&
+print_best_stats "nobreak" ".nobreaks, .id" $MAX \
+  ".id + \" \" + (.nobreaks | tostring)"&
 
 wait
