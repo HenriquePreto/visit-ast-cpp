@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/sexpr.cpp#31:5#sexpr_composite::sexpr_composite",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 7,
+    "visited": 1
+}

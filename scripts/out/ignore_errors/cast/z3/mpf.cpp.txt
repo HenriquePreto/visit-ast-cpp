@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/mpf.cpp#946:1#my_mpz_sqrt",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 953,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 953,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 53
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

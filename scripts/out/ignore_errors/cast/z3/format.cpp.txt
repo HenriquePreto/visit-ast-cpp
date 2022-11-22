@@ -1,0 +1,51 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/format.cpp#126:9#format_ns::flat_visitor::visit",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 126,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/format.cpp#125:9#format_ns::flat_visitor::visit",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 125,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/format.cpp#69:9#format_ns::format_decl_plugin::mk_func_decl",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 95,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 28
+        }
+    ],
+    "total": 26,
+    "visited": 3
+}

@@ -1,0 +1,36 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ackermannization/ackr_model_converter.cpp#130:1#ackr_model_converter::add_entry",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 150,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ackermannization/ackr_model_converter.cpp#98:1#ackr_model_converter::convert_constants",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        }
+    ],
+    "total": 12,
+    "visited": 2
+}

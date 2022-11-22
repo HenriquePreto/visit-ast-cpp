@@ -1,0 +1,86 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hdr_histogram/hdr_histogram.c#1173:1#hdr_percentiles_print",
+            "casts": 2,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1212,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1212,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hdr_histogram/hdr_histogram.c#1156:1#format_head_string",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1162,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1158,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1160,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hdr_histogram/hdr_histogram.c#972:1#format_line_string",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 981,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 986,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 983,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hdr_histogram/hdr_histogram.c#343:1#hdr_calculate_bucket_config",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 367,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 40
+        }
+    ],
+    "total": 75,
+    "visited": 4
+}

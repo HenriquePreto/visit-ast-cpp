@@ -1,0 +1,1000 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1325:1#chunk",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1334,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1179:1#localstat",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1190,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1165:1#localfunc",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1175,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1010:1#repeatstat",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1017,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1016,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#965:1#cond",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 969,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 969,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 969,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#908:1#check_conflict",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 925,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 913,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 913,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#881:1#block",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 885,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#727:1#simpleexp",
+            "casts": 6,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 749,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 745,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 732,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 757,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 757,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 49
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#856:1#expr",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 857,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#788:1#getbinopr",
+            "casts": 16,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 804,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 803,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 802,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 801,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 800,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 799,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 798,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 797,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 796,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 795,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 794,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 792,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 791,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 790,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#609:1#funcargs",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 651,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 651,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 620,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 47
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1067:1#fornum",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1082,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1082,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1082,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#443:1#recfield",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 459,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#356:1#close_func",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 371,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#328:1#open_func",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 346,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 343,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#296:1#leaveblock",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 299,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 301,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 301,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#285:1#enterblock",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#778:1#getunopr",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 783,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 782,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 781,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 780,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#276:1#enterlevel",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#828:1#subexpr",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 847,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 841,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 841,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 841,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 833,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 833,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#310:1#pushclosure",
+            "casts": 7,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 321,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#207:1#searchvar",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#224:1#singlevaraux",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 226,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 232,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#143:1#registerlocalvar",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 152,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#475:1#lastlistfield",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#217:1#markupval",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 220,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 219,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#176:1#removevars",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1036:1#exp1",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1040,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#991:1#whilestat",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1000,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#167:1#adjustlocalvars",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1238:1#retstat",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1254,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1250,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1250,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1224:1#exprstat",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1229,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#133:1#codestring",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#975:1#breakstat",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 980,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 986,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 986,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#183:1#indexupvalue",
+            "casts": 6,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 203,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 187,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1046:1#forbody",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1054,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#464:1#closelistfield",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 467,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#931:1#assignment",
+            "casts": 9,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 960,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 941,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 941,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 939,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 939,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#498:1#constructor",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 535,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 502,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 507,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 506,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 536,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#256:1#adjust_assign",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#160:1#new_localvar",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 163,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 162,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#543:1#parlist",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 572,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 571,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 571,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 548,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lparser.c#1112:1#forstat",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1117,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        }
+    ],
+    "total": 69,
+    "visited": 43
+}

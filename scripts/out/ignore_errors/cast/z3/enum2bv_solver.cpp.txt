@@ -1,0 +1,36 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/fd_solver/enum2bv_solver.cpp#135:5#enum2bv_solver::get_consequences_core",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/fd_solver/enum2bv_solver.cpp#101:5#enum2bv_solver::local_model_converter",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 104,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 12
+        }
+    ],
+    "total": 33,
+    "visited": 2
+}

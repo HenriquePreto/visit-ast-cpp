@@ -1,0 +1,1099 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#2116:1#serverLogHexDump",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2125,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2130,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2130,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2118,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2124,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1763:1#logServerInfo",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1768,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1718:1#closeDirectLogFiledes",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1719,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1709:1#openDirectLogFiledes",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1710,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1020:1#_serverAssertPrintClientInfo",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1037,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1037,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1033,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1033,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1033,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#388:1#debugCommand",
+            "casts": 116,
+            "vars": 69,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast",
+                "FloatingToIntegral",
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 974,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 949,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 943,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 935,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 930,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 928,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 918,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 910,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 886,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 886,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 866,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 862,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 859,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 850,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 648,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 845,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 835,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 830,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 620,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 786,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 784,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 981,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 781,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 978,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 779,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 577,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 774,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 770,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 766,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 763,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 759,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 750,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 750,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 747,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 742,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 939,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 736,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 729,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 629,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 826,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 724,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 624,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 821,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 718,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 715,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 514,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 711,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 698,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 795,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 686,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 683,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 680,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 877,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 674,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 868,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 661,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 661,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 661,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 855,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 745,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 695,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 637,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 980,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 823,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 531,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 628,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 528,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 725,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 523,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 615,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 807,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 610,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 609,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 497,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 591,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 538,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 701,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 506,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 529,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 505,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 597,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 791,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 988,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 503,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 902,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 649,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 519,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 913,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 613,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 710,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 588,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 982,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 782,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 979,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 502,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 525,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 619,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 612
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#276:1#computeDatasetDigest",
+            "casts": 7,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 311,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 301,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 301,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 283,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 283,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 288,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#139:1#xorObjectDigest",
+            "casts": 46,
+            "vars": 33,
+            "cast kinds": [
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 256,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 233,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 230,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 217,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 211,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 211,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 258,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 258,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 210,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 210,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 208,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 208,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 255,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 255,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 254,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 146,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 190,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 169,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 176,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 199,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 187,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 187,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 157,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 149,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 195,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 195,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 130
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#83:1#xorDigest",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 93,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1948:1#dumpX86Calls",
+            "casts": 6,
+            "vars": 3,
+            "cast kinds": [
+                "PointerToIntegral",
+                "IntegralCast",
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1966,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1956,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 1950,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1954,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1959,
+                    "cast kind": "PointerToIntegral"
+                },
+                {
+                    "cast line": 1964,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1973:1#dumpCodeAroundEIP",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1993,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1992,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1987,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/debug.c#1045:1#serverLogObjectDebugInfo",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1047,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1046,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "#150:38#logStackContent",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1224,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1221,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        }
+    ],
+    "total": 88,
+    "visited": 21
+}

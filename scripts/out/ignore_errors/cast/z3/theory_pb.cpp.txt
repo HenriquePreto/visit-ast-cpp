@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/theory_pb.cpp#2350:9#smt::pb_factory::get_fresh_value",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2351,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 3
+        }
+    ],
+    "total": 11,
+    "visited": 1
+}

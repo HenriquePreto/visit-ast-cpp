@@ -1,0 +1,41 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/goal.cpp#661:1#is_equal",
+            "casts": 6,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 678,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 688,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 665,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 664,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 669,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        }
+    ],
+    "total": 2,
+    "visited": 1
+}

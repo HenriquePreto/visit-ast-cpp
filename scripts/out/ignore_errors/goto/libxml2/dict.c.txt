@@ -1,0 +1,18 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#245:1#xmlDictAddString",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    xmlDictStringsPtr pool;\n    const int *ret;\n    pool = <recovery-expr>()->strings;\n    while (<recovery-expr>())\n        {\n            if (<recovery-expr>())\n                goto found_pool;\n            pool = pool->next;\n        }\n    if (<recovery-expr>()) {\n        if (<recovery-expr>()) {\n        }\n        <recovery-expr>(pool) = 0;\n        <recovery-expr>(pool) = &<recovery-expr>(pool)[0];\n        pool->next = <recovery-expr>()->strings;\n        <recovery-expr>()->strings = pool;\n    }\n  found_pool:\n    <recovery-expr>() = <recovery-expr>(pool);\n    memcpy(<recovery-expr>(pool), <recovery-expr>(), namelen);\n    <recovery-expr>(pool) += namelen;\n    *(<recovery-expr>(pool)++) = 0;\n    <recovery-expr>(pool)++;\n    return (<recovery-expr>());\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#309:1#xmlDictAddQString",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    xmlDictStringsPtr pool;\n    const int *ret;\n    if (<recovery-expr>())\n        return (<recovery-expr>()(<recovery-expr>(), <recovery-expr>(), namelen));\n    pool = <recovery-expr>()->strings;\n    while (<recovery-expr>())\n        {\n            if (<recovery-expr>())\n                goto found_pool;\n            pool = pool->next;\n        }\n    if (<recovery-expr>()) {\n        if (<recovery-expr>()) {\n        }\n        <recovery-expr>(pool) = 0;\n        <recovery-expr>(pool) = &<recovery-expr>(pool)[0];\n        pool->next = <recovery-expr>()->strings;\n        <recovery-expr>()->strings = pool;\n    }\n  found_pool:\n    <recovery-expr>() = <recovery-expr>(pool);\n    memcpy(<recovery-expr>(pool), <recovery-expr>(), plen);\n    <recovery-expr>(pool) += plen;\n    *(<recovery-expr>(pool)++) = ':';\n    memcpy(<recovery-expr>(pool), <recovery-expr>(), namelen);\n    <recovery-expr>(pool) += namelen;\n    *(<recovery-expr>(pool)++) = 0;\n    <recovery-expr>(pool)++;\n    return (<recovery-expr>());\n}\n"
+        }
+    ],
+    "total": 22,
+    "visited": 2
+}

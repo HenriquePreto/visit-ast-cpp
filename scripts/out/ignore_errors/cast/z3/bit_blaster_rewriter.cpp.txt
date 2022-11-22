@@ -1,0 +1,344 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#635:5#blaster_rewriter_cfg::reduce_quantifier",
+            "casts": 2,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 655,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 650,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#567:5#blaster_rewriter_cfg::pre_visit",
+            "casts": 4,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 580,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 574,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 573,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#379:5#blaster_rewriter_cfg::reduce_app",
+            "casts": 23,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 539,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 535,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 506,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 501,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 497,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 543,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 476,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 522,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 468,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 514,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 462,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 400,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 444,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 411,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 526,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 390,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 450,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 472,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 518,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 187
+        },
+        {
+            "id": "#274:73#blaster_rewriter_cfg::reduce_mul",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "#274:73#blaster_rewriter_cfg::reduce_and",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "#274:73#blaster_rewriter_cfg::reduce_add",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "#274:73#blaster_rewriter_cfg::reduce_xor",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#171:5#blaster_rewriter_cfg::pop",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 172,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#368:5#blaster_rewriter_cfg::blast_bv_term",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 371,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#148:5#blaster_rewriter_cfg::get_bits",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#604:5#blaster_rewriter_cfg::reduce_var",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 610,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 618,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#329:5#blaster_rewriter_cfg::reduce_concat",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 332,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp#215:5#blaster_rewriter_cfg::mk_const",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "#274:73#blaster_rewriter_cfg::reduce_or",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        }
+    ],
+    "total": 76,
+    "visited": 14
+}

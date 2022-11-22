@@ -1,0 +1,489 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1767:1#main",
+            "casts": 16,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2019,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1854,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1853,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1852,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1851,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1848,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1847,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1811,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2018,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1777,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1777,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1776,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 257
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1737:1#addFlagsFromEnvVar",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1756,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1748,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1743,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1719:1#snocString",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1724,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1724,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1706:1#mkCell",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1711,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1123:1#compress",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1185,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1152,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1192,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 176
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#950:1#fopen_output_safely",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 962,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#909:1#copyFileName",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 925,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1502:1#testf",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1521,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 84
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#669:1#cleanUpAndFail",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 715,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1110:1#mapSuffix",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1116,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#415:1#uncompressStream",
+            "casts": 1,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 445,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 116
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1304:1#uncompress",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1364,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1341,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 193
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#311:1#compressStream",
+            "casts": 2,
+            "vars": 17,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 98
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1073:1#containsDubiousChars",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1086,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1086,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1085,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#220:1#uInt64_from_UInt32s",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 226,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#536:1#testStream",
+            "casts": 1,
+            "vars": 11,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 563,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 88
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#259:1#uInt64_qrm10",
+            "casts": 7,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 264,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#1100:1#hasSuffix",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1103,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#248:1#uInt64_isZero",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 254,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzip2.c#277:1#uInt64_toAscii",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 286,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 291,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 44,
+    "visited": 20
+}

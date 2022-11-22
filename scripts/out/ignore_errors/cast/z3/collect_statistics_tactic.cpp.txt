@@ -1,0 +1,66 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/collect_statistics_tactic.cpp#109:9#collect_statistics_tactic::collect_proc::operator()",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/collect_statistics_tactic.cpp#159:9#collect_statistics_tactic::collect_proc::operator()",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 160,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/collect_statistics_tactic.cpp#102:9#collect_statistics_tactic::collect_proc::collect_proc",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/collect_statistics_tactic.cpp#67:5#collect_statistics_tactic::operator()",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 73,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        }
+    ],
+    "total": 17,
+    "visited": 4
+}

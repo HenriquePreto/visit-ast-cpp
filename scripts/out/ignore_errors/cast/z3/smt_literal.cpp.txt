@@ -1,0 +1,63 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_literal.cpp#91:5#smt::display_verbose",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 93,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_literal.cpp#104:5#smt::backward_subsumption",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 108,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_literal.cpp#82:5#smt::display_compact",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 84,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        }
+    ],
+    "total": 8,
+    "visited": 3
+}

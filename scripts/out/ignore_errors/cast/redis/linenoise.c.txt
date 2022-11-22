@@ -1,0 +1,628 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#1105:1#freeHistory",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1111,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1110,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#1030:1#linenoiseNoTTY",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1048,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1041,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#983:1#linenoisePrintKeyCodes",
+            "casts": 10,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1001,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1001,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 998,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 998,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 997,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 989,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 989,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#728:1#linenoiseEditHistoryNext",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 732,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#1211:1#linenoiseHistoryLoad",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1222,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#520:1#refreshSingleLine",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 556,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 541,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 552,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 543,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 553,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 540,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#486:1#abFree",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 487,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#445:1#linenoiseAddCompletion",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 454,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#366:1#completeLine",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 398,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#352:1#freeCompletions",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 357,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#796:1#linenoiseEdit",
+            "casts": 16,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 939,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 837,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 906,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 869,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 938,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 902,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 845,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 914,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 839,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 815,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 907,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 953,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 903,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 903,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 842,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 835,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 182
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#477:1#abAppend",
+            "casts": 6,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 481,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 481,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 481,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 478,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 478,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 478,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#1161:1#linenoiseHistorySetMaxLen",
+            "casts": 9,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1180,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1175,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1168,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1179,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1179,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1179,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1178,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1178,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#278:1#getCursorPosition",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 295,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 295,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 292,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 281,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 287,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 287,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#492:1#refreshShowHints",
+            "casts": 5,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 506,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 511,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 505,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 503,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#665:1#linenoiseEditInsert",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 675,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 675,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#565:1#refreshMultiLine",
+            "casts": 16,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 641,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 634,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 644,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 604,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 601,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 620,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 597,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 643,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 585,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 567,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 87
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#1128:1#linenoiseHistoryAdd",
+            "casts": 8,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1149,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1149,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1149,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1148,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1137,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1137,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1135,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1135,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#302:1#getColumns",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 321,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/linenoise/linenoise.c#223:1#isUnsupportedTerm",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 44,
+    "visited": 20
+}

@@ -1,0 +1,106 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sha1.c#155:1#SHA1Final",
+            "casts": 15,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 196,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 195,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 192,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 192,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 192,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 186,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sha1.c#56:1#SHA1Transform",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 65,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 65,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 65,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 110,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 56
+        }
+    ],
+    "total": 4,
+    "visited": 2
+}

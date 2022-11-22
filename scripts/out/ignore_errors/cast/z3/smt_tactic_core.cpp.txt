@@ -1,0 +1,82 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/smt_tactic_core.cpp#156:5#smt_tactic::operator()",
+            "casts": 4,
+            "vars": 25,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 195,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 189,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 254,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 158
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/smt_tactic_core.cpp#349:5#smt_tactic::user_propagate_clear",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 359,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 350,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/smt_tactic_core.cpp#142:9#smt_tactic::scoped_init_ctx::~scoped_init_ctx",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 145,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/smt_tactic_core.cpp#334:5#smt_tactic::user_propagate_delay_init",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 335,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 34,
+    "visited": 4
+}

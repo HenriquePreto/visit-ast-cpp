@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/optsmt.cpp#392:5#opt::operator<<",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

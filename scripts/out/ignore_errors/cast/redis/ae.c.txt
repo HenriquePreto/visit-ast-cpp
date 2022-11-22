@@ -1,0 +1,206 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#357:1#aeProcessEvents",
+            "casts": 1,
+            "vars": 10,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 404,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 117
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#276:1#processTimeEvents",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 307,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 282,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 65
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#215:1#aeCreateTimeEvent",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#139:1#aeDeleteEventLoop",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 148,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 142,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 141,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 151,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#67:1#aeCreateEventLoop",
+            "casts": 6,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 75,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 74,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 96,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 79,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#121:1#aeResizeSetSize",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae_select.c#78:1#aeApiPoll",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 79,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae_select.c#71:1#aeApiDelEvent",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 72,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae_select.c#63:1#aeApiAddEvent",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 64,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae_select.c#42:1#aeApiCreate",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 48,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 30,
+    "visited": 10
+}

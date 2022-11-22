@@ -1,0 +1,535 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#2281:13#smt::mf::quantifier_analyzer::operator()",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2303,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#2270:13#smt::mf::quantifier_analyzer::quantifier_analyzer",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2277,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#2254:13#smt::mf::quantifier_analyzer::process_clause",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2257,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#2057:13#smt::mf::quantifier_analyzer::process_i_app",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2062,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#2010:13#smt::mf::quantifier_analyzer::process_u_app",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2012,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#243:13#smt::mf::node::merge",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 256,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 255,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1765:13#smt::mf::quantifier_info::get_macro_based_inst_set",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1767,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1558:13#smt::mf::x_sleq_y::process_auf",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1560,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1559,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1798:13#smt::mf::quantifier_analyzer::neg",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1798,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1798,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1644:13#smt::mf::x_gle_t::populate_inst_sets",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1645,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1626:13#smt::mf::x_neq_t::populate_inst_sets",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1627,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1286:13#smt::mf::f_var_plus_offset::populate_inst_sets",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1289,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1293,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1594:13#smt::mf::x_eq_t::process_auf",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1595,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1532:13#smt::mf::x_neq_y::process_auf",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1534,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1533,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1518:13#smt::mf::x_eq_y::process_auf",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1520,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1519,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1544:13#smt::mf::x_leq_y::process_auf",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1546,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1545,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1046:13#smt::mf::auf_solver::get_f_i_proj",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1050,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1047,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1418:13#smt::mf::select_var::get_array_func_decl",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1423,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1638:13#smt::mf::x_gle_t::process_auf",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1640,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1237:13#smt::mf::f_var::populate_inst_sets",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1240,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1244,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#116:13#smt::mf::instantiation_set::get_generation",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 117,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1621:13#smt::mf::x_neq_t::process_auf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1623,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1280:13#smt::mf::f_var_plus_offset::process_auf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1283,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1104:13#smt::mf::auf_solver::mk_inverses",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1106,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#474:13#smt::mf::auf_solver::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 478,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#232:13#smt::mf::node::is_root",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 232,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#695:13#smt::mf::auf_solver::get_k_interp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 704,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1355:13#smt::mf::f_var_plus_offset::populate_inst_sets2",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1357,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#512:13#smt::mf::auf_solver::get_uvar_inst_set",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 517,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 514,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#419:13#smt::mf::auf_solver::mk_node",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 420,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#876:13#smt::mf::auf_solver::mk_mono_proj",
+            "casts": 3,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 886,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 890,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 890,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_model_finder.cpp#1599:13#smt::mf::x_eq_t::populate_inst_sets",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1605,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 201,
+    "visited": 32
+}

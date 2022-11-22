@@ -1,0 +1,214 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#428:5#nla2bv_tactic::nla2bv_tactic",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 430,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#422:9#nla2bv_tactic::scoped_set_imp::~scoped_set_imp",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 423,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#386:13#nla2bv_tactic::imp::count_mul_proc::operator()",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 398,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 391,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#383:13#nla2bv_tactic::imp::count_mul_proc::count_mul_proc",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 383,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#302:9#nla2bv_tactic::imp::log2",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 304,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#290:9#nla2bv_tactic::imp::update_num_bits",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 297,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#147:9#nla2bv_tactic::imp::reduce_bv2int",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 150,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#159:9#nla2bv_tactic::imp::reduce_bv2real",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 162,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#185:9#nla2bv_tactic::imp::substitute_vars",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 189,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#173:9#nla2bv_tactic::imp::assert_side_conditions",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 174,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#368:9#nla2bv_tactic::imp::collect_vars",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 371,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/nla2bv_tactic.cpp#86:9#nla2bv_tactic::imp::operator()",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 99,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        }
+    ],
+    "total": 40,
+    "visited": 12
+}

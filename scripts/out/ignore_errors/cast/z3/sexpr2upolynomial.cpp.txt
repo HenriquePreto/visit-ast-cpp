@@ -1,0 +1,69 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/sexpr2upolynomial.cpp#29:1#sexpr2upolynomial",
+            "casts": 13,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 69,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 71,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 55,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 78,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 41,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 52,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 80,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 45,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 67,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 43,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 54,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 80
+        }
+    ],
+    "total": 2,
+    "visited": 1
+}

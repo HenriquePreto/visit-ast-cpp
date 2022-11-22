@@ -1,0 +1,123 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#267:5#pool_solver::refresh",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#218:5#pool_solver::pop_core",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 220,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#90:5#pool_solver::get_unsat_core",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 93,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#99:5#pool_solver::get_num_assumptions",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#273:5#pool_solver::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#76:5#pool_solver::translate",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 76,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/solver/solver_pool.cpp#42:5#pool_solver::pool_solver",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 55,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 40,
+    "visited": 7
+}

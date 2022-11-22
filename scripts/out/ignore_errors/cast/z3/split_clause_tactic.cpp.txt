@@ -1,0 +1,44 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/split_clause_tactic.cpp#56:9#split_clause_tactic::split_pc::operator()",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 64,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/split_clause_tactic.cpp#27:5#split_clause_tactic::select_clause",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 35,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 29,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 31,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        }
+    ],
+    "total": 13,
+    "visited": 2
+}

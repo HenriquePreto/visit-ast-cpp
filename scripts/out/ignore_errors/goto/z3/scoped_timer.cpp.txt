@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/scoped_timer.cpp#51:1#thread_func",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    <recovery-expr>().lock();\n    while (true)\n        {\n            <recovery-expr>(s).wait(<recovery-expr>(), [=] {\n            });\n            <recovery-expr>().unlock();\n            if (<recovery-expr>(s) == EXITING)\n                return;\n            auto end;\n            while (!<recovery-expr>(s).try_lock_until(<recovery-expr>()))\n                {\n                    if (<recovery-expr>()) {\n                        goto next;\n                    }\n                }\n            <recovery-expr>(s).unlock();\n          next:\n            <recovery-expr>(s) = IDLE;\n            <recovery-expr>().lock();\n        }\n}\n"
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

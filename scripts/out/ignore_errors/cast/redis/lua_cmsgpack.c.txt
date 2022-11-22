@@ -1,0 +1,403 @@
+{
+    "functions": [
+        {
+            "id": "#164:18#luaopen_cmsgpack_safe",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 942,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 942,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#580:1#mp_decode_to_lua_type",
+            "casts": 22,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "FloatingCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 780,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 775,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 773,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 772,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 770,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 769,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 693,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 693,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 690,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 682,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 682,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 682,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 679,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 684,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 606,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 606,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 595,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 600,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 784,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 213
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#476:1#mp_encode_lua_null",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 479,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#425:1#table_is_an_array",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "FloatingToIntegral",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 454,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 454,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 454,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#901:1#luaopen_create",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 907,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 907,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#349:1#mp_encode_lua_bool",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 350,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#316:1#mp_encode_map",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 329,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 324,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#293:1#mp_encode_array",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 301,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#203:1#mp_encode_double",
+            "casts": 12,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast",
+                "FloatingCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 215,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 215,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 215,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 214,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 213,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 205,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 210,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 210,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 210,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 207,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#221:1#mp_encode_int",
+            "casts": 9,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 271,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 246,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 234,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 278,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 239,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 259,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 71
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#174:1#mp_encode_bytes",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 186,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 191,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#552:1#mp_decode_to_lua_array",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 559,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_cmsgpack.c#69:1#memrevifle",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 76,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        }
+    ],
+    "total": 33,
+    "visited": 13
+}

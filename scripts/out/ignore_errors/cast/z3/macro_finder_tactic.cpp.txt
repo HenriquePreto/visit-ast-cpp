@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/ufbv/macro_finder_tactic.cpp#41:9#macro_finder_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 15,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 77,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 44
+        }
+    ],
+    "total": 13,
+    "visited": 1
+}

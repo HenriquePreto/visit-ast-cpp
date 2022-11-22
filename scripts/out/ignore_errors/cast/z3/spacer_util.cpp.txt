@@ -1,0 +1,165 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#1067:1#spacer::is_numeric_sub",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1073,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#953:1#spacer::get_num_vars",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 957,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 956,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#911:5#spacer::collect_indices::operator()",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 914,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#873:1#spacer::mbqi_project",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 881,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#821:5#spacer::index_term_finder::operator()",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#569:1#spacer::simplify_bounds_new",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 585,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#797:1#spacer::ground_expr",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 803,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#298:1#spacer::expand_literals",
+            "casts": 6,
+            "vars": 16,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 317,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 329,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_util.cpp#554:1#spacer::simplify_bounds_old",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 80,
+    "visited": 9
+}

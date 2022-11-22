@@ -1,0 +1,41 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c#811:1#main",
+            "casts": 6,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 834,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 833,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 819,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 816,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 815,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

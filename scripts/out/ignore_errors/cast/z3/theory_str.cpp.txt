@@ -1,0 +1,36 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_kernel.h#158:9#smt::kernel::get_phase",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 158,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/theory_str.cpp#42:9#smt::seq_expr_solver::check_sat",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 46,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        }
+    ],
+    "total": 11,
+    "visited": 2
+}

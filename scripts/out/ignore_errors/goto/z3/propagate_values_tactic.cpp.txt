@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/propagate_values_tactic.cpp#133:5#(anonymous namespace)::propagate_values_tactic::run",
+            "gotos": 7,
+            "labels": 1,
+            "body": "{\n    int report;\n    _Bool forward = true;\n    int new_curr;\n    int new_pr;\n    unsigned int size;\n    this->m_idx = 0;\n    this->m_modified = false;\n    unsigned int round = 0;\n    if (<recovery-expr>())\n        goto end;\n    if (this->m_max_rounds == 0)\n        goto end;\n    if (<recovery-expr>())\n        goto end;\n    while (true)\n        {\n            if (forward) {\n                for (; this->m_idx < size; this->m_idx++) {\n                    this->process_current();\n                    if (<recovery-expr>())\n                        goto end;\n                }\n                if (<recovery-expr>())\n                    goto end;\n                forward = false;\n            } else {\n                while (this->m_idx > 0)\n                    {\n                        this->m_idx--;\n                        this->process_current();\n                        if (<recovery-expr>())\n                            goto end;\n                    }\n                if (!this->m_modified)\n                    goto end;\n                this->m_modified = false;\n                this->m_idx = 0;\n                forward = true;\n            }\n            round++;\n            if (round >= this->m_max_rounds)\n                break;\n        }\n  end:\n    ;\n}\n"
+        }
+    ],
+    "total": 15,
+    "visited": 1
+}

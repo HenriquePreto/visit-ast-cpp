@@ -1,0 +1,59 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/loadlib.c#592:1#setpath",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 594,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/loadlib.c#391:1#mkfuncname",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/loadlib.c#340:1#pushnexttemplate",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 24,
+    "visited": 3
+}

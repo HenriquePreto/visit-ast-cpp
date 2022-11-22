@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/sortmax.cpp#42:9#opt::sortmax::operator()",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 64,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 60
+        }
+    ],
+    "total": 14,
+    "visited": 1
+}

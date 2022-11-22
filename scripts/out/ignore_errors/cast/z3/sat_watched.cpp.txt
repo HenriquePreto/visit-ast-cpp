@@ -1,0 +1,36 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/sat/sat_watched.cpp#50:5#sat::find_binary_watch",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 54,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/sat/sat_watched.cpp#43:5#sat::find_binary_watch",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 47,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 6,
+    "visited": 2
+}

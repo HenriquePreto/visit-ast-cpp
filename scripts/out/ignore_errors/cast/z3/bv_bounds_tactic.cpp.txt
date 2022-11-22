@@ -1,0 +1,120 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#711:9#(anonymous namespace)::dom_bv_bounds_simplifier::pop",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 716,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#552:9#(anonymous namespace)::dom_bv_bounds_simplifier::~dom_bv_bounds_simplifier",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 556,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 553,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#489:9#(anonymous namespace)::dom_bv_bounds_simplifier::is_bound",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 492,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 517,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#434:9#(anonymous namespace)::bv_bounds_simplifier::pop",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#28:1#uMaxInt",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 29,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv_bounds_tactic.cpp#195:9#(anonymous namespace)::bv_bounds_simplifier::is_bound",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        }
+    ],
+    "total": 42,
+    "visited": 6
+}

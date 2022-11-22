@@ -1,0 +1,24 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/acl.c#1956:1#ACLStringSetUser",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    sds error;\n    int merged_argc = 0, invalid_idx = 0;\n    sds *acl_args = ACLMergeSelectorArguments(argv, argc, &merged_argc, &invalid_idx);\n    if (!acl_args) {\n        return sdscatfmt(sdsempty(), \"Unmatched parenthesis in acl selector starting at '%s'.\", (char *)argv[invalid_idx]);\n    }\n    user *tempu = ACLCreateUnlinkedUser();\n    if (u) {\n        ACLCopyUser(tempu, u);\n    }\n    for (int j = 0; j < merged_argc; j++) {\n        if (<recovery-expr>()) {\n            const char *errmsg = ACLSetUserStringError();\n            error = sdscatfmt(sdsempty(), \"Error in ACL SETUSER modifier '%s': %s\", (char *)acl_args[j], errmsg);\n            goto cleanup;\n        }\n    }\n    if (u) {\n        ACLKillPubsubClientsIfNeeded(tempu, u);\n    }\n    if (!u) {\n        u = ACLCreateUser(username, <recovery-expr>()(username));\n    }\n    ACLCopyUser(u, tempu);\n  cleanup:\n    ACLFreeUser(tempu);\n    for (int i = 0; i < merged_argc; i++) {\n        sdsfree(acl_args[i]);\n    }\n    zfree(acl_args);\n    return error;\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/acl.c#911:1#aclCreateSelectorFromOpSet",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    aclSelector *s = ACLCreateSelector(0);\n    int argc = 0;\n    sds trimmed = <recovery-expr>()(opset + 1, opsetlen - 2);\n    sds *argv = sdssplitargs(trimmed, &argc);\n    for (int i = 0; i < argc; i++) {\n        if (ACLSetSelector(s, argv[i], <recovery-expr>()(argv[i])) == -1) {\n            ACLFreeSelector(s);\n            goto cleanup;\n        }\n    }\n  cleanup:\n    sdsfreesplitres(argv, argc);\n    sdsfree(trimmed);\n    return s;\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/acl.c#2311:1#ACLSaveToFile",
+            "gotos": 5,
+            "labels": 1,
+            "body": "{\n    sds acl = sdsempty();\n    int fd = -1;\n    sds tmpfilename;\n    int retval = -1;\n    raxIterator ri;\n    raxStart(&ri, Users);\n    while (raxNext(&ri))\n        {\n            user *u = ri.data;\n            sds user = sdsnew(\"user \");\n            user = sdscatsds(user, u->name);\n            user = <recovery-expr>()(user, \" \", 1);\n            robj *descr = ACLDescribeUser(u);\n            user = sdscatsds(user, descr->ptr);\n            decrRefCount(descr);\n            acl = sdscatsds(acl, user);\n            acl = <recovery-expr>()(acl, \"\\n\", 1);\n            sdsfree(user);\n        }\n    raxStop(&ri);\n    tmpfilename = sdsnew(filename);\n    tmpfilename = sdscatfmt(tmpfilename, \".tmp-%i-%I\", (int)getpid(), commandTimeSnapshot());\n    if (<recovery-expr>()) {\n        do {\n            if (((3) & 255) < server.verbosity)\n                break;\n        } while (0);\n        goto cleanup;\n    }\n    int offset(int *);\n    while (<recovery-expr>() < <recovery-expr>()(acl))\n        {\n            if (<recovery-expr>()) {\n                if (<recovery-expr>())\n                    continue;\n                do {\n                    if (((3) & 255) < server.verbosity)\n                        break;\n                } while (0);\n                goto cleanup;\n            }\n        }\n    if (<recovery-expr>()) {\n        do {\n            if (((3) & 255) < server.verbosity)\n                break;\n        } while (0);\n        goto cleanup;\n    }\n    close(fd);\n    fd = -1;\n    if (rename(tmpfilename, filename) == -1) {\n        do {\n            if (((3) & 255) < server.verbosity)\n                break;\n        } while (0);\n        goto cleanup;\n    }\n    if (fsyncFileDir(filename) == -1) {\n        do {\n            if (((3) & 255) < server.verbosity)\n                break;\n        } while (0);\n        goto cleanup;\n    }\n    sdsfree(tmpfilename);\n    retval = 0;\n  cleanup:\n    if (fd != -1)\n        close(fd);\n    if (tmpfilename)\n        unlink(tmpfilename);\n    sdsfree(tmpfilename);\n    sdsfree(acl);\n    return retval;\n}\n"
+        }
+    ],
+    "total": 136,
+    "visited": 3
+}

@@ -1,0 +1,782 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1481:9#fm_tactic::imp::try_eliminate",
+            "casts": 5,
+            "vars": 15,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1516,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1513,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1538,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1515,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1525,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 65
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1322:9#fm_tactic::imp::resolve",
+            "casts": 18,
+            "vars": 26,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1455,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1411,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1411,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1403,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1403,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1399,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1368,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1351,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1443,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1336,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 1336,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 1369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1338,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 156
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1224:9#fm_tactic::imp::cleanup_constraints",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1229,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 1225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1227,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1132:9#fm_tactic::imp::register_constraint",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1143,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1128:9#fm_tactic::imp::is_false",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1129,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1033:9#fm_tactic::imp::add_constraint",
+            "casts": 4,
+            "vars": 21,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1080,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1085,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1054,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1047,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 94
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#917:9#fm_tactic::imp::to_expr",
+            "casts": 7,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 960,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 960,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 952,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 919,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 929,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 939,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 944,
+                    "cast kind": "IntegralToBoolean"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#909:9#fm_tactic::imp::all_int",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 910,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1240:9#fm_tactic::imp::analyze",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1243,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#868:9#fm_tactic::imp::init",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 886,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#854:9#fm_tactic::imp::init_forbidden_set",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 859,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1308:9#fm_tactic::imp::get_coeff",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1309,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#802:9#fm_tactic::imp::subsume",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralToBoolean"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#760:9#fm_tactic::imp::backward_subsumption",
+            "casts": 5,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 789,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 766,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 761,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#696:9#fm_tactic::imp::subsumes",
+            "casts": 17,
+            "vars": 15,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 748,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 748,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 738,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 738,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 724,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 716,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 706,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 706,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 700,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 700,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 711,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 63
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#570:9#fm_tactic::imp::del_constraints",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 571,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#625:9#fm_tactic::imp::mk_int",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 627,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#639:9#fm_tactic::imp::normalize_coeffs",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 657,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 640,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 646,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1167:9#fm_tactic::imp::init_use_list",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1169,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#533:9#fm_tactic::imp::is_occ",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 537,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#661:9#fm_tactic::imp::display",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 680,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 674,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 662,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 662,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 673,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 671,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#494:9#fm_tactic::imp::is_linear_pol",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 502,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#580:9#fm_tactic::imp::mk_constraint",
+            "casts": 6,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 599,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 586,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 590,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 595,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1206:9#fm_tactic::imp::sort_candidates",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1209,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#295:9#fm_tactic::fm_model_converter::display",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 299,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1192:13#fm_tactic::imp::x_cost_lt::operator()",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1202,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1202,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1180:9#fm_tactic::imp::get_cost",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1184,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1574:9#fm_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1600,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1606,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 55
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#309:9#fm_tactic::fm_model_converter::translate",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 313,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#200:9#fm_tactic::fm_model_converter::operator()",
+            "casts": 1,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 213,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 93
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#1639:9#fm_tactic::imp::display",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1641,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/fm_tactic.cpp#64:9#fm_tactic::fm_model_converter::process",
+            "casts": 4,
+            "vars": 23,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 73,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 79,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 109,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 115
+        }
+    ],
+    "total": 96,
+    "visited": 32
+}

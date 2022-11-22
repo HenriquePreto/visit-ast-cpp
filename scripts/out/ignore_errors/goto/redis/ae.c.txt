@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/ae.c#67:1#aeCreateEventLoop",
+            "gotos": 3,
+            "labels": 1,
+            "body": "{\n    aeEventLoop *eventLoop;\n    int i;\n    monotonicInit();\n    if (<recovery-expr>())\n        goto err;\n    eventLoop->events = <recovery-expr>()(sizeof(aeFileEvent) * setsize);\n    eventLoop->fired = <recovery-expr>()(sizeof(aeFiredEvent) * setsize);\n    if (<recovery-expr>())\n        goto err;\n    eventLoop->setsize = setsize;\n    eventLoop->timeEventNextId = 0;\n    eventLoop->stop = 0;\n    eventLoop->maxfd = -1;\n    eventLoop->flags = 0;\n    if (aeApiCreate(eventLoop) == -1)\n        goto err;\n    for (i = 0; i < setsize; i++)\n        eventLoop->events[i].mask = 0;\n    return eventLoop;\n  err:\n    if (eventLoop) {\n        zfree(eventLoop->events);\n        zfree(eventLoop->fired);\n        zfree(eventLoop);\n    }\n}\n"
+        }
+    ],
+    "total": 30,
+    "visited": 1
+}

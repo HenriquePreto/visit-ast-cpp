@@ -1,0 +1,29 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/memory_manager.cpp#249:1#synchronize_counters",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 264,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        }
+    ],
+    "total": 3,
+    "visited": 1
+}

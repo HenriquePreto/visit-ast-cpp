@@ -1,0 +1,203 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#384:9#bv1_blaster_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 391,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#258:9#bv1_blaster_tactic::rw_cfg::reduce_app",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 53
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#210:9#bv1_blaster_tactic::rw_cfg::reduce_bin_xor",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#182:9#bv1_blaster_tactic::rw_cfg::reduce_extract",
+            "casts": 2,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 189,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#163:9#bv1_blaster_tactic::rw_cfg::reduce_num",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#135:9#bv1_blaster_tactic::rw_cfg::reduce_eq",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 143,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#120:9#bv1_blaster_tactic::rw_cfg::blast_bv_term",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 123,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#365:9#bv1_blaster_tactic::imp::is_target",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 370,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#224:9#bv1_blaster_tactic::rw_cfg::reduce_xor",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 232,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#91:9#bv1_blaster_tactic::rw_cfg::mk_const",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 108,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bv1_blaster_tactic.cpp#198:9#bv1_blaster_tactic::rw_cfg::reduce_concat",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 201,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        }
+    ],
+    "total": 43,
+    "visited": 11
+}

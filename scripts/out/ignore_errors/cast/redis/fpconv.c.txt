@@ -1,0 +1,206 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#174:1#fpconv_g_fmt",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 184,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#94:1#strtod_buffer_size",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#75:1#valid_number_character",
+            "casts": 9,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 81,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 81,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 81,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 79,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 79,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#106:1#fpconv_strtod",
+            "casts": 9,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 137,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 127,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 121,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 136,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 136,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 136,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 114,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 147,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 44
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#52:1#fpconv_update_locale",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/fpconv.c#153:1#set_number_format",
+            "casts": 6,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 163,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 162,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        }
+    ],
+    "total": 7,
+    "visited": 6
+}

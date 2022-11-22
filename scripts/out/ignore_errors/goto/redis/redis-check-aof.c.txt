@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-check-aof.c#508:1#redis_check_aof_main",
+            "gotos": 4,
+            "labels": 1,
+            "body": "{\n    char *filepath;\n    char temp_filepath;\n    char *dirpath;\n    int fix = 0;\n    if (argc < 2) {\n        goto invalid_args;\n    } else if (argc == 2) {\n        filepath = argv[1];\n    } else if (argc == 3) {\n        if (!strcmp(argv[1], \"--fix\")) {\n            filepath = argv[2];\n            fix = 1;\n        } else {\n            goto invalid_args;\n        }\n    } else if (argc == 4) {\n        if (!strcmp(argv[1], \"--truncate-to-timestamp\")) {\n            char *endptr;\n            <recovery-expr>() = strtol(argv[2], &endptr, 10);\n            if (<recovery-expr>()) {\n                printf(\"Invalid timestamp, aborting...\\n\");\n                exit(1);\n            }\n            filepath = argv[3];\n        } else {\n            goto invalid_args;\n        }\n    } else {\n        goto invalid_args;\n    }\n    memcpy(<recovery-expr>(), filepath, strlen(filepath) + 1);\n    dirpath = dirname(<recovery-expr>());\n    input_file_type type = getInputFileType(filepath);\n    switch (type) {\n      case AOF_MULTI_PART:\n        checkMultiPartAof(dirpath, filepath, fix);\n        break;\n      case AOF_RESP:\n        checkOldStyleAof(filepath, fix, 0);\n        break;\n      case AOF_RDB_PREAMBLE:\n        checkOldStyleAof(filepath, fix, 1);\n        break;\n    }\n    exit(0);\n  invalid_args:\n    printf(\"Usage: %s [--fix|--truncate-to-timestamp $timestamp] <file.manifest|file.aof>\\n\", argv[0]);\n    exit(1);\n}\n"
+        }
+    ],
+    "total": 65,
+    "visited": 1
+}

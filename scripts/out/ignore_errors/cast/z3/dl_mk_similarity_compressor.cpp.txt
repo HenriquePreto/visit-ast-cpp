@@ -1,0 +1,192 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#186:5#datalog::collect_const_indexes",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 189,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#226:5#datalog::remove_stable_constants",
+            "casts": 5,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 245,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 236,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 244,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 249,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#63:5#datalog::compare_var_args",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 67,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#313:5#datalog::get_constant_count",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 316,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#109:5#datalog::rough_compare",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#209:5#datalog::collect_orphan_sorts",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 212,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#195:5#datalog::collect_orphan_consts",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#84:5#datalog::compare_args",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#263:5#datalog::detect_equal_constants",
+            "casts": 6,
+            "vars": 15,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 302,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 298,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 286,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 284,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_similarity_compressor.cpp#176:5#datalog::collect_const_indexes",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 23,
+    "visited": 10
+}

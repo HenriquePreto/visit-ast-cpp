@@ -1,0 +1,129 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/th_rewriter.cpp#608:5#(anonymous namespace)::th_rewriter_cfg::count_down_subterm_references",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 611,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/th_rewriter.cpp#473:5#(anonymous namespace)::th_rewriter_cfg::unify_add",
+            "casts": 8,
+            "vars": 16,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 523,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 494,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 507,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 476,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 63
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/th_rewriter.cpp#621:5#(anonymous namespace)::th_rewriter_cfg::log_rewrite_axiom_instantiation",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 626,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 630,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/th_rewriter.cpp#176:5#(anonymous namespace)::th_rewriter_cfg::reduce_app_core",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 93
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/th_rewriter.cpp#133:5#(anonymous namespace)::th_rewriter_cfg::is_eq_bit",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 153,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 153,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 147,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 147,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        }
+    ],
+    "total": 35,
+    "visited": 5
+}

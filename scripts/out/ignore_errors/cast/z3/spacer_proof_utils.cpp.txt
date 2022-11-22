@@ -1,0 +1,40 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_proof_utils.cpp#283:5#spacer::mk_fk_from_ab",
+            "casts": 2,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 298,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 344,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 81
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_proof_utils.cpp#210:5#spacer::mk_th_lemma",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 213,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        }
+    ],
+    "total": 14,
+    "visited": 2
+}

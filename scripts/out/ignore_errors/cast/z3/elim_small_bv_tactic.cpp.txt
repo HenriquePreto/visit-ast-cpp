@@ -1,0 +1,105 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/elim_small_bv_tactic.cpp#197:9#(anonymous namespace)::elim_small_bv_tactic::rw_cfg::pre_visit",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 203,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/elim_small_bv_tactic.cpp#256:5#(anonymous namespace)::elim_small_bv_tactic::operator()",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/elim_small_bv_tactic.cpp#116:9#(anonymous namespace)::elim_small_bv_tactic::rw_cfg::reduce_quantifier",
+            "casts": 6,
+            "vars": 17,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 151,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 151,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 139,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 74
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/elim_small_bv_tactic.cpp#69:9#(anonymous namespace)::elim_small_bv_tactic::rw_cfg::replace_var",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 78,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 82,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/elim_small_bv_tactic.cpp#46:9#(anonymous namespace)::elim_small_bv_tactic::rw_cfg::rw_cfg",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 52,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        }
+    ],
+    "total": 17,
+    "visited": 5
+}

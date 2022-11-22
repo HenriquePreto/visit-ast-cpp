@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/dt2bv_tactic.cpp#119:5#dt2bv_tactic::operator()",
+            "casts": 2,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 136,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 125,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        }
+    ],
+    "total": 17,
+    "visited": 1
+}

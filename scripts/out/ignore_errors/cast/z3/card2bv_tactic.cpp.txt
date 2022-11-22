@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/card2bv_tactic.cpp#55:5#card2bv_tactic::operator()",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 69,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        }
+    ],
+    "total": 8,
+    "visited": 1
+}

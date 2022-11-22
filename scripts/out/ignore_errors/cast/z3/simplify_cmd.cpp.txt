@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/simplify_cmd.cpp#64:5#simplify_cmd::execute",
+            "casts": 1,
+            "vars": 17,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 75,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 62
+        }
+    ],
+    "total": 9,
+    "visited": 1
+}

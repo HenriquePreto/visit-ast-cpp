@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/push_app_ite.cpp#24:1#has_ite_arg",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 25,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

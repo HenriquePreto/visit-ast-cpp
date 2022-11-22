@@ -1,0 +1,134 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/setproctitle.c#275:1#setproctitle",
+            "casts": 9,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 310,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 303,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 303,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 303,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 297,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 296,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 296,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 307,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/setproctitle.c#191:1#spt_init",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 246,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 78
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/setproctitle.c#105:1#spt_copyenv",
+            "casts": 13,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 159,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 138,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 122,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 122,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 122,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 119,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 119,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 118,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 118,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 152,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 140,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 151,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 57
+        }
+    ],
+    "total": 6,
+    "visited": 3
+}

@@ -1,0 +1,397 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#142:1#zipmapLookupRaw",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 146,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#285:1#zipmapDel",
+            "casts": 7,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 294,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#189:1#zipmapRawValueLength",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#172:1#zipmapRequiredLength",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 177,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 176,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 175,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#215:1#zipmapSet",
+            "casts": 20,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 279,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 278,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 217,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 231,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 241,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 67
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#114:1#zipmapGetEncodedLengthSize",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 115,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 115,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#105:1#zipmapDecodeLength",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 109,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 109,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#120:1#zipmapEncodeLength",
+            "casts": 6,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 129,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 125,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#380:1#zipmapValidateIntegrity",
+            "casts": 6,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 399,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 424,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 434,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 63
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#371:1#zipmapBlobLen",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#96:1#zipmapNew",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 99,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#206:1#zipmapResize",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 208,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/zipmap.c#354:1#zipmapLen",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 363,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 357,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 356,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 355,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        }
+    ],
+    "total": 19,
+    "visited": 13
+}

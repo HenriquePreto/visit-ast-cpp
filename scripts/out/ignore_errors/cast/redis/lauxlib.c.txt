@@ -1,0 +1,55 @@
+{
+    "functions": [
+        {
+            "id": "#164:18#luaL_findtable",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 379,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 368,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "#164:18#luaL_optlstring",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "#164:18#luaL_checknumber",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 43,
+    "visited": 3
+}

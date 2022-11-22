@@ -1,0 +1,281 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#347:1#redisContextUpdateCommandTimeout",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 349,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#331:1#redisContextUpdateConnectTimeout",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 333,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#363:1#_redisContextConnectTcp",
+            "casts": 10,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 411,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 410,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 398,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 387,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 376,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 386,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 428,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 170
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#218:1#redisContextTimeoutMsec",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 221,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#547:1#redisContextConnectUnix",
+            "casts": 7,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 587,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 579,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 571,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 560,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 559,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 558,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 551,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 66
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/net.c#95:1#__redisSetErrorFromErrno",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#158:1#hi_sdsinclen",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 160,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 159,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 164,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#91:1#hi_sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 93,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#108:1#hi_sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 110,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 109,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#134:1#hi_sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 136,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 135,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#184:1#hi_sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 186,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/sds.h#201:1#hi_sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 203,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 202,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        }
+    ],
+    "total": 31,
+    "visited": 12
+}

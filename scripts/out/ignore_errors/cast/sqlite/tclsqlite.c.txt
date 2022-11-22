@@ -1,0 +1,1113 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1931:1#DbObjCmd",
+            "casts": 148,
+            "vars": 104,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToPointer",
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3636,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3615,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3614,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3613,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3454,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3443,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3405,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 3392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3391,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3346,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3325,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3322,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 3306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3272,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3070,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3070,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3070,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3069,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 3052,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3030,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3018,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2902,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2704,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2901,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2895,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2892,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2595,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2989,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2879,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2864,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2835,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2753,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3147,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2678,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2678,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2678,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3072,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2673,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2633,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2578,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2178,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2572,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2572,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3360,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2364,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2561,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2560,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2560,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2560,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2547,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2547,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2141,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2535,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3323,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3323,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2532,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2533,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2627,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3015,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3015,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3015,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2127,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2324,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2324,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2324,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2521,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3112,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3112,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3112,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2602,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3390,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2502,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2158,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2158,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2158,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2946,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2323,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2520,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2520,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3111,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2326,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3114,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2130,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3002,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2286,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2049,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2243,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2228,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3016,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2194,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2160,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2548,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2157,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2254,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2111,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2790,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2740,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2271,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2271,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2271,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3453,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2128,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2128,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2503,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2024,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 1955,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2003,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3014,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 3408,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2187,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2672,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2025,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2025,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2025,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2898,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2307,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3095,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3489,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1983,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2662,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2662,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2265,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2265,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2027,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3406,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3406,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3406,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1744
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1733:1#dbEvalFinalize",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1737,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1669:1#dbEvalStep",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1698,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1674,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1670,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1675,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1672,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 58
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1189:1#local_getline",
+            "casts": 17,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1215,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1213,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1209,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1202,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1202,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1196,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1196,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1219,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1219,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1219,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1207,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1201,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1201,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1201,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1195,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1195,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1206,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1587:1#dbEvalInit",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1594,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1492:1#dbReleaseStmt",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1529,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1516,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1511,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#3728:1#DbMain",
+            "casts": 9,
+            "vars": 15,
+            "cast kinds": [
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3866,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 3851,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3850,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3739,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3772,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3777,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3738,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3848,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 154
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1281:1#dbPrepare",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1287,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1316:1#dbPrepareAndBind",
+            "casts": 25,
+            "vars": 17,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1460,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1395,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1395,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1391,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1371,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1417,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1417,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1417,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1417,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1343,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1343,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1343,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1412,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1412,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1412,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1459,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1452,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1334,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 161
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#939:1#tclSqlFunc",
+            "casts": 4,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1041,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1040,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1039,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1044,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 143
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#508:1#flushStmtCache",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 518,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 517,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#1753:1#dbEvalColumnValue",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1760,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 1774,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#330:1#incrblobSeek",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 340,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#391:1#createIncrblobChannel",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 426,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#472:1#findSqlFunc",
+            "casts": 5,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 477,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 477,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 477,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 475,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 475,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#736:1#DbProfileHandler",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../src/tclsqlite.c#452:1#safeToUseEvalObjv",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 461,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 55,
+    "visited": 17
+}

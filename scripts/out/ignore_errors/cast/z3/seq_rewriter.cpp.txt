@@ -1,0 +1,67 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/seq_rewriter.cpp#205:5#sym_expr_boolean_algebra::is_sat",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 215,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/seq_rewriter.cpp#177:5#sym_expr_boolean_algebra::mk_and",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/seq_rewriter.cpp#191:5#sym_expr_boolean_algebra::mk_or",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        }
+    ],
+    "total": 12,
+    "visited": 3
+}

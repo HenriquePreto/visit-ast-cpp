@@ -1,0 +1,286 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#651:5#datalog::read_uint64",
+            "casts": 15,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 674,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 674,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 655,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 655,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 655,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 655,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 666,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 666,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 666,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#514:5#datalog::collect_sub_permutation",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 519,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#486:5#datalog::try_remove_cycle_from_permutation",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 495,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#461:5#datalog::print_renaming",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 464,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 464,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#430:5#datalog::reverse_renaming",
+            "casts": 6,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 450,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 436,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 434,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#414:9#datalog::skip_proof_converter::operator()",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#113:5#datalog::apply_subst",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 117,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#159:5#datalog::display_fact",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 167,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#131:5#datalog::output_predicate",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 138,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 140,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#83:5#datalog::mk_new_rule_tail",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 87,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#284:5#datalog::del_rule",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 297,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_util.cpp#69:5#datalog::count_variable_arguments",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 72,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 74,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        }
+    ],
+    "total": 36,
+    "visited": 12
+}

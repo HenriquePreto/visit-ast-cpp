@@ -1,0 +1,468 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#783:5#(anonymous namespace)::elim_uncnstr_tactic::run",
+            "casts": 4,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 847,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 804,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 806,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 821,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 67
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#680:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_datatype_app",
+            "casts": 5,
+            "vars": 7,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 698,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 708,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 682,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 692,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 690,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#599:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_bv_app",
+            "casts": 8,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 633,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 644,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 613,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 624,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 646,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 616,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 610,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#711:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::reduce_app",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 718,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#551:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_bv_le",
+            "casts": 2,
+            "vars": 14,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 556,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 596,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 47
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#438:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_arith_app",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 453,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 450,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#529:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_concat",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 539,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 533,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 531,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 540,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#514:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_bv_div",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 526,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#408:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_arith_mul",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 410,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 435,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 409,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#369:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_add",
+            "casts": 5,
+            "vars": 7,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 382,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 371,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 370,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#343:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_le_ge",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 356,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#274:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_basic_app",
+            "casts": 8,
+            "vars": 6,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 339,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 334,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 303,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 324,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 278,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 68
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#136:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::mk_diff",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 75
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#212:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_eq",
+            "casts": 4,
+            "vars": 7,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 271,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 254,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 61
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#81:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::uncnstr",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 82,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#457:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_bv_mul",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 485,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 459,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#891:5#(anonymous namespace)::elim_uncnstr_tactic::reset_statistics",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 892,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#488:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_extract",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 499,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 490,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/elim_uncnstr_tactic.cpp#650:9#(anonymous namespace)::elim_uncnstr_tactic::rw_cfg::process_array_app",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 676,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 663,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 29
+        }
+    ],
+    "total": 44,
+    "visited": 19
+}

@@ -1,0 +1,70 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/debug.cpp#79:1#invoke_gdb",
+            "casts": 13,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 103,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 112,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 100,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 99,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 81,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 91,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 87,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        }
+    ],
+    "total": 9,
+    "visited": 1
+}

@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#957:1#ldbReplParseCommand",
+            "gotos": 9,
+            "labels": 2,
+            "body": "{\n    static char *protocol_error = \"protocol error\";\n    sds *argv;\n    int argc = 0;\n    sds copy = sdsdup(ldb.cbuf);\n    char *p = copy;\n    p = strchr(p, '*');\n    if (!p)\n        goto protoerr;\n    char *plen = p + 1;\n    p = strstr(p, \"\\r\\n\");\n    if (!p)\n        goto keep_reading;\n    *p = '\\x00';\n    p += 2;\n    *argcp = atoi(plen);\n    if (*argcp <= 0 || *argcp > 1024)\n        goto protoerr;\n    argv = <recovery-expr>()(sizeof(sds) * (*argcp));\n    argc = 0;\n    while (argc < *argcp)\n        {\n            if (*p == '\\x00')\n                goto keep_reading;\n            if (*p != '$')\n                goto protoerr;\n            plen = p + 1;\n            p = strstr(p, \"\\r\\n\");\n            if (!p)\n                goto keep_reading;\n            *p = '\\x00';\n            p += 2;\n            int slen = atoi(plen);\n            if (slen <= 0 || slen > 1024)\n                goto protoerr;\n            if (<recovery-expr>())\n                goto keep_reading;\n            argv[argc++] = <recovery-expr>()(p, slen);\n            p += slen;\n            if (p[0] != '\\r' || p[1] != '\\n')\n                goto protoerr;\n            p += 2;\n        }\n    sdsfree(copy);\n    return argv;\n  protoerr:\n    *err = protocol_error;\n  keep_reading:\n    sdsfreesplitres(argv, argc);\n    sdsfree(copy);\n}\n"
+        }
+    ],
+    "total": 118,
+    "visited": 1
+}

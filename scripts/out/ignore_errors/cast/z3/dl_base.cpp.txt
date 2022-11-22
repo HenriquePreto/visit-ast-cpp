@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_base.cpp#47:5#datalog::get_renaming_args",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 51,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 53,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        }
+    ],
+    "total": 6,
+    "visited": 1
+}

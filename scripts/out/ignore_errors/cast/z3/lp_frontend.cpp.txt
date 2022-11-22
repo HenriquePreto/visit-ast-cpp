@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/shell/lp_frontend.cpp#101:1#read_mps_file",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 108,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 3,
+    "visited": 1
+}

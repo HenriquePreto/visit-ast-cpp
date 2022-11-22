@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/var_subst.cpp#210:1#get_free_vars_offset",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 232,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        }
+    ],
+    "total": 5,
+    "visited": 1
+}

@@ -1,0 +1,36 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/page.cpp#33:1#del_pages",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 34,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/page.cpp#41:1#allocate_default_page",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 43,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 12
+        }
+    ],
+    "total": 7,
+    "visited": 2
+}

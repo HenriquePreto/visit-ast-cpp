@@ -1,0 +1,329 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1275:1#ast_smt2_pp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1281,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1262:1#ast_smt2_pp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1268,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1250:1#ast_smt2_pp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1256,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1123:5#smt2_printer::operator()",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1134,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1100:5#smt2_printer::operator()",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1108,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1107,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1102,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1238:1#ast_smt2_pp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1244,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1022:5#smt2_printer::reset_stacks",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1023,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1009:5#smt2_printer::del_expr2alias_stack",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1012,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#927:5#smt2_printer::process_quantifier",
+            "casts": 4,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 994,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 992,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 928,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 948,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 74
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#905:5#smt2_printer::pp_var_args",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 909,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#897:5#smt2_printer::unregister_var_names",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 898,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#865:5#smt2_printer::register_var_names",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 874,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 870,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 867,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1225:1#ast_smt2_pp",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1232,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#836:5#smt2_printer::begin_scope",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 845,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#725:5#smt2_printer::process_app",
+            "casts": 4,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 726,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 66
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#883:5#smt2_printer::register_var_names",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 885,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 884,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#1210:1#mk_smt2_format",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1217,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt2_pp.cpp#793:5#smt2_printer::pp_let",
+            "casts": 3,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 806,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 812,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        }
+    ],
+    "total": 60,
+    "visited": 18
+}

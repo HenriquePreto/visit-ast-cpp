@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/script.c#516:1#scriptCall",
+            "gotos": 7,
+            "labels": 1,
+            "body": "{\n    client *c = run_ctx->c;\n    c->argv = argv;\n    c->argc = argc;\n    c->user = run_ctx->original_client->user;\n    moduleCallCommandFilters(c);\n    argv = c->argv;\n    argc = c->argc;\n    struct redisCommand *cmd = lookupCommand(argv, argc);\n    c->cmd = c->lastcmd = c->realcmd = cmd;\n    if (scriptVerifyCommandArity(cmd, argc, err) != 0) {\n        goto error;\n    }\n    if (!server.script_disable_deny_script && (<recovery-expr>(cmd) & (1ULL << 6))) {\n        *err = sdsnew(\"This Redis command is not allowed from script\");\n        goto error;\n    }\n    if (scriptVerifyAllowStale(c, err) != 0) {\n        goto error;\n    }\n    if (scriptVerifyACL(c, err) != 0) {\n        goto error;\n    }\n    if (scriptVerifyWriteCommandAllow(run_ctx, err) != 0) {\n        goto error;\n    }\n    if (scriptVerifyOOM(run_ctx, err) != 0) {\n        goto error;\n    }\n    if (<recovery-expr>(cmd) & (1ULL << 0)) {\n        run_ctx->flags |= (1ULL << 0);\n    }\n    if (scriptVerifyClusterState(run_ctx, c, run_ctx->original_client, err) != 0) {\n        goto error;\n    }\n    int call_flags = (1 << 0) | (1 << 1);\n    if (run_ctx->repl_flags & 1) {\n        call_flags |= (1 << 2);\n    }\n    if (run_ctx->repl_flags & 2) {\n        call_flags |= (1 << 3);\n    }\n    call(c, call_flags);\n    (((<recovery-expr>(c) & (1 << 4)) == 0) ? (void)0 : (_serverAssert(\"(c->flags & CLIENT_BLOCKED) == 0\", \"/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/script.c\", 574) , __builtin_unreachable()));\n    return;\n  error:\n    afterErrorReply(c, *err, <recovery-expr>()(*err), 0);\n    incrCommandStatsOnError(cmd, (1 << 0));\n}\n"
+        }
+    ],
+    "total": 74,
+    "visited": 1
+}

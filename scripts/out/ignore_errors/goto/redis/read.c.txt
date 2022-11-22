@@ -1,0 +1,24 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/read.c#703:1#redisReaderFeed",
+            "gotos": 2,
+            "labels": 1,
+            "body": "{\n    hisds newbuf;\n    if (r->err)\n        return -1;\n    if (<recovery-expr>()) {\n        if (<recovery-expr>(r) == 0 && <recovery-expr>(r) != 0 && <recovery-expr>()(r->buf) > <recovery-expr>(r)) {\n            hi_sdsfree(r->buf);\n            r->buf = hi_sdsempty();\n            if (r->buf == 0)\n                goto oom;\n            <recovery-expr>(r) = 0;\n        }\n        newbuf = <recovery-expr>()(r->buf, buf, <recovery-expr>());\n        if (<recovery-expr>())\n            goto oom;\n        r->buf = newbuf;\n        <recovery-expr>(r) = <recovery-expr>()(r->buf);\n    }\n    return 0;\n  oom:\n    __redisReaderSetErrorOOM(r);\n    return -1;\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/read.c#651:1#redisReaderCreateWithFunctions",
+            "gotos": 3,
+            "labels": 1,
+            "body": "{\n    redisReader *r;\n    r = <recovery-expr>()(1, sizeof(redisReader));\n    r->buf = hi_sdsempty();\n    if (<recovery-expr>())\n        goto oom;\n    r->task = <recovery-expr>()(9, sizeof (*r->task));\n    if (<recovery-expr>())\n        goto oom;\n    for (; r->tasks < 9; r->tasks++) {\n        r->task[r->tasks] = <recovery-expr>()(1, sizeof (**r->task));\n        if (<recovery-expr>())\n            goto oom;\n    }\n    r->fn = fn;\n    <recovery-expr>(r) = (1024 * 16);\n    r->maxelements = ((1LL << 32) - 1);\n    r->ridx = -1;\n    return r;\n  oom:\n    redisReaderFree(r);\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hiredis/read.c#466:1#redisReaderGrow",
+            "gotos": 2,
+            "labels": 1,
+            "body": "{\n    redisReadTask **aux;\n    int newlen;\n    newlen = r->tasks + 9;\n    aux = <recovery-expr>()(r->task, sizeof (*r->task) * newlen);\n    if (<recovery-expr>())\n        goto oom;\n    r->task = aux;\n    for (; r->tasks < newlen; r->tasks++) {\n        r->task[r->tasks] = <recovery-expr>()(1, sizeof (**r->task));\n        if (<recovery-expr>())\n            goto oom;\n    }\n    return 0;\n  oom:\n    __redisReaderSetErrorOOM(r);\n    return -1;\n}\n"
+        }
+    ],
+    "total": 29,
+    "visited": 3
+}

@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_legacy_mbp.cpp#49:1#spacer::qe_project",
+            "casts": 1,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 75,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 65
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

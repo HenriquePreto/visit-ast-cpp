@@ -1,0 +1,430 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#642:1#latencyCommand",
+            "casts": 12,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 697,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 685,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 684,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 653,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 676,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 687,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 670,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 667,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 645,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 85
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#514:1#latencySpecificCommandsFillCDF",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 545,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 518,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#144:1#analyzeLatencyForEvent",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 145,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 145,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 55
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#568:1#latencyCommandReplyWithLatestEvents",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 579,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#119:1#latencyResetEvent",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 129,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#82:1#latencyAddSample",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 83,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#44:1#dictStringHash",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 45,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#39:1#dictStringKeyCompare",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 41,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 41,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#201:1#createLatencyReport",
+            "casts": 9,
+            "vars": 25,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 284,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 281,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 265,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 388,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 256
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#467:1#fillCommandCDF",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 487,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 468,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/latency.c#550:1#latencyCommandReplyWithSamples",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 563,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 558,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        }
+    ],
+    "total": 65,
+    "visited": 19
+}

@@ -1,0 +1,68 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lbaselib.c#193:1#luaB_collectgarbage",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 212,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 204,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 204,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lbaselib.c#143:1#luaB_setfenv",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 147,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lbaselib.c#53:1#luaB_tonumber",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 70,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 69,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 68,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 26
+        }
+    ],
+    "total": 43,
+    "visited": 3
+}

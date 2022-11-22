@@ -1,0 +1,102 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/purify_arith_tactic.cpp#507:9#purify_arith_proc::rw_cfg::process_irrat",
+            "casts": 4,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 535,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 524,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 526,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/purify_arith_tactic.cpp#777:5#purify_arith_proc::operator()",
+            "casts": 7,
+            "vars": 32,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 821,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 803,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 814,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 797,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 812,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 112
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/purify_arith_tactic.cpp#151:5#purify_arith_proc::find_unsafe",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/purify_arith_tactic.cpp#139:9#purify_arith_proc::find_unsafe_proc::operator()",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 142,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        }
+    ],
+    "total": 64,
+    "visited": 4
+}

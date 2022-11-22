@@ -1,0 +1,526 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#6271:1#pp",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6272,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#127:9#realclosure::mpbq_config::set_upper_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#6266:1#pp",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6267,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#306:9#realclosure::transcendental::transcendental",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 307,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#240:5#realclosure::rank_eq",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 241,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#274:9#realclosure::sign_det::sign_det",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#236:5#realclosure::rank_lt",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 237,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#230:9#realclosure::extension::is_transcendental",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#229:9#realclosure::extension::is_infinitesimal",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#223:9#realclosure::extension::extension",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#95:13#realclosure::mpbq_config::interval::set_lower_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#259:9#realclosure::sign_condition::sign_condition",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 259,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 259,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 259,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#228:9#realclosure::extension::is_algebraic",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#296:9#realclosure::algebraic::num_roots_inside_interval",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 296,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 296,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#124:9#realclosure::mpbq_config::set_lower_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 124,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#89:13#realclosure::mpbq_config::interval::interval",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#125:9#realclosure::mpbq_config::set_upper_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 125,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#290:9#realclosure::algebraic::algebraic",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 290,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#104:13#realclosure::mpbq_config::interval::upper_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 104,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#165:9#realclosure::value::value",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 165,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#260:9#realclosure::sign_condition::sign_condition",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 260,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#88:13#realclosure::mpbq_config::interval::interval",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#102:13#realclosure::mpbq_config::interval::upper_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#98:13#realclosure::mpbq_config::interval::set_upper_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#103:13#realclosure::mpbq_config::interval::lower_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 103,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#97:13#realclosure::mpbq_config::interval::set_lower_is_open",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#126:9#realclosure::mpbq_config::set_lower_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#96:13#realclosure::mpbq_config::interval::set_upper_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 96,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/realclosure/realclosure.cpp#101:13#realclosure::mpbq_config::interval::lower_is_inf",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 99,
+    "visited": 29
+}

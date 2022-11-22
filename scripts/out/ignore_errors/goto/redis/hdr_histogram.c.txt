@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/hdr_histogram/hdr_histogram.c#1173:1#hdr_percentiles_print",
+            "gotos": 3,
+            "labels": 1,
+            "body": "{\n    char line_format[25];\n    const char *head_format;\n    int rc = 0;\n    struct hdr_iter iter;\n    struct hdr_iter_percentiles *percentiles;\n    <recovery-expr>()(line_format, 25, <recovery-expr>(h), format);\n    head_format = format_head_string(format);\n    <recovery-expr>()(&iter, h, <recovery-expr>());\n    if (fprintf(<recovery-expr>(), head_format, \"Value\", \"Percentile\", \"TotalCount\", \"1/(1-Percentile)\") < 0) {\n        goto cleanup;\n    }\n    percentiles = &<recovery-expr>(iter).percentiles;\n    while (<recovery-expr>()(&iter))\n        {\n            double value = <recovery-expr>(iter) / value_scale;\n            double percentile = percentiles->percentile / 100.;\n            double inverted_percentile = (1. / (1. - percentile));\n            if (<recovery-expr>()) {\n                goto cleanup;\n            }\n        }\n    if (CLASSIC == format) {\n        double mean = hdr_mean(h) / value_scale;\n        double stddev = hdr_stddev(h) / value_scale;\n        double max = <recovery-expr>()(h) / value_scale;\n        if (fprintf(<recovery-expr>(), CLASSIC_FOOTER, mean, stddev, max, <recovery-expr>(h), <recovery-expr>(h), <recovery-expr>(h)) < 0) {\n            goto cleanup;\n        }\n    }\n  cleanup:\n    return rc;\n}\n"
+        }
+    ],
+    "total": 75,
+    "visited": 1
+}

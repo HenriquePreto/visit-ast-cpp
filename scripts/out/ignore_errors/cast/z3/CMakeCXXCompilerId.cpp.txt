@@ -1,0 +1,37 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp#802:1#main",
+            "casts": 5,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 822,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 808,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 806,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

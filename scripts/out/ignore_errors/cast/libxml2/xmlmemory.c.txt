@@ -1,0 +1,196 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#945:1#xmlInitMemory",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 961,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 965,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#585:1#xmlMemBlocks",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 590,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#567:1#xmlMemUsed",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 572,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#311:1#xmlReallocLoc",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 354,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 330,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 370,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 78
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#667:1#xmlMemDisplayLast",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 60
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#220:1#xmlMallocAtomicLoc",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 255,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 62
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#144:1#xmlMallocLoc",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 177,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 62
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#489:1#xmlMemStrdupLoc",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 533,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 527,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 514,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 516,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 53
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#413:1#xmlMemFree",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 460,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 62
+        }
+    ],
+    "total": 22,
+    "visited": 9
+}

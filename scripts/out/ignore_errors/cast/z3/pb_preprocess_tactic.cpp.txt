@@ -1,0 +1,261 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#602:5#pb_preprocess_tactic::replace",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 608,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#564:5#pb_preprocess_tactic::to_ge",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 580,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#479:5#pb_preprocess_tactic::resolve",
+            "casts": 3,
+            "vars": 17,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 523,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 495,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 77
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#468:5#pb_preprocess_tactic::is_reduction",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 470,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#460:5#pb_preprocess_tactic::is_valid",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 461,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#387:5#pb_preprocess_tactic::classify_vars",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#272:5#pb_preprocess_tactic::log2ceil",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#336:5#pb_preprocess_tactic::decompose_cut",
+            "casts": 2,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#309:5#pb_preprocess_tactic::cut",
+            "casts": 7,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 321,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 312,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 312,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 323,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#630:5#pb_preprocess_tactic::subsumes",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 636,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 638,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#448:5#pb_preprocess_tactic::get_coeff",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#285:5#pb_preprocess_tactic::decompose",
+            "casts": 3,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 296,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 287,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 295,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/pb_preprocess_tactic.cpp#251:5#pb_preprocess_tactic::normalize",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 254,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        }
+    ],
+    "total": 35,
+    "visited": 13
+}

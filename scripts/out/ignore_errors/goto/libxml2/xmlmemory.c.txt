@@ -1,0 +1,24 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#311:1#xmlReallocLoc",
+            "gotos": 2,
+            "labels": 1,
+            "body": "{\n    MEMHDR *p, *tmp;\n    unsigned long number;\n    if (<recovery-expr>())\n        return (<recovery-expr>()(<recovery-expr>(), file, line));\n    if (!xmlMemInitialized)\n        xmlInitMemory();\n    p = ((void *)(((char *)(ptr)) - (((sizeof(MEMHDR) + (sizeof(double) - 1)) / sizeof(double)) * sizeof(double))));\n    number = p->mh_number;\n    if (xmlMemStopAtBlock == number)\n        xmlMallocBreakpoint();\n    if (p->mh_tag != 23205U) {\n        debugmem_tag_error(p);\n        ;\n        goto error;\n    }\n    p->mh_tag = ~23205U;\n    xmlMutexLock(<recovery-expr>());\n    debugMemSize -= <recovery-expr>(p);\n    debugMemBlocks--;\n    xmlMutexUnlock(<recovery-expr>());\n    if (<recovery-expr>()) {\n        xmlMemoryDump();\n    }\n    tmp = (MEMHDR *)realloc(p, (((sizeof(MEMHDR) + (sizeof(double) - 1)) / sizeof(double)) * sizeof(double)) + <recovery-expr>());\n    if (!tmp) {\n        free(p);\n        goto error;\n    }\n    p = tmp;\n    if (xmlMemTraceBlockAt == ptr) {\n        xmlMallocBreakpoint();\n    }\n    p->mh_tag = 23205U;\n    p->mh_number = number;\n    p->mh_type = 2;\n    <recovery-expr>(p) = <recovery-expr>();\n    p->mh_file = file;\n    p->mh_line = line;\n    xmlMutexLock(<recovery-expr>());\n    debugMemSize += <recovery-expr>();\n    debugMemBlocks++;\n    if (debugMemSize > debugMaxMemSize)\n        debugMaxMemSize = debugMemSize;\n    xmlMutexUnlock(<recovery-expr>());\n    return (((void *)(((char *)(p)) + (((sizeof(MEMHDR) + (sizeof(double) - 1)) / sizeof(double)) * sizeof(double)))));\n  error:\n    ;\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#489:1#xmlMemStrdupLoc",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    char *s;\n    MEMHDR *p;\n    if (!xmlMemInitialized)\n        xmlInitMemory();\n    if (<recovery-expr>()) {\n        xmlMemoryDump();\n    }\n    if (!p) {\n        goto error;\n    }\n    p->mh_tag = 23205U;\n    p->mh_type = 3;\n    p->mh_file = file;\n    p->mh_line = line;\n    xmlMutexLock(<recovery-expr>());\n    p->mh_number = ++block;\n    debugMemBlocks++;\n    if (debugMemSize > debugMaxMemSize)\n        debugMaxMemSize = debugMemSize;\n    xmlMutexUnlock(<recovery-expr>());\n    s = (char *)((void *)(((char *)(p)) + (((sizeof(MEMHDR) + (sizeof(double) - 1)) / sizeof(double)) * sizeof(double))));\n    if (xmlMemStopAtBlock == p->mh_number)\n        xmlMallocBreakpoint();\n    strcpy(s, str);\n    if (xmlMemTraceBlockAt == s) {\n        xmlMallocBreakpoint();\n    }\n    return (s);\n  error:\n    ;\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmlmemory.c#413:1#xmlMemFree",
+            "gotos": 2,
+            "labels": 1,
+            "body": "{\n    MEMHDR *p;\n    char *target;\n    if (<recovery-expr>())\n        return;\n    if (ptr == (void *)-1) {\n        goto error;\n    }\n    if (xmlMemTraceBlockAt == ptr) {\n        xmlMallocBreakpoint();\n    }\n    target = (char *)ptr;\n    p = ((void *)(((char *)(ptr)) - (((sizeof(MEMHDR) + (sizeof(double) - 1)) / sizeof(double)) * sizeof(double))));\n    if (p->mh_tag != 23205U) {\n        debugmem_tag_error(p);\n        ;\n        goto error;\n    }\n    if (xmlMemStopAtBlock == p->mh_number)\n        xmlMallocBreakpoint();\n    p->mh_tag = ~23205U;\n    memset(target, -1, <recovery-expr>(p));\n    xmlMutexLock(<recovery-expr>());\n    debugMemSize -= <recovery-expr>(p);\n    debugMemBlocks--;\n    xmlMutexUnlock(<recovery-expr>());\n    free(p);\n    return;\n  error:\n    ;\n    xmlMallocBreakpoint();\n    return;\n}\n"
+        }
+    ],
+    "total": 22,
+    "visited": 3
+}

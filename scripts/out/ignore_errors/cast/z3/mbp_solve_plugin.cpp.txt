@@ -1,0 +1,75 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/mbp/mbp_solve_plugin.cpp#364:9#mbp::bv_solve_plugin::solve_eq",
+            "casts": 6,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 370,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 370,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/mbp/mbp_solve_plugin.cpp#324:9#mbp::dt_solve_plugin::solve",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 350,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 335,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/mbp/mbp_solve_plugin.cpp#70:9#mbp::arith_solve_plugin::solve",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 91,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        }
+    ],
+    "total": 26,
+    "visited": 3
+}

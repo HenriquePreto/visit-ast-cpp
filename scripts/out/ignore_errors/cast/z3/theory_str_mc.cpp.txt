@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_kernel.h#158:9#smt::kernel::get_phase",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 158,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 7,
+    "visited": 1
+}

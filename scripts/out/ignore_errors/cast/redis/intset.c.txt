@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/intset.c#117:1#intsetSearch",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 138,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        }
+    ],
+    "total": 17,
+    "visited": 1
+}

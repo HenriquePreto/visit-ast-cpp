@@ -1,0 +1,121 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geohash.c#206:1#geohashDecodeAreaToLongLat",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 211,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 208,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geohash.c#196:1#geohashDecodeType",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geohash.c#153:1#geohashEncodeType",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geohash.c#52:1#interleave64",
+            "casts": 5,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geohash.c#82:1#deinterleave64",
+            "casts": 6,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        }
+    ],
+    "total": 15,
+    "visited": 5
+}

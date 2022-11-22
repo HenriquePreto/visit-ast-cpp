@@ -1,0 +1,86 @@
+{
+    "functions": [
+        {
+            "id": "#164:18#lua_newstate",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 162,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 164,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lstate.c#70:1#f_luaopen",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 80,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "#164:18#lua_close",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 208,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lstate.c#84:1#preinit_state",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 96,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 90,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        }
+    ],
+    "total": 10,
+    "visited": 4
+}

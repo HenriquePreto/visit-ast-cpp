@@ -1,0 +1,259 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#864:5#get_consequences_cmd::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 865,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#797:5#declare_map_cmd::set_next_arg",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 798,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#789:5#declare_map_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 789,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#839:5#get_consequences_cmd::get_consequences_cmd",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 839,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#584:5#get_option_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 584,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#736:5#set_info_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 736,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#844:5#get_consequences_cmd::set_next_arg",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 845,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#37:5#help_cmd::display_cmd",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 41,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 45,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#810:5#declare_map_cmd::execute",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#506:5#set_option_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 506,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#302:1#escape_string",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 304,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#842:5#get_consequences_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 842,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#677:5#get_info_cmd::get_arity",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#123:5#get_model_cmd::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 124,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#112:5#get_model_cmd::execute",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 118,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/cmd_context/basic_cmds.cpp#103:5#get_model_cmd::get_model_cmd",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 103,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 94,
+    "visited": 16
+}

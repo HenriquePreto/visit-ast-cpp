@@ -1,0 +1,76 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/pqsort.c#88:1#med3",
+            "casts": 10,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 95,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/pqsort.c#98:1#_pqsort",
+            "casts": 2,
+            "vars": 18,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 138,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 77
+        }
+    ],
+    "total": 4,
+    "visited": 2
+}

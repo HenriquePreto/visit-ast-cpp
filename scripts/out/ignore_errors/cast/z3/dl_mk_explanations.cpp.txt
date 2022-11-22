@@ -1,0 +1,281 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#576:5#datalog::explanation_relation_plugin::mk_filter_by_intersection_fn",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 580,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 590,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 586,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 591,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#542:9#datalog::explanation_relation_plugin::intersection_filter_fn::operator()",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 554,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#527:5#datalog::explanation_relation_plugin::mk_filter_by_negation_fn",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 531,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#463:9#datalog::explanation_relation_plugin::assignment_filter_fn::operator()",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 474,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#421:9#datalog::explanation_relation_plugin::foreign_union_fn::operator()",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 429,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#435:5#datalog::explanation_relation_plugin::mk_union_fn",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 438,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#348:5#datalog::explanation_relation_plugin::mk_project_fn",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 351,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#250:9#datalog::explanation_relation::display",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 257,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 256,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#484:5#datalog::explanation_relation_plugin::mk_filter_interpreted_fn",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 510,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 504,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 493,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#265:9#datalog::explanation_relation::get_size_estimate",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 265,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#194:9#datalog::explanation_relation::no_undefined",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#317:5#datalog::explanation_relation_plugin::mk_join_fn",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 323,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#80:9#datalog::explanation_relation_plugin::can_handle_signature",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 82,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#163:9#datalog::explanation_relation::unite_with_data",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/dl_mk_explanations.cpp#385:9#datalog::explanation_relation_plugin::union_fn::operator()",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 410,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 391,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 399,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 31
+        }
+    ],
+    "total": 46,
+    "visited": 15
+}

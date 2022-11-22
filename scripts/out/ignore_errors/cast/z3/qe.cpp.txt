@@ -1,0 +1,345 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#2273:5#qe::extract_vars",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2277,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#2089:9#qe::quant_elim_new::eliminate_exists",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2098,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2104,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1866:9#qe::quant_elim_plugin::is_eq_value",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1867,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1715:9#qe::quant_elim_plugin::pop",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1732,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1723,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 66
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#2064:9#qe::quant_elim_new::bind_variables",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2065,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2069,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1613:9#qe::quant_elim_plugin::get_max_relevant",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1619,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1577:9#qe::quant_elim_plugin::add_constraint",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "PointerToBoolean",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1584,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 1577,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1577,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1577,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#2439:5#qe::mk_exists",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2449,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#2564:9#qe::simplify_solver_context::add_constraint",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2564,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2564,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2564,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1398:9#qe::quant_elim_plugin::check",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1406,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 97
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#968:9#qe::search_tree::is_root",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 968,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#66:9#qe::conjunctions::get_partition",
+            "casts": 2,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 84,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 83
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1957:9#qe::quant_elim_plugin::find_min_weight",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1959,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1964,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1963,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#1066:9#qe::search_tree::is_pure",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1068,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#449:9#qe::nnf::lookup",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 459,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#276:9#qe::conjunctions::is_var",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#379:9#qe::lift_ite::find_ite",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 400,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe.cpp#163:9#qe::conjunctions::partition_vars",
+            "casts": 6,
+            "vars": 20,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 247,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 226,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 242,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 103
+        }
+    ],
+    "total": 155,
+    "visited": 18
+}

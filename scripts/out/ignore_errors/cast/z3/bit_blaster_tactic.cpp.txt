@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bit_blaster_tactic.cpp#53:9#bit_blaster_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 70,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 44
+        }
+    ],
+    "total": 17,
+    "visited": 1
+}

@@ -1,0 +1,196 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#2619:1#xmlCharEncOutFunc",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2744,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 140
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#2262:1#xmlCharEncInput",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2330,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 79
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#2856:1#xmlByteConsumed",
+            "casts": 6,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2894,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2864,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2889,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2860,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2862,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2887,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#2155:1#xmlCharEncFirstLineInput",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2236,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 92
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#2357:1#xmlCharEncInFunc",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2416,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 69
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#1678:1#xmlFindCharEncodingHandler",
+            "casts": 6,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1710,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1710,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1696,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1711,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1702,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 1713,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 137
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#1420:1#xmlInitCharEncodingHandlers",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1422,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1430,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/encoding.c#1338:1#xmlNewCharEncodingHandler",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1368,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 1367,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1364,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1364,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1351,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 67
+        }
+    ],
+    "total": 16,
+    "visited": 8
+}

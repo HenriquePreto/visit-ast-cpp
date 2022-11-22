@@ -1,0 +1,2022 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3903:9#(anonymous namespace)::mam_impl::rematch",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "PointerToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3909,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 3906,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3521:9#(anonymous namespace)::mam_impl::collect_parents",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3522,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3536,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 158
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3286:9#(anonymous namespace)::mam_impl::insert",
+            "casts": 11,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "PointerToBoolean",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3301,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3299,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3310,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3289,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3300,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3311,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 3294,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3294,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3291,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3296,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3296,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 51
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3351:9#(anonymous namespace)::mam_impl::update_pp",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3366,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3366,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3352,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3352,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3208:9#(anonymous namespace)::mam_impl::update_children_plbls",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3210,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3156:9#(anonymous namespace)::mam_impl::add_candidate",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3157,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3061:9#(anonymous namespace)::path_tree::display",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3064,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3074,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3063,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3003:5#(anonymous namespace)::is_equal",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3012,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3012,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3008,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3008,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3006,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3006,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1481:9#(anonymous namespace)::compiler::insert",
+            "casts": 31,
+            "vars": 33,
+            "cast kinds": [
+                "DerivedToBase",
+                "IntegralCast",
+                "PointerToBoolean",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1724,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1703,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1687,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1682,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1681,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1672,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1668,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1668,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1667,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1714,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1665,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 1712,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 1592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1558,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1503,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1502,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1514,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1490,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1488,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1580,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 249
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#2126:5#(anonymous namespace)::interpreter::init_continue",
+            "casts": 8,
+            "vars": 13,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2181,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2151,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2217,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2149,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2157,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2157,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 97
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#2093:5#(anonymous namespace)::interpreter::mk_depth2_vector",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2096,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1915:9#(anonymous namespace)::interpreter::exec_is_cgr",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1934,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1921,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1916,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1956,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1899:9#(anonymous namespace)::interpreter::get_next_f_app",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1908,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#2278:5#(anonymous namespace)::interpreter::execute_core",
+            "casts": 87,
+            "vars": 11,
+            "cast kinds": [
+                "UncheckedDerivedToBase",
+                "NullToPointer",
+                "PointerToBoolean",
+                "DerivedToBase",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2803,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2800,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2787,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2784,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2777,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2774,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2768,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2757,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2753,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2733,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2830,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2731,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 2716,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2712,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2711,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2676,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2669,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2663,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2760,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2653,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2750,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2638,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2632,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2826,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2600,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2394,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2588,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2578,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2675,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2569,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2554,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2320,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2514,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2561,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2504,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2795,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2495,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2589,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2730,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2533,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2627,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2338,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2525,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2313,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 2798,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2454,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 2548,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2692,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2411,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2480,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2527,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2371,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2662,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2348,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2736,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2359,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2453,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2329,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2321,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2806,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2280,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2765,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 2487,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2308,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2446,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 567
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3469:9#(anonymous namespace)::mam_impl::update_filters",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3484,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1027:9#(anonymous namespace)::compiler::get_num_bound_vars_core",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1028,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1033,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1030,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#906:9#(anonymous namespace)::compiler::linearise_core",
+            "casts": 5,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1007,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 115
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#888:9#(anonymous namespace)::compiler::get_stats",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 890,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 889,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#309:5#(anonymous namespace)::operator<<",
+            "casts": 43,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 355,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 351,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 348,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 345,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 338,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 334,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 331,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 325,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 313,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 313,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 358,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 310,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 58
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#257:5#(anonymous namespace)::display_get_cgr",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#819:9#(anonymous namespace)::compiler::init",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 836,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 829,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 844,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1425:9#(anonymous namespace)::compiler::get_compatibility_measure",
+            "casts": 32,
+            "vars": 8,
+            "cast kinds": [
+                "NullToPointer",
+                "UncheckedDerivedToBase",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1474,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1474,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1474,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1466,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1464,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1462,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1460,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1450,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1442,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1440,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1436,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1431,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1454,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1430,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 1429,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1452,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1428,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 55
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3778:9#(anonymous namespace)::mam_impl::collect_ground_exprs",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3781,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3797,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#2992:9#(anonymous namespace)::path::path",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2999,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3427:9#(anonymous namespace)::mam_impl::update_filters",
+            "casts": 4,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3432,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3429,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#703:9#(anonymous namespace)::code_tree_manager::mk_get_cgr",
+            "casts": 7,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 711,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 710,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 706,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 705,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 705,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 705,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 704,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#606:9#(anonymous namespace)::code_tree_manager::mk_init",
+            "casts": 7,
+            "vars": 2,
+            "cast kinds": [
+                "DerivedToBase",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 616,
+                    "cast kind": "DerivedToBase"
+                },
+                {
+                    "cast line": 609,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 609,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 607,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#692:9#(anonymous namespace)::code_tree_manager::mk_bind",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 694,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 694,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 694,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 693,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#2940:9#(anonymous namespace)::code_tree_map::get_code_tree_for",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2945,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#283:5#(anonymous namespace)::display_joints",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 285,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 284,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3828:9#(anonymous namespace)::mam_impl::add_pattern",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3837,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#266:5#(anonymous namespace)::display_is_cgr",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1058:9#(anonymous namespace)::compiler::gen_mp_filter",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1082,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1061,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1069,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#736:9#(anonymous namespace)::code_tree_manager::mk_cont",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 738,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1090:9#(anonymous namespace)::compiler::linearise_multi_pattern",
+            "casts": 11,
+            "vars": 26,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1135,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1135,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1097,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1096,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1173,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1173,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1093,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1148,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 114
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3265:9#(anonymous namespace)::mam_impl::mk_path_tree",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "PointerToBoolean",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3276,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 3274,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 3271,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3270,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3267,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3272,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3269,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1886:9#(anonymous namespace)::interpreter::get_first_f_app",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1896,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#725:9#(anonymous namespace)::code_tree_manager::mk_yield",
+            "casts": 7,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 732,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 728,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 726,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#242:5#(anonymous namespace)::display_num_args",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 243,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#401:9#(anonymous namespace)::code_tree::display_seq",
+            "casts": 7,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 414,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 402,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3409:9#(anonymous namespace)::mam_impl::get_ground_arg",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3419,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 3410,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3412,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#715:9#(anonymous namespace)::code_tree_manager::mk_is_cgr",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 720,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 717,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 716,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 721,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#470:9#(anonymous namespace)::code_tree::code_tree",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 477,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#419:9#(anonymous namespace)::code_tree::display_children",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 421,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1262:9#(anonymous namespace)::compiler::find_best_child",
+            "casts": 5,
+            "vars": 6,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1267,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1265,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1264,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1263,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1273,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#273:5#(anonymous namespace)::display_yield",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#686:9#(anonymous namespace)::code_tree_manager::mk_noop",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 688,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#71:9#(anonymous namespace)::label_hasher::mk_lbl_hash",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 73,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 72,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1208:9#(anonymous namespace)::compiler::linearise",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1226,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#128:9#(anonymous namespace)::instruction::is_init",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#1406:9#(anonymous namespace)::compiler::is_compatible",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1408,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#3929:9#(anonymous namespace)::mam_impl::on_match",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3947,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3947,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/mam.cpp#630:9#(anonymous namespace)::code_tree_manager::mk_code_tree",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 632,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        }
+    ],
+    "total": 152,
+    "visited": 53
+}

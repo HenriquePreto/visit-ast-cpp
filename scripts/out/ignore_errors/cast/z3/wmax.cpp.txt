@@ -1,0 +1,121 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/wmax.cpp#204:9#opt::wmax::remove_negations",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 219,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 211,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/wmax.cpp#245:9#opt::wmax::max_resolve",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 264,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 261,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/wmax.cpp#130:9#opt::wmax::mk_assumptions",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 139,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/wmax.cpp#157:9#opt::wmax::update_cores",
+            "casts": 7,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 196,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 184,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 177,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 186,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 45
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/wmax.cpp#144:9#opt::wmax::verify_cores",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 145,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        }
+    ],
+    "total": 17,
+    "visited": 5
+}

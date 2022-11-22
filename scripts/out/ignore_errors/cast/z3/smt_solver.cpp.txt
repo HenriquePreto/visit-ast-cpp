@@ -1,0 +1,118 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#421:9#(anonymous namespace)::smt_solver::add_pattern_literals_to_core",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 428,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 444,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#400:9#(anonymous namespace)::smt_solver::compute_assrtn_fds",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 402,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#333:9#(anonymous namespace)::smt_solver::cube",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer",
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 335,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 345,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 349,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#180:9#(anonymous namespace)::smt_solver::pop_core",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#45:13#(anonymous namespace)::smt_solver::cuber::cube",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 46,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_solver.cpp#269:9#(anonymous namespace)::smt_solver::get_unsat_core",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 271,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        }
+    ],
+    "total": 68,
+    "visited": 6
+}

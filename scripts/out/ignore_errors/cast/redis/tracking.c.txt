@@ -1,0 +1,398 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#585:1#trackingBroadcastInvalidationMessages",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 596,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 608,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 608,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 47
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#495:1#trackingLimitUsedSlots",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 522,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 501,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 496,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#357:1#trackingInvalidateKey",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 367,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#540:1#trackingBuildBroadcastReply",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 570,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#217:1#trackingRememberKeys",
+            "casts": 2,
+            "vars": 8,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 242,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 244,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#180:1#enableTracking",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 199,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 199,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#268:1#sendTrackingMessage",
+            "casts": 8,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 279,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 312,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 294,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 294,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 278,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 293,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#155:1#enableBcastTrackingForPrefix",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 159,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#67:1#disableTracking",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 83,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 76,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#446:1#freeTrackingRadixTreeCallback",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 447,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/tracking.c#323:1#trackingRememberKeyToBroadcast",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 331,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        }
+    ],
+    "total": 69,
+    "visited": 19
+}

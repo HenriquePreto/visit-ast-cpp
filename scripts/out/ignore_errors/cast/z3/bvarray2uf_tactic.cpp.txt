@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bvarray2uf_tactic.cpp#51:9#bvarray2uf_tactic::imp::operator()",
+            "casts": 1,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 75,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        }
+    ],
+    "total": 14,
+    "visited": 1
+}

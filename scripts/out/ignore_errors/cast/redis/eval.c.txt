@@ -1,0 +1,770 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1630:1#luaLdbLineHook",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1647,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 49
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1280:1#ldbRedisProtocolToHuman_Double",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1283,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1271:1#ldbRedisProtocolToHuman_Bool",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1273,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1231:1#ldbRedisProtocolToHuman_Set",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1239,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1236,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1241,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1211:1#ldbRedisProtocolToHuman_MultiBulk",
+            "casts": 5,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1216,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1223,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1190:1#ldbRedisProtocolToHuman_Bulk",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1195,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1194,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1184:1#ldbRedisProtocolToHuman_Int",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1186,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1164:1#ldbRedisProtocolToHuman",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1166,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1356:1#ldbBreak",
+            "casts": 6,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1387,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1382,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1375,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1386,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1378,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#784:1#ldbStartSession",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 822,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#753:1#ldbSendLogs",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 760,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#1247:1#ldbRedisProtocolToHuman_Map",
+            "casts": 4,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1259,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1259,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1255,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1252,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#316:1#evalExtractShebangFlags",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 346,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 64
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#727:1#ldbLog",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 728,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#589:1#scriptCommand",
+            "casts": 14,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 650,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 644,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 639,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 590,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 613,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 636,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 636,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 626,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 637,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 623,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 611,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 609,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 73
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#489:1#evalGenericCommand",
+            "casts": 4,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 534,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 500,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 505,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 497,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 61
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#423:1#luaCreateFunction",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 466,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 429,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 428,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 49
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#383:1#evalGetCommandFlags",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 388,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 390,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#270:1#scriptingRelease",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#183:1#scriptingInit",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 84
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#671:1#evalScriptsMemory",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 672,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#288:1#evalCalcFunctionName",
+            "casts": 8,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 307,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 292,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 291,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#112:1#sha1hex",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 124,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 123,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#957:1#ldbReplParseCommand",
+            "casts": 7,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 976,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 987,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 985,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 990,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 981,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 52
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#941:1#ldbDelBreakpoint",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 947,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 947,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 947,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/eval.c#837:1#ldbEndSession",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 854,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        }
+    ],
+    "total": 118,
+    "visited": 34
+}

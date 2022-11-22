@@ -1,0 +1,313 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#1069:5#maxcore::init_local",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1077,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#981:5#maxcore::update_assignment",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 984,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#896:5#maxcore::cs_max_resolve",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 914,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 918,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 47
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#675:5#maxcore::display_vec",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 676,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#1040:5#maxcore::remove_soft",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1042,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#490:5#maxcore::process_sat",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 499,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#370:5#maxcore::operator()",
+            "casts": 6,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 376,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 375,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 372,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#688:5#maxcore::max_resolve",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 712,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 706,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 49
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#142:5#maxcore::maxcore",
+            "casts": 6,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 167,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 158,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 164,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#536:5#maxcore::max_core_size",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 537,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#738:5#maxcore::bin_resolve",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#316:5#maxcore::check_sat_hill_climb",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 325,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 324,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 329,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxcore.cpp#557:5#maxcore::process_unsat",
+            "casts": 12,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 570,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 567,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 564,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 563,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 52
+        }
+    ],
+    "total": 69,
+    "visited": 13
+}

@@ -1,0 +1,1172 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#3220:1#parse_smt2_commands_with_parser",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3221,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#3146:9#smt2::parser::operator()",
+            "casts": 5,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3185,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 3169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3203,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3147,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 64
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#3129:9#smt2::parser::parse_sort_ref",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3130,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#780:9#smt2::parser::parse_symbols",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 781,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1818:9#smt2::parser::parse_root_obj",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1829,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2534:9#smt2::parser::parse_push",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2538,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2629:9#smt2::parser::parse_get_value",
+            "casts": 5,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2676,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2637,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2652,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2634,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2669,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 60
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2453:9#smt2::parser::parse_define_const",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2456,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2425:9#smt2::parser::parse_rec_fun_body",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2426,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2441,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2409:9#smt2::parser::parse_rec_fun_bodies",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2410,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2344:9#smt2::parser::parse_define_funs_rec",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2348,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#3085:9#smt2::parser::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3087,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2326:9#smt2::parser::parse_define_fun_rec",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2330,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2178:9#smt2::parser::parse_sort_decl_or_params",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2184,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2165:9#smt2::parser::parse_sort_decl_params",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2168,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1890:9#smt2::parser::pop_app_frame",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1902,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1399:9#smt2::parser::compile_patterns",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1404,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1160:9#smt2::parser::parse_expr_state",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1167,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1165,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1164,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1161,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1721:9#smt2::parser::is_bv_num",
+            "casts": 12,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1725,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1725,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1723,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1723,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1682:9#smt2::parser::is_bv_hex",
+            "casts": 27,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1706,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1705,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1703,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1703,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1701,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1701,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1701,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1701,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1699,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1699,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1697,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1697,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1697,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1697,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1695,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1695,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1690,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1687,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1687,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1685,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1685,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1683,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1683,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1660:9#smt2::parser::is_bv_binary",
+            "casts": 15,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1676,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1676,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1672,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1672,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1670,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1670,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1670,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1670,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1668,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1665,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1665,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1663,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1663,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1661,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1661,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#674:9#smt2::parser::parse_psort",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 701,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 683,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1480:9#smt2::parser::parse_match_pattern",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1538,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 67
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1261:9#smt2::parser::parse_sorted_vars",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1284,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1339:9#smt2::parser::push_match_frame",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1390,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2559:9#smt2::parser::parse_assert",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2566,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1020:9#smt2::parser::in_quant_ctx",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1021,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1021,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1021,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1021,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2386:9#smt2::parser::parse_rec_fun_decl",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2387,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2405,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#860:9#smt2::parser::parse_declare_datatypes",
+            "casts": 5,
+            "vars": 16,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 922,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 899,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 904,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 909,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 868,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 76
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2154:9#smt2::parser::parse_exprs",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#769:9#smt2::parser::parse_sorts",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 770,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#521:9#smt2::parser::parse_sexpr",
+            "casts": 3,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 575,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 524,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 536,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#482:9#smt2::parser::unknown_sort",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 484,
+                    "cast kind": "IntegralToBoolean"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2062:9#smt2::parser::pop_expr_frame",
+            "casts": 8,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2085,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2082,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2079,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2072,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2069,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2066,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2076,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2065,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2890:9#smt2::parser::parse_ext_cmd",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2899,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2917,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2262:9#smt2::parser::parse_define",
+            "casts": 3,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2303,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2282,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2265,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 45
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#737:9#smt2::parser::parse_sort",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 740,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 765,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 746,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#3112:9#smt2::parser::parse_sexpr_ref",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3113,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#594:9#smt2::parser::parse_psort_name",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 615,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#49:13#smt2::parser::local::local",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 49,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#251:9#smt2::parser::shrink",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#347:9#smt2::parser::sync_after_error",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 349,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 348,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2545:9#smt2::parser::parse_pop",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2549,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1643:9#smt2::parser::is_bv_decimal",
+            "casts": 13,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1654,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1651,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1651,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1645,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#1313:9#smt2::parser::push_quant_frame",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1325,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#490:9#smt2::parser::consume_sexpr",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 518,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 491,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#2095:9#smt2::parser::parse_expr",
+            "casts": 8,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2150,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2138,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2135,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2109,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2108,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2141,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2101,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2096,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 58
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/parsers/smt2/smt2parser.cpp#969:9#smt2::parser::parse_datatype_dec",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 976,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        }
+    ],
+    "total": 197,
+    "visited": 48
+}

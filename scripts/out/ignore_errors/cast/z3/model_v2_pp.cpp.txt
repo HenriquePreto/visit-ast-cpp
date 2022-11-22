@@ -1,0 +1,59 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/model/model_v2_pp.cpp#58:1#display_functions",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/model/model_v2_pp.cpp#23:1#display_function",
+            "casts": 3,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 29,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 31,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/model/model_v2_pp.cpp#64:1#display_constants",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 67,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        }
+    ],
+    "total": 5,
+    "visited": 3
+}

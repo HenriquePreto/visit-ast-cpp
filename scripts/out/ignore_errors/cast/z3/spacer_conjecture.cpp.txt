@@ -1,0 +1,29 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_conjecture.cpp#45:1#spacer::find_unique_mono_var_lit",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 54,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        }
+    ],
+    "total": 3,
+    "visited": 1
+}

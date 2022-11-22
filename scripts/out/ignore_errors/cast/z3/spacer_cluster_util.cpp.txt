@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/spacer/spacer_cluster_util.cpp#133:5#spacer::bool_and_less_proc::get_first_uc",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 145,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 138,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 11,
+    "visited": 1
+}

@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/arith_bounds_tactic.cpp#73:5#arith_bounds_tactic::bounds_arith_subsumption",
+            "casts": 1,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 80,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 72
+        }
+    ],
+    "total": 11,
+    "visited": 1
+}

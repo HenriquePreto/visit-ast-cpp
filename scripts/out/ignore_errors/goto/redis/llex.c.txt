@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/llex.c#223:1#read_long_string",
+            "gotos": 1,
+            "labels": 1,
+            "body": "{\n    int cont = 0;\n    (void)(cont);\n    (save(ls, ls->current) , (ls->current = ((<recovery-expr>((ls->z))--) > 0 ? ((int)(((unsigned char)((*(ls->z)->p++))))) : luaZ_fill(ls->z))));\n    if ((ls->current == '\\n' || ls->current == '\\r'))\n        inclinenumber(ls);\n    for (;;) {\n        switch (ls->current) {\n          case (-1):\n            luaX_lexerror(ls, (seminfo) ? \"unfinished long string\" : \"unfinished long comment\", TK_EOS);\n            break;\n          case '[':\n            {\n                if (skip_sep(ls) == sep) {\n                    (save(ls, ls->current) , (ls->current = ((<recovery-expr>((ls->z))--) > 0 ? ((int)(((unsigned char)((*(ls->z)->p++))))) : luaZ_fill(ls->z))));\n                    cont++;\n                    if (sep == 0)\n                        luaX_lexerror(ls, \"nesting of [[...]] is deprecated\", '[');\n                }\n                break;\n            }\n          case ']':\n            {\n                if (skip_sep(ls) == sep) {\n                    (save(ls, ls->current) , (ls->current = ((<recovery-expr>((ls->z))--) > 0 ? ((int)(((unsigned char)((*(ls->z)->p++))))) : luaZ_fill(ls->z))));\n                    goto endloop;\n                }\n                break;\n            }\n          case '\\n':\n          case '\\r':\n            {\n                save(ls, '\\n');\n                inclinenumber(ls);\n                if (!seminfo)\n                    (<recovery-expr>((ls->buff)) = 0);\n                break;\n            }\n          default:\n            {\n                if (seminfo)\n                    (save(ls, ls->current) , (ls->current = ((<recovery-expr>((ls->z))--) > 0 ? ((int)(((unsigned char)((*(ls->z)->p++))))) : luaZ_fill(ls->z))));\n                else\n                    (ls->current = ((<recovery-expr>((ls->z))--) > 0 ? ((int)(((unsigned char)((*(ls->z)->p++))))) : luaZ_fill(ls->z)));\n            }\n        }\n    }\n  endloop:\n    if (seminfo)\n        seminfo->ts = <recovery-expr>()(ls, ((ls->buff)->buffer) + (2 + sep), (<recovery-expr>((ls->buff))) - 2 * (2 + sep));\n}\n"
+        }
+    ],
+    "total": 19,
+    "visited": 1
+}

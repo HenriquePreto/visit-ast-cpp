@@ -1,0 +1,353 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/smt2_util.cpp#59:1#mk_smt2_quoted_symbol",
+            "casts": 5,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 65,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 65,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 65,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 65,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 64,
+                    "cast kind": "IntegralToBoolean"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/smt2_util.cpp#21:1#is_smt2_simple_symbol_char",
+            "casts": 46,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 28,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 27,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 26,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 25,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 25,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 25,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 25,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 24,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 24,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 24,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 24,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 23,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 23,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 23,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 23,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/smt2_util.cpp#31:1#is_smt2_quoted_symbol",
+            "casts": 27,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 47,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 42,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 42,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 42,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 42,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 38,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 38,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 32,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        }
+    ],
+    "total": 4,
+    "visited": 3
+}

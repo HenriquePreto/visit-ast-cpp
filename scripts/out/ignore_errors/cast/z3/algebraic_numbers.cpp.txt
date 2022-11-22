@@ -1,0 +1,48 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/algebraic_numbers.cpp#51:9#algebraic_numbers::algebraic_cell::is_minimal",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 51,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/algebraic_numbers.cpp#50:9#algebraic_numbers::algebraic_cell::algebraic_cell",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 50,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 50,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 50,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 50,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 2,
+    "visited": 2
+}

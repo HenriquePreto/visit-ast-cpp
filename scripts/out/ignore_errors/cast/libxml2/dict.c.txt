@@ -1,0 +1,127 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#1008:1#xmlDictExists",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1018,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1020,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 94
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#497:1#xmlDictComputeFastQKey",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 542,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 504,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 501,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 70
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#454:1#xmlDictComputeFastKey",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#1114:1#xmlDictQLookup",
+            "casts": 5,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1127,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1116,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1186,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 93
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/dict.c#868:1#xmlDictLookup",
+            "casts": 4,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 882,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 972,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 870,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 880,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 128
+        }
+    ],
+    "total": 22,
+    "visited": 5
+}

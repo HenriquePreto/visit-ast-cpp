@@ -3,4 +3,3 @@ bazel-bin
 bazel-cc-ast-tool
 bazel-out
 bazel-testlogs
-out/

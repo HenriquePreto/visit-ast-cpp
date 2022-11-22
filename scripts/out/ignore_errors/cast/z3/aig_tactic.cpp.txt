@@ -1,0 +1,68 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/aig/aig_tactic.cpp#40:9#aig_tactic::mk_aig_manager::~mk_aig_manager",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 42,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/aig/aig_tactic.cpp#47:5#aig_tactic::aig_tactic",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 47,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/aig/aig_tactic.cpp#69:5#aig_tactic::operator()",
+            "casts": 5,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 75,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        }
+    ],
+    "total": 11,
+    "visited": 3
+}

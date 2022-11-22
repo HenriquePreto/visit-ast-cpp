@@ -1,0 +1,40 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/rpolynomial.cpp#49:9#rpolynomial::polynomial::get_obj_size",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 49,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 49,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/rpolynomial.cpp#47:9#rpolynomial::polynomial::dec_ref",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 47,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 14,
+    "visited": 2
+}

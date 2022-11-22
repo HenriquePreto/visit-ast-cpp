@@ -1,0 +1,229 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#1019:1#upolynomial::factor_square_free",
+            "casts": 5,
+            "vars": 32,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1200,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1044,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1044,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1074,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1041,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 278
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#251:1#upolynomial::zp_square_free_factor",
+            "casts": 4,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 310,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 360,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 284,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 120
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#408:1#upolynomial::zp_factor_square_free_berlekamp",
+            "casts": 2,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 426,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 101
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#208:5#upolynomial::berlekamp_matrix::next_null_space_vector",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 214,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#158:5#upolynomial::berlekamp_matrix::diagonalize",
+            "casts": 4,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 163,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 162,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 167,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 44
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#709:1#upolynomial::hensel_lift_quadratic",
+            "casts": 2,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 732,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 732,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 94
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#372:1#upolynomial::zp_factor",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#88:5#upolynomial::berlekamp_matrix::berlekamp_matrix",
+            "casts": 9,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 138,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 119,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 115,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 111,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 111,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/upolynomial_factorization.cpp#979:1#upolynomial::mignotte_bound",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1008,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 987,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        }
+    ],
+    "total": 22,
+    "visited": 9
+}

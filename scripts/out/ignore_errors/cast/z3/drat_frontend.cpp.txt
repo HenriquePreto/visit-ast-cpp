@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/shell/drat_frontend.cpp#67:1#read_drat",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        }
+    ],
+    "total": 7,
+    "visited": 1
+}

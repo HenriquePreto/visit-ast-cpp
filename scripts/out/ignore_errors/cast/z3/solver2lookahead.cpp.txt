@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/portfolio/solver2lookahead.cpp#22:1#mk_solver2lookahead",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 23,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 3
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

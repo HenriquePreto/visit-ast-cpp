@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/base/dl_context.cpp#1041:5#datalog::collect_free_funcs",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1045,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        }
+    ],
+    "total": 4,
+    "visited": 1
+}

@@ -1,0 +1,296 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#882:5#smt_printer::visit_pred",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 885,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#691:5#smt_printer::visit_children",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 699,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#646:5#smt_printer::is_small",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 647,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#562:5#smt_printer::newline",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#250:5#smt_printer::visit_params",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 292,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 251,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#500:5#smt_printer::visit_quantifier",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 544,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 528,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 61
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#869:5#smt_printer::operator()",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 873,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#568:5#smt_printer::visit_var",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 571,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 577,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#357:5#smt_printer::visit_app",
+            "casts": 6,
+            "vars": 22,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 454,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 386,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 416,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 481,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 133
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#745:5#smt_printer::operator()",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 782,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 750,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#651:5#smt_printer::is_small",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 679,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 670,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 663,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 673,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 656,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 678,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 676,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#303:5#smt_printer::visit_sort",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 328,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 327,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#786:5#smt_printer::pp_dt",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 794,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 60
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_smt_pp.cpp#243:5#smt_printer::is_sort_param",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 245,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 32,
+    "visited": 14
+}

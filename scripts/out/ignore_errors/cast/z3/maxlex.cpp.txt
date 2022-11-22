@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/maxlex.cpp#152:9#opt::maxlex::maxlexN",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        }
+    ],
+    "total": 12,
+    "visited": 1
+}

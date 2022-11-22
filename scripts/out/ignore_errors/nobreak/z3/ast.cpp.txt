@@ -1,0 +1,11 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast.cpp#506:1#ast_array_hash",
+            "nobreaks": 1,
+            "body": "{\n    switch (size) {\n      case 0:\n        return init_value;\n      case 1:\n        return combine_hash(array[0]->hash(), init_value);\n      case 2:\n        return combine_hash(combine_hash(array[0]->hash(), array[1]->hash()), init_value);\n      case 3:\n        return combine_hash(combine_hash(array[0]->hash(), array[1]->hash()), combine_hash(array[2]->hash(), init_value));\n      default:\n        {\n            unsigned int a, b, c;\n            a = b = 2654435769U;\n            c = init_value;\n            while (size >= 3)\n                {\n                    size--;\n                    a += array[size]->hash();\n                    size--;\n                    b += array[size]->hash();\n                    size--;\n                    c += array[size]->hash();\n                    <recovery-expr>(mix, a, b, c);\n                }\n            switch (size) {\n              case 2:\n                b += array[1]->hash();\n              case 1:\n                c += array[0]->hash();\n            }\n            <recovery-expr>(mix, a, b, c);\n            return c;\n        }\n    }\n}\n"
+        }
+    ],
+    "total": 24,
+    "visited": 1
+}

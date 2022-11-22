@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/ufbv/ufbv_rewriter_tactic.cpp#47:5#ufbv_rewriter_tactic::operator()",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        }
+    ],
+    "total": 8,
+    "visited": 1
+}

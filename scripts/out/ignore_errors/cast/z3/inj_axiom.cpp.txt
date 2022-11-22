@@ -1,0 +1,33 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/rewriter/inj_axiom.cpp#30:1#simplify_inj_axiom",
+            "casts": 4,
+            "vars": 30,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 82,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 55,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 109
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

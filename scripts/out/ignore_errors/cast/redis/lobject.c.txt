@@ -1,0 +1,1162 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lobject.c#182:1#luaO_chunkid",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lobject.c#54:1#luaO_log2",
+            "casts": 258,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 67,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 66,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 62,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 61,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 59,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lobject.c#90:1#luaO_str2d",
+            "casts": 5,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 96,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lobject.c#111:1#luaO_pushvfstring",
+            "casts": 6,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 157,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 144,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 144,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 119,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lobject.c#35:1#luaO_int2fb",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 41,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 41,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 38,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 37,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 9,
+    "visited": 5
+}

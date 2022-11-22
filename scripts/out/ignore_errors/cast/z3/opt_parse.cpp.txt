@@ -1,0 +1,774 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#770:5#lp_parse::parse_upper",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 779,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 779,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 776,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#733:5#lp_parse::parse_bound",
+            "casts": 8,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 755,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 755,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 742,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 742,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 747,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 747,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 752,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#472:5#lp_tokenizer::is_ws",
+            "casts": 6,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 473,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#28:5#opt_stream_buffer::opt_stream_buffer",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 30,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#464:5#lp_tokenizer::is_alpha",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 465,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#372:5#lp_tokenizer::line",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#364:5#lp_tokenizer::next",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 364,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#49:5#opt_stream_buffer::skip_line",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 54,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#207:5#opb::parse_ids",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#154:5#wcnf::parse",
+            "casts": 6,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 164,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#476:5#lp_tokenizer::is_sym",
+            "casts": 40,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 499,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 499,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 498,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 497,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 497,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 496,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 496,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 495,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 495,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 494,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 494,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 493,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 493,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 492,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 492,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 491,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 490,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 490,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 489,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 489,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 487,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 487,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 484,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 484,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 482,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 482,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 481,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 481,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 480,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 480,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#92:1#opt_stream_buffer::parse_int",
+            "casts": 7,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 109,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 108,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 108,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#278:5#opb::parse",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 284,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#69:1#opt_stream_buffer::parse_token",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 72,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 76,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#468:5#lp_tokenizer::is_num",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#379:5#lp_tokenizer::is_separator",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#79:1#opt_stream_buffer::parse_unsigned",
+            "casts": 7,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 84,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 81,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#383:5#lp_tokenizer::lower",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#215:5#opb::parse_coeff_r",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 220,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 219,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/opt/opt_parse.cpp#389:5#lp_tokenizer::parse_all",
+            "casts": 18,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 429,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 400,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 423,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 423,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 410,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 398,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 398,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 74
+        }
+    ],
+    "total": 81,
+    "visited": 20
+}

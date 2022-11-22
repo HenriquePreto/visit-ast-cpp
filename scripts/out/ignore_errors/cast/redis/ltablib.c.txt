@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/ltablib.c#56:1#maxn",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 14,
+    "visited": 1
+}

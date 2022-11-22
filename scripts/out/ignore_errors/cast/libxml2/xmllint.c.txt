@@ -1,0 +1,167 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#3080:1#main",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3712,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3673,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3728,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3094,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 673
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#1279:1#ignorableWhitespaceDebug",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1290,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#1582:1#testSAX",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1646,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 76
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#1237:1#charactersDebug",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1248,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#2110:1#parseAndPrintFile",
+            "casts": 6,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2346,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2299,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2296,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 2270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2248,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2248,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 785
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#364:1#myStrdupFunc",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#236:1#xmllintExternalEntityLoader",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 249,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 248,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 78
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/libxml2/xmllint.c#322:1#OOM",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 326,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        }
+    ],
+    "total": 44,
+    "visited": 8
+}

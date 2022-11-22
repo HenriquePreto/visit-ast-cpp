@@ -1,0 +1,140 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/shell/main.cpp#127:1#parse_cmd_line_args",
+            "casts": 30,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralToBoolean",
+                "PointerToBoolean",
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 327,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 326,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 288,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 270,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 260,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 307,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 307,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 283,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 235,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 163,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 230,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 137,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 159,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 159,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 251,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 130,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 318,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 152,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 152,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 293,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 221,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 202
+        }
+    ],
+    "total": 3,
+    "visited": 1
+}

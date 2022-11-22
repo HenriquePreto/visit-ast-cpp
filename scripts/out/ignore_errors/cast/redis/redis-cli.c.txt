@@ -1,0 +1,3917 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8894:1#main",
+            "casts": 8,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 9072,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 9072,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 9054,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8915,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8898,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 9002,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8903,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8902,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 218
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8846:1#intrinsicLatencyMode",
+            "casts": 6,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8877,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8861,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8849,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8869,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8847,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8847,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8814:1#compute_something_fast",
+            "casts": 10,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8829,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8829,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8829,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8825,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8825,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8825,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8821,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8817,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8822,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8819,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8742:1#LRUTestMode",
+            "casts": 8,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8797,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8797,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8760,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8754,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8754,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8798,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8798,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8759,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 60
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8722:1#powerLawRand",
+            "casts": 9,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8730,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8729,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8728,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8725,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8596:1#statMode",
+            "casts": 9,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8674,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8671,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8668,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8664,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8650,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8650,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8665,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 88
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8542:1#getInfoField",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8554,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8548,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8553,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8553,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8553,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8552,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8552,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8441:1#findHotKeys",
+            "casts": 14,
+            "vars": 11,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8526,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8524,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8517,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8515,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8461,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8461,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8445,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 93
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8203:1#getKeySizes",
+            "casts": 6,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8234,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8220,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8211,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 55
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7901:1#pipeMode",
+            "casts": 19,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8028,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8020,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8018,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8018,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8018,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7902,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7902,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7902,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7902,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8017,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8017,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8017,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8016,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7992,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7977,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7999,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7927,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8019,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8019,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 153
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7802:1#getRDB",
+            "casts": 4,
+            "vars": 9,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7869,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7869,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7820,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7822,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 93
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7315:1#clusterManagerCommandBackup",
+            "casts": 4,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7335,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7323,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7323,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 63
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3790:1#clusterManagerKeyHashSlot",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3801,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3794,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7271:1#clusterManagerCommandCall",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7290,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8560:1#getLongInfoField",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8566,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8162:1#getKeyTypes",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8191,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8174,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8167,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7116:1#clusterManagerCommandImport",
+            "casts": 2,
+            "vars": 23,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7185,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7191,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 154
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#390:1#dictSdsDestructor",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 393,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7058:1#clusterManagerCommandSetTimeout",
+            "casts": 2,
+            "vars": 12,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7105,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7080,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6863:1#clusterManagerCommandRebalance",
+            "casts": 21,
+            "vars": 40,
+            "cast kinds": [
+                "BitCast",
+                "FloatingCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7022,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6943,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 6943,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6943,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6943,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6941,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6931,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6954,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 6911,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6882,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6881,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6892,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 7030,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6902,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6913,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7005,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7051,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6906,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6975,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 6917,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6963,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 194
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6676:1#clusterManagerCommandReshard",
+            "casts": 21,
+            "vars": 38,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6849,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6842,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6833,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6797,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6783,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6801,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6769,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6683,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6752,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6721,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6744,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6813,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6740,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6716,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6762,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6735,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6804,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6720,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6703,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6699,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 186
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#314:1#mstime",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 315,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1471:1#cliFormatReplyCSV",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1503,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 45
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6054:1#clusterManagerNodeArrayReset",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6056,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5776:1#clusterManagerCheckCluster",
+            "casts": 12,
+            "vars": 36,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5918,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5904,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5779,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5802,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5868,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5912,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5832,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5832,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5909,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5814,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5814,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5902,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 163
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5205:1#clusterManagerFixSlotsCoverage",
+            "casts": 21,
+            "vars": 42,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5370,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5346,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5320,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5315,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5304,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5276,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5345,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5267,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5313,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5266,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5265,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5265,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5240,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5286,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5239,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5227,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5248,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5248,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 198
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5178:1#clusterManagerNodeMasterRandom",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5185,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5195,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5085:1#clusterManagerGetCoveredSlots",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5095,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5092,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5039:1#clusterManagerGetLinkStatus",
+            "casts": 7,
+            "vars": 11,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5063,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5059,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5059,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5055,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5066,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5053,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5046,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4872:1#clusterManagerGetConfigSignature",
+            "casts": 25,
+            "vars": 19,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4960,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4959,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4943,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4893,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4940,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4937,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4937,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4937,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4936,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4888,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4935,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4931,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4931,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4931,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4907,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4916,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4927,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4900,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4911,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4929,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4882,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4918,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 92
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4599:1#clusterManagerNodeLoadInfo",
+            "casts": 16,
+            "vars": 34,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4758,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4738,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4724,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4665,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4688,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4734,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4674,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4696,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4691,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4671,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4682,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4705,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 169
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4992:1#clusterManagerGetDisconnectedLinks",
+            "casts": 3,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5028,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5005,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5000,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4539:1#clusterManagerWaitForClusterJoin",
+            "casts": 1,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4575,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5739:1#clusterManagerFixMultipleSlotOwners",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5742,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5758,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4433:1#clusterManagerMoveSlot",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4479,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4491,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 69
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8135:1#typeinfo_add",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8139,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8139,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2789:1#evalMode",
+            "casts": 3,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2834,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2838,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2838,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 82
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6010:1#clusterManagerReleaseReshardTable",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6017,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6016,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4033:1#clusterManagerDelSlot",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4050,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4056,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5075:1#clusterManagerOnError",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5078,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2506:1#cliSplitArgs",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2513,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2512,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3905:1#clusterManagerAddSlots",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3943,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3912,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1540:1#cliFormatReplyJson",
+            "casts": 5,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1593,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1571,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1579,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1579,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1599,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 70
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7538:1#showLatencyDistSamples",
+            "casts": 5,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating",
+                "FloatingToIntegral"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7553,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7552,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7549,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 7549,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 7549,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3705:1#clusterManagerNodeGetJSON",
+            "casts": 2,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3718,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3738,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 71
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6043:1#clusterManagerNodeArrayInit",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6046,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3508:1#clusterManagerGetAntiAffinityScore",
+            "casts": 7,
+            "vars": 21,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3563,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3544,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3544,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3533,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3555,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3515,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3512,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 68
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3457:1#clusterManagerNodeIsEmpty",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3473,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3171:1#freeClusterManagerNode",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3195,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3191,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3201,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3178,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3658:1#clusterManagerNodeFlagString",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3666,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3402:1#clusterManagerNodeByAbbreviatedName",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3413,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4122:1#clusterManagerCompareKeysValues",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4176,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7736:1#slaveMode",
+            "casts": 4,
+            "vars": 8,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7744,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7746,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7776,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7776,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7699:1#sendSync",
+            "casts": 8,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7730,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7730,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7725,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7724,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7722,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7721,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7454:1#latencyMode",
+            "casts": 15,
+            "vars": 9,
+            "cast kinds": [
+                "FloatingCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7506,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 7506,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 7498,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7482,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7468,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7489,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 7466,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7465,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7456,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3204:1#freeClusterManager",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3219,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3210,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2748:1#noninteractive",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2758,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2614:1#repl",
+            "casts": 7,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2733,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2648,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2692,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2736,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 2680,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2671,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2649,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 133
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#914:1#completionCallback",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 921,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2435:1#confirmWithYes",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2447,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5159:1#clusterManagerNodeWithLeastReplicas",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5166,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#2283:1#parseEnv",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2290,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 2285,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4184:1#clusterManagerMigrateKeysInReply",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4261,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4203,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4202,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 76
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1956:1#parseOptions",
+            "casts": 11,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast",
+                "FloatingToIntegral",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2220,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2160,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 2104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2236,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1985,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 2073,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1986,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 1986,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 2076,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 326
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3116:1#parseClusterNodeAddress",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3122,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3128,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3855:1#clusterManagerShowClusterInfo",
+            "casts": 8,
+            "vars": 13,
+            "cast kinds": [
+                "FloatingCast",
+                "IntegralToFloating",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3900,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 3874,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3869,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3862,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3868,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3868,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3868,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3901,
+                    "cast kind": "FloatingCast"
+                }
+            ],
+            "size": 48
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8572:1#bytesToHuman",
+            "casts": 14,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8591,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8590,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8590,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8590,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8588,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8576,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8587,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8587,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8575,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8580,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8585,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1354:1#isColorTerm",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1355,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#871:1#cliOutputHelp",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 880,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4775:1#clusterManagerLoadInfoFromNode",
+            "casts": 6,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4840,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4809,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4805,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4783,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4791,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4821,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 77
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3058:1#createClusterManagerCommand",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3067,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3067,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3067,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3066,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1015:1#freeHintsCallback",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1016,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#943:1#hintsCallback",
+            "casts": 4,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 997,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 946,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 948,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 998,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 71
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6130:1#clusterManagerCommandCreate",
+            "casts": 27,
+            "vars": 56,
+            "cast kinds": [
+                "IntegralToFloating",
+                "FloatingCast",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6419,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6413,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6400,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6158,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6393,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6334,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6381,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6321,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6172,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6313,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6309,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6230,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 6230,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 6226,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6414,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6195,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6190,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6189,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6236,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6236,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6166,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6150,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 6303,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6170,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6388,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 292
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6578:1#clusterManagerCommandDeleteNode",
+            "casts": 1,
+            "vars": 10,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6612,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 66
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#795:1#cliInitHelp",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1653:1#cliReadReply",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1708,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1705,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 84
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5120:1#clusterManagerGetNodeWithMostKeysInSlot",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5131,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1238:1#cliFormatReplyTTY",
+            "casts": 14,
+            "vars": 9,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1315,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1313,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1312,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1310,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1300,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1304,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1304,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1304,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1297,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 115
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#644:1#cliFillInCommandHelpEntry",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 646,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#533:1#sdscat_orempty",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 534,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3378:1#clusterManagerNodeByName",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3388,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 19
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3843:1#clusterManagerShowNodes",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3848,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8143:1#type_free",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8149,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8144,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#352:1#getDotfilePath",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 366,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 357,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#554:1#cliAddArgument",
+            "casts": 1,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 619,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 88
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#304:1#ustime",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 309,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8404:1#getKeyFreqs",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8416,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8409,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5999:1#clusterManagerShowReshardTable",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6004,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5964:1#clusterManagerComputeReshardTable",
+            "casts": 10,
+            "vars": 15,
+            "cast kinds": [
+                "FloatingCast",
+                "IntegralToFloating",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5995,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5982,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 5982,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 5981,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 5981,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 5980,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 5980,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 5991,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5972,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5967,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6423:1#clusterManagerCommandAddNode",
+            "casts": 7,
+            "vars": 13,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6520,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6506,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6478,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6489,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6499,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6485,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 6472,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 154
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8267:1#findBigKeys",
+            "casts": 20,
+            "vars": 15,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToFloating",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8394,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8394,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8393,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8393,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8393,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8373,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8373,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8366,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8296,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8296,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 8365,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 8286,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8363,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8358,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8358,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8268,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 136
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3579:1#clusterManagerOptimizeAntiAffinity",
+            "casts": 7,
+            "vars": 19,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3639,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3615,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3620,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3588,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3654,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 3608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 3594,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 75
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4267:1#clusterManagerMigrateKeysInSlot",
+            "casts": 4,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4418,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4321,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 4357,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4372,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 151
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8689:1#scanMode",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8691,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 8707,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3364:1#clusterManagerRemoveNodeFromList",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3370,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8735:1#LRUTestGenKey",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8737,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#8883:1#askPassword",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 8885,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7578:1#latencyDistMode",
+            "casts": 68,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7650,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7638,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7621,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7620,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7620,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7619,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7619,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7618,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7618,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7617,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7617,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7616,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7616,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7615,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7615,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7614,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7614,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7613,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7613,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7611,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7611,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7610,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7610,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7609,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7609,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7608,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7606,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7606,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7605,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7605,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7604,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7604,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7603,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7603,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7602,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7602,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7601,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7601,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7600,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7600,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7599,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7599,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7597,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7597,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7596,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7596,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7594,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7594,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7592,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7580,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7582,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7582,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7593,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7593,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 77
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1519:1#jsonStringOutput",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1528,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#3160:1#freeClusterManagerNodeFlags",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 3165,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1382:1#sdsCatColorizedLdbReply",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1391,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#1738:1#cliSendCommand",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1808,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1808,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 172
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#6110:1#clusterManagerMode",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 6118,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#437:1#cliOldInitHelp",
+            "casts": 3,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 444,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 438,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#379:1#dictSdsKeyCompare",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 387,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#5407:1#clusterManagerFixOpenSlot",
+            "casts": 27,
+            "vars": 42,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 5693,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5686,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5672,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5463,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5557,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5651,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5604,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5584,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5563,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5486,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5483,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5575,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5504,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5598,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5692,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5473,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5634,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5634,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5447,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5470,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5456,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 5617,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5507,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5438,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 5435,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 331
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#7379:1#clusterManagerCommandHelp",
+            "casts": 8,
+            "vars": 17,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7424,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7418,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7400,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7400,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 7400,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7394,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#4965:1#clusterManagerIsConfigConsistent",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 4967,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 4975,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/redis-cli.c#752:1#cliInitGroupHelpEntries",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 760,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        }
+    ],
+    "total": 230,
+    "visited": 118
+}

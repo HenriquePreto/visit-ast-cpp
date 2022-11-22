@@ -1,0 +1,217 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#826:9#qe::datatype_plugin::get_eqs",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 827,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#664:9#qe::datatype_plugin::subst_rec",
+            "casts": 4,
+            "vars": 17,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 731,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 703,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 713,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 82
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#584:9#qe::datatype_plugin::get_num_branches_rec",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 612,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#523:9#qe::datatype_plugin::subst_constructor",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 537,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#397:9#qe::lift_foreign_vars::contains_foreign",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 399,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#570:9#qe::datatype_plugin::has_recognizer",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 573,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#287:9#qe::datatype_atoms::solve_diseq",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 312,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#247:9#qe::datatype_atoms::solve_eq",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 272,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#185:9#qe::datatype_atoms::add_unsat_eq",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 217,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#369:9#qe::lift_foreign_vars::reduce_eq",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 386,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#761:9#qe::datatype_plugin::assign_nonrec",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 768,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#832:9#qe::datatype_plugin::update_eqs",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 833,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/qe_datatype_plugin.cpp#620:9#qe::datatype_plugin::assign_rec",
+            "casts": 1,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 657,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        }
+    ],
+    "total": 54,
+    "visited": 13
+}

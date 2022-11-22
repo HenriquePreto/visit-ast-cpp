@@ -1,0 +1,766 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1066:9#tb::unifier::unify",
+            "casts": 9,
+            "vars": 18,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1144,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1134,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1088,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1121,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1121,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1143,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1105,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1082,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1102,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 83
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1020:9#tb::selection::insert_score",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1025,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#992:9#tb::selection::prepare_weight_select",
+            "casts": 6,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1001,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 997,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 993,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 995,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1000,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#977:9#tb::selection::score_argument",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 982,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 981,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#951:9#tb::selection::basic_score_predicate",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 952,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#930:9#tb::selection::normalize_scores",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 937,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#913:9#tb::selection::score_variables",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 919,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 923,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#887:9#tb::selection::weight_select",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 891,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 890,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 889,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#836:9#tb::selection::andrei_select",
+            "casts": 5,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 841,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 840,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 850,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 839,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 844,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#905:9#tb::selection::score_variables",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 907,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1280:9#tb::extract_delta::mk_fresh_vars",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1284,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#770:9#tb::selection::select",
+            "casts": 5,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 774,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 772,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 771,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 776,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#746:9#tb::selection::selection",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 752,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#642:9#tb::index::check_substitution",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 697,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 66
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1178:9#tb::unifier::insert_subst",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1179,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1300:5#tb::operator<<",
+            "casts": 7,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1307,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1306,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1305,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1304,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1303,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1302,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1301,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#438:9#tb::rules::init",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 444,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#832:9#tb::selection::trivial_select",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 833,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#958:9#tb::selection::score_predicate",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 959,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 963,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#337:9#tb::clause::reduce_equalities",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 347,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#318:9#tb::clause::init_from_rule",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 329,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#281:9#tb::clause::dec_ref",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 283,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1160:9#tb::unifier::extract_subst",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1165,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#268:9#tb::clause::init",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 271,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#45:9#tb::matcher::is_eq",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 63,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#943:9#tb::selection::basic_score_predicate",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 945,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 944,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#254:9#tb::clause::init",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 257,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 256,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 255,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1209:9#tb::extract_delta::mk_delta_clauses",
+            "casts": 6,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1210,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1230,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1235,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1240,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#121:9#tb::matcher::operator()",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#1264:9#tb::extract_delta::resolve_rules",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1269,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1267,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#971:9#tb::selection::score_argument",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 972,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#795:9#tb::selection::is_reductive",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#170:9#tb::clause::clause",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#460:9#tb::rules::get_num_rules",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 466,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#871:9#tb::selection::basic_weight_select",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 874,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 873,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 872,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#229:9#tb::clause::to_formula",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 244,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/tab/tab_context.cpp#546:9#tb::index::setup",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 556,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 564,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        }
+    ],
+    "total": 95,
+    "visited": 37
+}

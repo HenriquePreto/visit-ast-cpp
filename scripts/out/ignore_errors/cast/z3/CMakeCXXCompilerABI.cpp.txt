@@ -1,0 +1,29 @@
+{
+    "functions": [
+        {
+            "id": "/usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp#7:1#main",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 12,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 11,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 10,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        }
+    ],
+    "total": 1,
+    "visited": 1
+}

@@ -1,0 +1,1265 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#7516:1#operator<<",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7518,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1603:9#polynomial::polynomial::display_smt2",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1607,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1604,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1577:9#polynomial::polynomial::display_mon_smt2",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1581,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1585,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1521:9#polynomial::polynomial::display",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1534,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1527,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1499:9#polynomial::polynomial::graded_lex_min_pos",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1503,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1502,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1483:9#polynomial::polynomial::graded_lex_max_pos",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1487,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1486,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1466:9#polynomial::polynomial::make_first_maximal",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1470,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1475,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1467,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1469,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1439:9#polynomial::polynomial::lex_sorted",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1440,
+                    "cast kind": "IntegralToBoolean"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1400:9#polynomial::polynomial::swap_0_pos",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1401,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1386:9#polynomial::polynomial::po_gt",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1387,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1389,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1319:9#polynomial::polynomial::lex_sort",
+            "casts": 8,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1362,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1325,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1322,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1332,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1321,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1331,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1353,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 52
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1249:9#polynomial::monomial_manager::derivative",
+            "casts": 4,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1261,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1255,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1260,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1254,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1231:9#polynomial::monomial_manager::div_x",
+            "casts": 2,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1236,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1407:9#polynomial::polynomial::polynomial",
+            "casts": 5,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1416,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1414,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1419,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1183:9#polynomial::monomial_manager::sqrt",
+            "casts": 6,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1192,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1191,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1191,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1184,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1190,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#432:9#polynomial::monomial::is_square",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 434,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#902:9#polynomial::monomial_manager::mk_monomial",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 911,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 903,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 905,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#440:9#polynomial::monomial::rename",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 441,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#894:9#polynomial::monomial_manager::mk_monomial",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 895,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 899,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1071:9#polynomial::monomial_manager::gcd_core",
+            "casts": 5,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1080,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1079,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1078,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1077,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1076,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 74
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#378:9#polynomial::monomial::display",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 391,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 379,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 383,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1202:9#polynomial::monomial_manager::div_x_k",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1208,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1207,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#637:5#polynomial::lex_compare2",
+            "casts": 6,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 648,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 644,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 641,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 640,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 645,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#923:9#polynomial::monomial_manager::mul",
+            "casts": 3,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 929,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 928,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 928,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#419:9#polynomial::monomial::is_unit",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#563:9#polynomial::tmp_monomial::push_back",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1274:9#polynomial::monomial_manager::rename",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1275,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1519:9#polynomial::polynomial::is_zero",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1519,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#547:9#polynomial::tmp_monomial::init",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 549,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#7480:1#convert",
+            "casts": 2,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 7494,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 7504,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 34
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1169:9#polynomial::monomial_manager::pw",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1172,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1177,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#738:5#polynomial::rev_lex_compare",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 741,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#609:5#polynomial::lex_compare",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 613,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 618,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 612,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 617,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#135:5#polynomial::is_valid_power_product",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 137,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 136,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#397:9#polynomial::monomial::display_smt2",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 410,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 406,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 398,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 409,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#242:9#polynomial::monomial::max_var_degree",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 245,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 244,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 243,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#483:9#polynomial::monomial2pos::set",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#297:9#polynomial::monomial::max_smaller_than_core",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 340,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 326,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 304,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#424:9#polynomial::monomial::is_power_of_two",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 426,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 426,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1375:9#polynomial::polynomial::dec_ref",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1375,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#146:5#polynomial::power_product_total_degree",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 147,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#216:9#polynomial::monomial::dec_ref",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 216,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#848:9#polynomial::monomial_manager::dec_ref",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 850,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#993:9#polynomial::monomial_manager::div_core",
+            "casts": 3,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 998,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 997,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#876:9#polynomial::monomial_manager::convert",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 878,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#195:9#polynomial::monomial::monomial",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 201,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 205,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#169:9#polynomial::monomial::hash_core",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#250:9#polynomial::monomial::index_of",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 259,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 279,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 36
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#193:9#polynomial::monomial::get_obj_size",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1377:9#polynomial::polynomial::get_obj_size",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1377,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#287:9#polynomial::monomial::degree_of",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#888:9#polynomial::monomial_manager::mk_monomial",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 891,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#555:9#polynomial::tmp_monomial::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 556,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#180:13#polynomial::monomial::eq_proc::operator()",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 184,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#576:9#polynomial::tmp_monomial::reserve",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 578,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#125:5#polynomial::operator<<",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#494:9#polynomial::monomial2pos::reset",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 496,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#1444:9#polynomial::polynomial::lex_sort",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1445,
+                    "cast kind": "IntegralToBoolean"
+                },
+                {
+                    "cast line": 1447,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1452,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#814:9#polynomial::monomial_manager::dec_ref",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 815,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/math/polynomial/polynomial.cpp#779:9#polynomial::monomial_manager::monomial_manager",
+            "casts": 5,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 781,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 780,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 790,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 790,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 779,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 14
+        }
+    ],
+    "total": 134,
+    "visited": 60
+}

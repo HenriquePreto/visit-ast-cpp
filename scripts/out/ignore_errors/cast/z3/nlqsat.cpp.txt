@@ -1,0 +1,251 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#850:9#qe::nlqsat::operator()",
+            "casts": 6,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 875,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 875,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 885,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 885,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 859,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 859,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 79
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#695:9#qe::nlqsat::hoist",
+            "casts": 4,
+            "vars": 15,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 745,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 709,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 774,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 87
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#640:9#qe::nlqsat::ackermanize_div",
+            "casts": 2,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 656,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 653,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#539:9#qe::nlqsat::is_exists",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 539,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 539,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#492:9#qe::nlqsat::project_qe",
+            "casts": 5,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 516,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 500,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 508,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 513,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#460:9#qe::nlqsat::project",
+            "casts": 7,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 470,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 480,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 480,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#423:9#qe::nlqsat::get_level",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#396:9#qe::nlqsat::negate_clause",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#540:9#qe::nlqsat::is_forall",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 540,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#369:9#qe::nlqsat::mbp",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 387,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/qe/nlqsat.cpp#288:9#qe::nlqsat::init_assumptions",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 302,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 44
+        }
+    ],
+    "total": 74,
+    "visited": 11
+}

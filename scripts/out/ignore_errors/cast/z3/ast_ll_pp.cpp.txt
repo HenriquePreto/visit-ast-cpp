@@ -1,0 +1,109 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_ll_pp.cpp#93:5#ll_printer::display_children",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_ll_pp.cpp#102:5#ll_printer::display_params",
+            "casts": 3,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 110,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 26
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_ll_pp.cpp#255:5#ll_printer::display_quantifier_header",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 260,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 259,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_ll_pp.cpp#288:5#ll_printer::display",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 300,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 310,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 310,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 31
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/ast_ll_pp.cpp#198:5#ll_printer::operator()",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 216,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 211,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 56
+        }
+    ],
+    "total": 23,
+    "visited": 5
+}

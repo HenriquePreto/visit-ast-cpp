@@ -1,0 +1,25 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/fpa/fpa2bv_tactic.cpp#42:9#fpa2bv_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 56,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 60,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 61
+        }
+    ],
+    "total": 12,
+    "visited": 1
+}

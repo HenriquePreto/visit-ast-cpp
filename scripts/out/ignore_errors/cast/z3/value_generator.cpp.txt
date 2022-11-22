@@ -1,0 +1,258 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#269:5#array_value_generator::get_value",
+            "casts": 4,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 290,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 292,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#216:5#seq_value_generator::get_value",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 221,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 247,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 35
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#192:5#arith_value_generator::get_value",
+            "casts": 8,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 200,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 200,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 200,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 200,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#117:5#datatype_value_generator::get_value",
+            "casts": 4,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 141,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 138,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 148,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 135,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#173:5#arith_value_generator::calkin_wilf",
+            "casts": 4,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 175,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 175,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 174,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#78:5#datatype_value_generator::domain_size_exhausted",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 81,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 18
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#54:5#datatype_value_generator::index2vector",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 58,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#166:5#arith_value_generator::u2i",
+            "casts": 7,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 167,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 167,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/value_generator.cpp#33:1#inverse_cantor",
+            "casts": 6,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 35,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 34,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        }
+    ],
+    "total": 25,
+    "visited": 9
+}

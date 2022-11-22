@@ -1,0 +1,12 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/bv/bit_blaster_model_converter.cpp#94:5#bit_blaster_model_converter::mk_bvs",
+            "gotos": 2,
+            "labels": 1,
+            "body": "{\n    int util;\n    int val;\n    int two;\n    unsigned int sz;\n    for (unsigned int i = 0; i < sz; i++) {\n        int *new_val;\n        if (<recovery-expr>()) {\n            continue;\n        }\n        int *bs;\n        <recovery-expr>().reset();\n        unsigned int bv_sz = to_app(<recovery-expr>())->get_num_args();\n        if (TO_BOOL) {\n            unsigned int j = bv_sz;\n            while (j > 0)\n                {\n                    --j;\n                    <recovery-expr>() *= <recovery-expr>();\n                    int *bit;\n                    SASSERT(is_uninterp_const(<recovery-expr>()));\n                    int *bit_decl;\n                    int *bit_val;\n                    if (<recovery-expr>())\n                        goto bail;\n                    if (<recovery-expr>())\n                        <recovery-expr>()++;\n                }\n        } else {\n            for (unsigned int j = 0; j < bv_sz; j++) {\n                <recovery-expr>() *= <recovery-expr>();\n                int *bit;\n                SASSERT(<recovery-expr>().is_bv(<recovery-expr>()));\n                SASSERT(<recovery-expr>().get_bv_size(<recovery-expr>()) == 1);\n                SASSERT(is_uninterp_const(<recovery-expr>()));\n                int *bit_decl;\n                int *bit_val;\n                if (<recovery-expr>() && !<recovery-expr>().is_one(<recovery-expr>()) && !<recovery-expr>().is_zero(<recovery-expr>()))\n                    goto bail;\n                if (<recovery-expr>() && <recovery-expr>().is_one(<recovery-expr>()))\n                    <recovery-expr>()++;\n            }\n        }\n        <recovery-expr>() = <recovery-expr>().mk_numeral(<recovery-expr>(), bv_sz);\n        continue;\n      bail:\n        int vals;\n        if (TO_BOOL)\n            <recovery-expr>() = <recovery-expr>().mk_bv(<recovery-expr>().size(), <recovery-expr>().data());\n        else\n            <recovery-expr>() = <recovery-expr>().mk_concat(<recovery-expr>());\n    }\n}\n"
+        }
+    ],
+    "total": 14,
+    "visited": 1
+}

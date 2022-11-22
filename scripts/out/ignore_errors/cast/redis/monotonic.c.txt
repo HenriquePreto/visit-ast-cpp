@@ -1,0 +1,45 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/monotonic.c#176:1#monotonicGetType",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 177,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/monotonic.c#143:1#monotonicInit_posix",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 153,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 12
+        }
+    ],
+    "total": 8,
+    "visited": 2
+}

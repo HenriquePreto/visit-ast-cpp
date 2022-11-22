@@ -1,0 +1,11 @@
+{
+    "functions": [
+        {
+            "id": "#150:38#MurmurHash64A",
+            "nobreaks": 1,
+            "body": "{\n    const int m;\n    const int r = 47;\n    const int *data;\n    const int *end;\n    while (<recovery-expr>() != <recovery-expr>())\n        {\n            <recovery-expr>() += 8;\n        }\n    switch (len & 7) {\n      case 7:\n        ;\n      case 6:\n        ;\n      case 5:\n        ;\n      case 4:\n        ;\n      case 3:\n        ;\n      case 2:\n        ;\n      case 1:\n        ;\n    }\n    ;\n}\n"
+        }
+    ],
+    "total": 72,
+    "visited": 1
+}

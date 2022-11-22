@@ -1,0 +1,98 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/sqlite/build/../tool/mkkeywordhash.c#404:1#main",
+            "casts": 20,
+            "vars": 21,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 643,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 572,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 569,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 564,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 547,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 547,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 547,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 466,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 488,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 428,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 428,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 428,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 313
+        }
+    ],
+    "total": 6,
+    "visited": 1
+}

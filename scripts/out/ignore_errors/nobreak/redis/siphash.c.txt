@@ -1,0 +1,16 @@
+{
+    "functions": [
+        {
+            "id": "#60:32#siphash",
+            "nobreaks": 1,
+            "body": "{\n    const int *end;\n    const int left = <recovery-expr>() & 7;\n    for (; <recovery-expr>() != <recovery-expr>(); <recovery-expr>() += 8) {\n        do {\n        } while (0);\n    }\n    switch (left) {\n      case 7:\n        ;\n      case 6:\n        ;\n      case 5:\n        ;\n      case 4:\n        ;\n      case 3:\n        ;\n      case 2:\n        ;\n      case 1:\n        ;\n        break;\n      case 0:\n        break;\n    }\n    do {\n    } while (0);\n    do {\n    } while (0);\n    do {\n    } while (0);\n}\n"
+        },
+        {
+            "id": "#60:32#siphash_nocase",
+            "nobreaks": 1,
+            "body": "{\n    const int *end;\n    const int left = <recovery-expr>() & 7;\n    for (; <recovery-expr>() != <recovery-expr>(); <recovery-expr>() += 8) {\n        do {\n        } while (0);\n    }\n    switch (left) {\n      case 7:\n        ;\n      case 6:\n        ;\n      case 5:\n        ;\n      case 4:\n        ;\n      case 3:\n        ;\n      case 2:\n        ;\n      case 1:\n        ;\n        break;\n      case 0:\n        break;\n    }\n    do {\n    } while (0);\n    do {\n    } while (0);\n    do {\n    } while (0);\n}\n"
+        }
+    ],
+    "total": 3,
+    "visited": 2
+}

@@ -1,0 +1,113 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/mt19937-64.c#164:1#genrand64_real3",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/mt19937-64.c#158:1#genrand64_real2",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 160,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/mt19937-64.c#152:1#genrand64_real1",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/mt19937-64.c#73:1#init_genrand64",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 77,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/mt19937-64.c#83:1#init_by_array64",
+            "casts": 9,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 94,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 91,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 91,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 21
+        }
+    ],
+    "total": 7,
+    "visited": 5
+}

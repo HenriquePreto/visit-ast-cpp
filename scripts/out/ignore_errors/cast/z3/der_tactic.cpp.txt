@@ -1,0 +1,21 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/core/der_tactic.cpp#36:9#der_tactic::imp::operator()",
+            "casts": 1,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 42,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 19
+        }
+    ],
+    "total": 11,
+    "visited": 1
+}

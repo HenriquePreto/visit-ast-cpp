@@ -1,0 +1,16 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/fp/dl_cmds.cpp#177:5#dl_rule_cmd::next_arg_kind",
+            "nobreaks": 1,
+            "body": "{\n    switch (this->m_arg_idx) {\n      case 0:\n        ;\n      case 1:\n        ;\n      case 2:\n        ;\n      default:\n        ;\n    }\n}\n"
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/fp/dl_cmds.cpp#401:5#dl_declare_rel_cmd::next_arg_kind",
+            "nobreaks": 1,
+            "body": "{\n    switch (this->m_query_arg_idx++) {\n      case 0:\n        ;\n      case 1:\n        ;\n      default:\n        ;\n    }\n}\n"
+        }
+    ],
+    "total": 58,
+    "visited": 2
+}

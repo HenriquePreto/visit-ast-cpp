@@ -1,0 +1,283 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#1060:9#(anonymous namespace)::rel_goal_case_split_queue::lower_generation",
+            "casts": 1,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1086,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#331:9#(anonymous namespace)::rel_case_split_queue::rel_case_split_queue",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 337,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#850:9#(anonymous namespace)::rel_goal_case_split_queue::pop_scope",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 869,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 866,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 32
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#830:9#(anonymous namespace)::rel_goal_case_split_queue::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 832,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#1000:9#(anonymous namespace)::rel_goal_case_split_queue::get_generation",
+            "casts": 3,
+            "vars": 7,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1003,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1023,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1002,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 29
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#279:5#(anonymous namespace)::has_child_assigned_to",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 291,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 288,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 283,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 298,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 30
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#588:9#(anonymous namespace)::rel_act_case_split_queue::reset",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 590,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#175:9#(anonymous namespace)::dact_case_split_queue::activity_decreased_eh",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 178,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 177,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#674:9#(anonymous namespace)::rel_act_case_split_queue::display_core",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 678,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#389:9#(anonymous namespace)::rel_case_split_queue::reset",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 391,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#215:9#(anonymous namespace)::dact_case_split_queue::next_case_split",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 224,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 220,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#183:9#(anonymous namespace)::dact_case_split_queue::mk_var_eh",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 191,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 187,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 184,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#954:9#(anonymous namespace)::rel_goal_case_split_queue::display_core",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 958,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#167:9#(anonymous namespace)::dact_case_split_queue::activity_increased_eh",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "UncheckedDerivedToBase"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 170,
+                    "cast kind": "UncheckedDerivedToBase"
+                },
+                {
+                    "cast line": 169,
+                    "cast kind": "UncheckedDerivedToBase"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/smt_case_split_queue.cpp#479:9#(anonymous namespace)::rel_case_split_queue::display_core",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 483,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        }
+    ],
+    "total": 110,
+    "visited": 15
+}

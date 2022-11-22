@@ -1,0 +1,56 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/inf_rational.cpp#142:1#sup_power",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 146,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 144,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 144,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 154,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/inf_rational.cpp#115:1#inf_power",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 119,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 117,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 117,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        }
+    ],
+    "total": 10,
+    "visited": 2
+}

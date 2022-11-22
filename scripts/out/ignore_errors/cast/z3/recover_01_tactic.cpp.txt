@@ -1,0 +1,138 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/recover_01_tactic.cpp#311:9#recover_01_tactic::imp::operator()",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 344,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 325,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 67
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/recover_01_tactic.cpp#240:9#recover_01_tactic::imp::process",
+            "casts": 13,
+            "vars": 18,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 294,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 277,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 242,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 242,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 265,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 288,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 287,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 278,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 272,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 70
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/recover_01_tactic.cpp#143:9#recover_01_tactic::imp::find_zero_cls",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 155,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/recover_01_tactic.cpp#166:9#recover_01_tactic::imp::find_coeff",
+            "casts": 6,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 196,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 178,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 172,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 191,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        }
+    ],
+    "total": 19,
+    "visited": 4
+}

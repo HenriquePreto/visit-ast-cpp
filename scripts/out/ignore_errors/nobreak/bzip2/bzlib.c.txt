@@ -1,0 +1,11 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/bzip2/bzlib.c#409:1#BZ2_bzCompress",
+            "nobreaks": 1,
+            "body": "{\n    Bool progress;\n    EState *s;\n    if (<recovery-expr>())\n        return (-2);\n    s = strm->state;\n    if (<recovery-expr>())\n        return (-2);\n    if (s->strm != strm)\n        return (-2);\n  preswitch:\n    switch (s->mode) {\n      case 1:\n        return (-1);\n      case 2:\n        if (action == 0) {\n            progress = handle_compress(strm);\n            return progress ? 1 : (-2);\n        } else if (action == 1) {\n            s->avail_in_expect = strm->avail_in;\n            s->mode = 3;\n            goto preswitch;\n        } else if (action == 2) {\n            s->avail_in_expect = strm->avail_in;\n            s->mode = 4;\n            goto preswitch;\n        } else\n            return (-2);\n      case 3:\n        if (action != 1)\n            return (-1);\n        if (s->avail_in_expect != s->strm->avail_in)\n            return (-1);\n        progress = handle_compress(strm);\n        if (s->avail_in_expect > 0 || !isempty_RL(s) || s->state_out_pos < s->numZ)\n            return 2;\n        s->mode = 2;\n        return 1;\n      case 4:\n        if (action != 2)\n            return (-1);\n        if (s->avail_in_expect != s->strm->avail_in)\n            return (-1);\n        progress = handle_compress(strm);\n        if (!progress)\n            return (-1);\n        if (s->avail_in_expect > 0 || !isempty_RL(s) || s->state_out_pos < s->numZ)\n            return 3;\n        s->mode = 1;\n        return 4;\n    }\n    return 0;\n}\n"
+        }
+    ],
+    "total": 41,
+    "visited": 1
+}

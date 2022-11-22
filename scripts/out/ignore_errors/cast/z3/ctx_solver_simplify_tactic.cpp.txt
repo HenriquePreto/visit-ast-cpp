@@ -1,0 +1,75 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/ctx_solver_simplify_tactic.cpp#162:5#ctx_solver_simplify_tactic::reduce",
+            "casts": 7,
+            "vars": 23,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 245,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 171,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 169,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 122
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/ctx_solver_simplify_tactic.cpp#80:5#ctx_solver_simplify_tactic::reset_statistics",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 80,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/smt/tactic/ctx_solver_simplify_tactic.cpp#49:5#ctx_solver_simplify_tactic::ctx_solver_simplify_tactic",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 51,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        }
+    ],
+    "total": 17,
+    "visited": 3
+}

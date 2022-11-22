@@ -1,0 +1,53 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/mpz.cpp#90:1#u_gcd",
+            "casts": 9,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 100,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 100,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 92,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 91,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 102,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        }
+    ],
+    "total": 5,
+    "visited": 1
+}

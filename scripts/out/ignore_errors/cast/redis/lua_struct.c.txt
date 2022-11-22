@@ -1,0 +1,196 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#366:1#b_size",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 372,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#293:1#b_unpack",
+            "casts": 4,
+            "vars": 10,
+            "cast kinds": [
+                "FloatingCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 333,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 327,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 326,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 71
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#266:1#getinteger",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#196:1#correctbytes",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#169:1#putinteger",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 188,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 174,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#111:1#optsize",
+            "casts": 8,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 122,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 118,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 117,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 116,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 115,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 114,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 113,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#208:1#b_pack",
+            "casts": 2,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 217,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 56
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/deps/lua/src/lua_struct.c#92:1#getnum",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 101,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 100,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 93,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        }
+    ],
+    "total": 11,
+    "visited": 8
+}

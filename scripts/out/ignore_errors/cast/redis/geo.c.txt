@@ -1,0 +1,692 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#965:1#geodistCommand",
+            "casts": 4,
+            "vars": 5,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 985,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 984,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 971,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 966,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#932:1#geoposCommand",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "FloatingCast",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 955,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 953,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 944,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 954,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 941,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 27
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#515:1#georadiusGeneric",
+            "casts": 29,
+            "vars": 33,
+            "cast kinds": [
+                "FloatingCast",
+                "NullToPointer",
+                "FloatingToIntegral",
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 833,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 807,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 792,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 744,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 744,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 744,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 791,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 787,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 790,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 743,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 743,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 743,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 729,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 727,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 728,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 567,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 710,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 804,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 717,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 717,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 563,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 770,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 583,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 322
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#416:1#sort_gp_asc",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 417,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 417,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#255:1#geoGetPointsInRange",
+            "casts": 7,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralToFloating",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 292,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 291,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 263,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 262,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 61
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#206:1#addReplyDoubleDistance",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 209,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralToPointer"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#150:1#extractDistanceOrReply",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 165,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 158,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 21
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#128:1#extractUnitOrReply",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 142,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 129,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 134,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 17
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#114:1#longLatFromMember",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast",
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 115,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 117,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#437:1#geoaddCommand",
+            "casts": 6,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast",
+                "IntegralToPointer",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 485,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 462,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 444,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 477,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 461,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#177:1#extractBoxOrReply",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 193,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 185,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#76:1#geoArrayFree",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 80,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 79,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#870:1#geohashCommand",
+            "casts": 9,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralToPointer",
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 923,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 923,
+                    "cast kind": "IntegralToPointer"
+                },
+                {
+                    "cast line": 922,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 904,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 880,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 902,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 883,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 905,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 903,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#357:1#membersOfAllNeighbors",
+            "casts": 6,
+            "vars": 8,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 412,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 359,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 359,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 374,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 409,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#204:1#connWritev",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#217:1#geoAppendIfWithinShape",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#180:1#sdsalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 182,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#87:1#sdslen",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 89,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/connection.h#318:1#connGetState",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 319,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 3
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#154:1#sdsinclen",
+            "casts": 3,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 156,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 161,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 155,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/geo.c#349:1#membersOfGeoHashBox",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralToFloating"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 353,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 353,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#104:1#sdsavail",
+            "casts": 2,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 105,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 25
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#197:1#sdssetalloc",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 199,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/redis/src/sds.h#130:1#sdssetlen",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 132,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 131,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        }
+    ],
+    "total": 78,
+    "visited": 24
+}

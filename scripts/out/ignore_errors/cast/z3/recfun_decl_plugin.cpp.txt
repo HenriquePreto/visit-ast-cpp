@@ -1,0 +1,40 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/recfun_decl_plugin.cpp#202:5#recfun::convert_path",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 207,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 15
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/ast/recfun_decl_plugin.cpp#158:9#recfun::branch::branch",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 159,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 159,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 1
+        }
+    ],
+    "total": 18,
+    "visited": 2
+}

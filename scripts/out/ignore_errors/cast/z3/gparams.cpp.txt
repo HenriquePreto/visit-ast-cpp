@@ -1,0 +1,41 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/gparams.cpp#74:1#get_new_param_name",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "NullToPointer",
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 83,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 76,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/util/gparams.cpp#33:1#is_old_param_name",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 35,
+                    "cast kind": "PointerToBoolean"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 8,
+    "visited": 2
+}

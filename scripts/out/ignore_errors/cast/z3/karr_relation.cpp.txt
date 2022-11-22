@@ -1,0 +1,224 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#403:9#datalog::karr_relation::is_linear",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 420,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 39
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#292:9#datalog::karr_relation::mk_union",
+            "casts": 5,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast",
+                "PointerToBoolean"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 328,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 312,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 305,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 294,
+                    "cast kind": "PointerToBoolean"
+                },
+                {
+                    "cast line": 314,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 41
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#96:9#datalog::karr_relation::to_formula",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 103,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#374:9#datalog::karr_relation::mk_rename",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 379,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 375,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#233:9#datalog::karr_relation::mk_project",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 243,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 240,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 242,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#184:9#datalog::karr_relation::mk_join",
+            "casts": 4,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 195,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 203,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 213,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 47
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#91:9#datalog::karr_relation::complement",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "NullToPointer"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 93,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#112:9#datalog::karr_relation::filter_interpreted",
+            "casts": 1,
+            "vars": 12,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 122,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 71
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#463:9#datalog::karr_relation::to_formula",
+            "casts": 1,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 468,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 28
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#364:9#datalog::karr_relation::same_row",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 366,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/muz/rel/karr_relation.cpp#45:9#datalog::karr_relation::add_fact",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 50,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 17
+        }
+    ],
+    "total": 27,
+    "visited": 11
+}

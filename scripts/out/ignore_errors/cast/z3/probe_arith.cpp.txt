@@ -1,0 +1,163 @@
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#349:1#(anonymous namespace)::is_lp",
+            "casts": 1,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 353,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#44:9#(anonymous namespace)::arith_degree_probe::proc::updt_degree",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 48,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#122:5#(anonymous namespace)::arith_bw_probe::operator()",
+            "casts": 5,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast",
+                "FloatingToIntegral"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#105:9#(anonymous namespace)::arith_bw_probe::proc::operator()",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 111,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#97:9#(anonymous namespace)::arith_bw_probe::proc::proc",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 100,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 99,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 98,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#79:5#(anonymous namespace)::arith_degree_probe::operator()",
+            "casts": 5,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralToFloating",
+                "IntegralCast",
+                "FloatingToIntegral"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "FloatingToIntegral"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "IntegralToFloating"
+                },
+                {
+                    "cast line": 83,
+                    "cast kind": "IntegralToFloating"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/cc-ast-tool/scripts/benchmarks/z3/src/tactic/arith/probe_arith.cpp#38:9#(anonymous namespace)::arith_degree_probe::proc::proc",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 41,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 40,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 39,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        }
+    ],
+    "total": 91,
+    "visited": 7
+}
