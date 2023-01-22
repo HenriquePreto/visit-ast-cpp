@@ -5,7 +5,7 @@
 #define RAPIDJSON_HAS_STDSTRING 1
 #endif
 
-#include "src/visitor.h"
+#include "visitor.h"
 
 #include <iostream>
 #include <string>

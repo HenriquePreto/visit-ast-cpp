@@ -1,4 +1,4 @@
-#include "src/cc_ast_tool_lib.h"
+#include "visit_ast_lib.h"
 
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/MemoryBuffer.h"

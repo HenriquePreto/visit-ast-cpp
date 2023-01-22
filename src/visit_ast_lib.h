@@ -1,7 +1,7 @@
 #ifndef CC_AST_TOOL_LIB_H_
 #define CC_AST_TOOL_LIB_H_
 
-#include "src/frontend_action.h"
+#include "frontend_action.h"
 
 #include <string>
 #include <algorithm>

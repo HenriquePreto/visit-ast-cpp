@@ -1,8 +1,8 @@
-#include "src/cc_ast_tool_lib.h"
+#include "visit_ast_lib.h"
 
-#include "src/cast_visitor.h"
-#include "src/goto_visitor.h"
-#include "src/nobreak_visitor.h"
+#include "visitors/cast_visitor.h"
+#include "visitors/goto_visitor.h"
+#include "visitors/nobreak_visitor.h"
 
 #include "absl/log/check.h"
 #include "absl/flags/flag.h"

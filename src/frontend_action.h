@@ -3,7 +3,7 @@
 
 #include <memory>
 
-#include "src/ast_consumer.h"
+#include "ast_consumer.h"
 
 #include "clang/AST/ASTConsumer.h"
 #include "clang/Frontend/CompilerInstance.h"

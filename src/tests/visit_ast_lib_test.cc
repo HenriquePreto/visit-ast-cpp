@@ -1,7 +1,7 @@
-#include "src/cc_ast_tool_lib.h"
-#include "src/cast_visitor.h"
-#include "src/goto_visitor.h"
-#include "src/nobreak_visitor.h"
+#include "src/visit_ast_lib.h"
+#include "src/visitors/cast_visitor.h"
+#include "src/visitors/goto_visitor.h"
+#include "src/visitors/nobreak_visitor.h"
 
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
