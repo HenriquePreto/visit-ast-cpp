@@ -14,13 +14,13 @@
 absl::StatusOr<std::string> GetFileContents(absl::string_view path);
 
 template <typename T>
-absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
+absl::StatusOr<typename T::Info> VisitASTOnCode(
     const absl::string_view &cc_file_content,
     std::vector<std::string> &args_as_strings,
     const std::string &cc_in = "input.cc",
     const std::string &tool_name = "clang-tool",
     const bool &ignore_errors = true) {
-  typename T::VisitorInfo visitor_info;
+  typename T::Info info;
 
   if (ignore_errors) {
     args_as_strings.clear();
@@ -37,9 +37,9 @@ absl::StatusOr<typename T::VisitorInfo> VisitASTOnCode(
   }
 
   if (clang::tooling::runToolOnCodeWithArgs(
-          std::make_unique<FrontendAction<T>>(visitor_info, ignore_errors),
+          std::make_unique<FrontendAction<T>>(info, ignore_errors),
           cc_file_content, args_as_strings, cc_in, tool_name)) {
-    return visitor_info;
+    return info;
   }
   return absl::Status(absl::StatusCode::kInvalidArgument, 
                       "Could not compile source file contents");

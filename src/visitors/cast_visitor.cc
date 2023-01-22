@@ -1,7 +1,7 @@
 #include "cast_visitor.h"
 #include "clang/Basic/SourceManager.h"
 
-void CastVisitor::VisitorInfo::ToJson(
+void CastVisitor::Info::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   unsigned visited = 0;
   writer.StartObject();
@@ -48,12 +48,12 @@ void CastVisitor::VisitorInfo::ToJson(
 }
 
 std::vector<std::pair<const unsigned, clang::CastKind>>
-CastVisitor::VisitorInfo::GetCastLines(const std::string &function_id) const {
+CastVisitor::Info::GetCastLines(const std::string &function_id) const {
   auto &cast_lines = function_info_.at(function_id).cast_lines_;
   return std::vector(cast_lines.cbegin(), cast_lines.cend());
 }
 
-std::vector<clang::CastKind> CastVisitor::VisitorInfo::GetCastKinds(
+std::vector<clang::CastKind> CastVisitor::Info::GetCastKinds(
   const std::string &function_id) const {
     auto &cast_kinds = function_info_.at(function_id).cast_kinds_;
     return std::vector(cast_kinds.cbegin(), cast_kinds.cend());
@@ -70,12 +70,12 @@ bool CastVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
   auto function_id = 
     file_name + "#" + std::to_string(line_num) + 
     ":" + std::to_string(column_num)  + "#" + function_name;
-  current_cast_info_ = &visitor_info_.function_info_[function_id];
+  current_function_info_ = &info_.function_info_[function_id];
   auto *body = decl->getBody();
   auto body_begin_loc = ctx_.getFullLoc(body->getBeginLoc());
   auto body_end_loc = ctx_.getFullLoc(body->getEndLoc());
-  current_cast_info_->begin_line_ = body_begin_loc.getSpellingLineNumber();
-  current_cast_info_->end_line_ = body_end_loc.getSpellingLineNumber();
+  current_function_info_->begin_line_ = body_begin_loc.getSpellingLineNumber();
+  current_function_info_->end_line_ = body_end_loc.getSpellingLineNumber();
   return true;
 }
 
@@ -85,14 +85,14 @@ bool CastVisitor::VisitImplicitCastExpr(const clang::ImplicitCastExpr *expr) {
     return true;
   auto full_location = ctx_.getFullLoc(expr->getBeginLoc());
   auto line = full_location.getSpellingLineNumber();
-  current_cast_info_->cast_lines_.emplace(std::make_pair(line, cast_kind));
-  current_cast_info_->cast_kinds_.emplace(cast_kind);
+  current_function_info_->cast_lines_.emplace(std::make_pair(line, cast_kind));
+  current_function_info_->cast_kinds_.emplace(cast_kind);
   return true;
 }
 
 bool CastVisitor::VisitVarDecl(const clang::VarDecl *decl) {
   if (decl->isLocalVarDecl())
-    ++current_cast_info_->num_vars_;
+    ++current_function_info_->num_vars_;
   return true;
 }
 
@@ -106,6 +106,6 @@ bool CastVisitor::IsValidImplicitCast(const clang::CastKind &cast_kind) const {
 bool CastVisitor::IsLocalStmt(const clang::Stmt *stmt) const {
   auto full_location = ctx_.getFullLoc(stmt->getBeginLoc());
   auto line_num = full_location.getSpellingLineNumber();
-  return current_cast_info_->begin_line_ <= line_num && 
-         line_num <= current_cast_info_->end_line_;
+  return current_function_info_->begin_line_ <= line_num && 
+         line_num <= current_function_info_->end_line_;
 }

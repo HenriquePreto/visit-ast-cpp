@@ -1,4 +1,4 @@
-# vist-ast-cpp
+# visit-ast-cpp
 
 Unfinished tool, work in progress ...
 

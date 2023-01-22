@@ -3,7 +3,7 @@
 #include "llvm/Support/raw_ostream.h"
 #include <algorithm>
 
-void NoBreakVisitor::VisitorInfo::ToJson(
+void NoBreakVisitor::Info::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   unsigned visited = 0;
   writer.StartObject();
@@ -41,15 +41,15 @@ bool NoBreakVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
   auto function_id = 
     file_name + "#" + std::to_string(line_num) + ":" 
     + std::to_string(col_num)  + "#" + function_name;
-  current_nobreak_info_ = &visitor_info_.function_info_[function_id];
+  current_function_info_ = &info_.function_info_[function_id];
   stmt_ = decl->getBody();
   return true;
 }
 
 bool NoBreakVisitor::VisitSwitchStmt(const clang::SwitchStmt *stmt) {
   if (!IsOkSwitch(stmt)) {
-    if (++current_nobreak_info_->num_nobreaks_ == 1) {
-      llvm::raw_string_ostream body_stream(current_nobreak_info_->body_);
+    if (++current_function_info_->num_nobreaks_ == 1) {
+      llvm::raw_string_ostream body_stream(current_function_info_->body_);
       stmt_->printPretty(body_stream, 
         nullptr, clang::PrintingPolicy(clang::LangOptions()));
     }

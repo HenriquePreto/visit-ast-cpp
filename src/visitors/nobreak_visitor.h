@@ -15,13 +15,13 @@
 
 class NoBreakVisitor : public Visitor<NoBreakVisitor> {
 public:
-  struct NoBreakInfo {
+  struct FunctionInfo {
     unsigned num_nobreaks_ = 0;
     std::string body_;
   };
 
-  struct VisitorInfo {
-    std::unordered_map<std::string, NoBreakInfo> function_info_;
+  struct Info {
+    std::unordered_map<std::string, FunctionInfo> function_info_;
     
     inline bool ContainsFunction(const std::string &function_id) const {
       return function_info_.contains(function_id);
@@ -39,9 +39,9 @@ public:
       rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
   };
 
-  explicit NoBreakVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-    : Visitor(ctx), visitor_info_(visitor_info), 
-      current_nobreak_info_(&visitor_info.function_info_[""]) {}
+  explicit NoBreakVisitor(clang::ASTContext &ctx, Info &info)
+    : Visitor(ctx), info_(info), 
+      current_function_info_(&info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
   
@@ -61,8 +61,8 @@ private:
 
   bool IsCompoundStmt(const clang::ConstStmtIterator &it) const;
 
-  VisitorInfo &visitor_info_;
-  NoBreakInfo *current_nobreak_info_;
+  Info &info_;
+  FunctionInfo *current_function_info_;
   clang::Stmt *stmt_;
 };
 

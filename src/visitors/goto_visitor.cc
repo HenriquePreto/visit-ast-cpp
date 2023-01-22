@@ -2,7 +2,7 @@
 #include "clang/Basic/SourceManager.h"
 #include "llvm/Support/raw_ostream.h"
 
-void GotoVisitor::VisitorInfo::ToJson(
+void GotoVisitor::Info::ToJson(
     rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const {
   unsigned visited = 0;
   writer.StartObject();
@@ -42,14 +42,14 @@ bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
   auto function_id = 
     file_name + "#" + std::to_string(line_num) + ":" 
     + std::to_string(column_num)  + "#" + function_name;
-  current_goto_info_ = &visitor_info_.function_info_[function_id];
+  current_function_info_ = &info_.function_info_[function_id];
   stmt_ = decl->getBody();
   return true;
 }
 
 bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt *stmt) {
-  if (++current_goto_info_->num_gotos_ == 1) {
-    llvm::raw_string_ostream body_stream(current_goto_info_->body_);
+  if (++current_function_info_->num_gotos_ == 1) {
+    llvm::raw_string_ostream body_stream(current_function_info_->body_);
     stmt_->printPretty(body_stream, nullptr,
       clang::PrintingPolicy(clang::LangOptions()));
   }
@@ -57,6 +57,6 @@ bool GotoVisitor::VisitGotoStmt(const clang::GotoStmt *stmt) {
 }
 
 bool GotoVisitor::VisitLabelStmt(const clang::LabelStmt *stmt) {
-  ++current_goto_info_->num_labels_;
+  ++current_function_info_->num_labels_;
   return true;
 }

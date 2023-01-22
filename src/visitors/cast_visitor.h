@@ -15,7 +15,7 @@
 
 class CastVisitor : public Visitor<CastVisitor> {
 public:
-  struct CastInfo {
+  struct FunctionInfo {
     unsigned num_vars_ = 0;
     unsigned begin_line_ = 0;
     unsigned end_line_ = 0;
@@ -27,8 +27,8 @@ public:
     }
   };
 
-  struct VisitorInfo {
-    std::unordered_map<std::string, CastInfo> function_info_;
+  struct Info {
+    std::unordered_map<std::string, FunctionInfo> function_info_;
     
     inline unsigned GetNumCasts(const std::string &function_id) const {
       return function_info_.at(function_id).cast_lines_.size();
@@ -56,9 +56,9 @@ public:
       rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
   };
 
-  explicit CastVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-    : Visitor(ctx), visitor_info_(visitor_info),
-      current_cast_info_(&visitor_info.function_info_[""]) {}
+  explicit CastVisitor(clang::ASTContext &ctx, Info &info)
+    : Visitor(ctx), info_(info),
+      current_function_info_(&info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
 
@@ -71,8 +71,8 @@ public:
   bool IsLocalStmt(const clang::Stmt *stmt) const;
 
 private:
-  VisitorInfo &visitor_info_;
-  CastInfo *current_cast_info_;
+  Info &info_;
+  FunctionInfo *current_function_info_;
 };
 
 #endif // CC_AST_TOOL_CAST_VISITOR_H_

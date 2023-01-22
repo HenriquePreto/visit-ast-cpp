@@ -15,14 +15,14 @@
 
 class GotoVisitor : public Visitor<GotoVisitor> {
 public:
-  struct GotoInfo {
+  struct FunctionInfo {
     unsigned num_gotos_ = 0;
     unsigned num_labels_ = 0;
     std::string body_;
   };
 
-  struct VisitorInfo {
-    std::unordered_map<std::string, GotoInfo> function_info_;
+  struct Info {
+    std::unordered_map<std::string, FunctionInfo> function_info_;
 
     inline bool ContainsFunction(const std::string &function_id) const {
       return function_info_.contains(function_id);
@@ -44,9 +44,9 @@ public:
       rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer) const;
   };
 
-  explicit GotoVisitor(clang::ASTContext &ctx, VisitorInfo &visitor_info)
-    : Visitor(ctx), visitor_info_(visitor_info), 
-      current_goto_info_(&visitor_info.function_info_[""]) {}
+  explicit GotoVisitor(clang::ASTContext &ctx, Info &info)
+    : Visitor(ctx), info_(info), 
+      current_function_info_(&info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
   
@@ -55,8 +55,8 @@ public:
   bool VisitLabelStmt(const clang::LabelStmt *stmt);
 
 private:
-  VisitorInfo &visitor_info_;
-  GotoInfo *current_goto_info_;
+  Info &info_;
+  FunctionInfo *current_function_info_;
   clang::Stmt *stmt_;
 };
 

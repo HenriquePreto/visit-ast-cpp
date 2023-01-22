@@ -12,17 +12,17 @@
 
 template <typename T>
 class FrontendAction : public clang::ASTFrontendAction {
-  using VisitorInfo = typename T::VisitorInfo;
+  using Info = typename T::Info;
 
 public:
-  explicit FrontendAction(VisitorInfo &visitor_info, bool ignore_errors)
-    : visitor_info_(visitor_info), ignore_errors_(ignore_errors) {}
+  explicit FrontendAction(Info &info, bool ignore_errors)
+    : info_(info), ignore_errors_(ignore_errors) {}
 
   std::unique_ptr<clang::ASTConsumer> CreateASTConsumer(
     clang::CompilerInstance &instance, llvm::StringRef) override;
   
 private:
-  VisitorInfo &visitor_info_;
+  Info &info_;
   bool ignore_errors_;
 };
 
@@ -33,7 +33,7 @@ std::unique_ptr<clang::ASTConsumer> FrontendAction<T>::CreateASTConsumer(
     instance.getDiagnostics().setClient(
       new clang::IgnoringDiagConsumer(), /* ShouldOwnClient = */ true);
   return std::make_unique<ASTConsumer<T>>(
-    instance.getASTContext(), visitor_info_);
+    instance.getASTContext(), info_);
 }
 
 #endif // CC_AST_TOOL_FRONTEND_ACTION_H_
