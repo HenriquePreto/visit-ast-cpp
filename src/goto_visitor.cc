@@ -32,20 +32,18 @@ void GotoVisitor::VisitorInfo::ToJson(
 }
 
 bool GotoVisitor::VisitFunctionDecl(const clang::FunctionDecl *decl) {
-  // Expr `decl->hasBody()` is needed because a default definition 
-  // doesn't have body: `virtual ~SomeClass() = default`;
-  if (decl->isThisDeclarationADefinition() && decl->hasBody()) {
-    auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
-    auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
-    auto line_num = full_location.getSpellingLineNumber();
-    auto column_num = full_location.getSpellingColumnNumber();
-    auto function_name = decl->getQualifiedNameAsString();
-    auto function_id = 
-      file_name + "#" + std::to_string(line_num) + ":" 
-      + std::to_string(column_num)  + "#" + function_name;
-    current_goto_info_ = &visitor_info_.function_info_[function_id];
-    stmt_ = decl->getBody();
-  }
+  if (!(decl->isThisDeclarationADefinition() && decl->hasBody())) 
+    return true;
+  auto full_location = ctx_.getFullLoc(decl->getBeginLoc());
+  auto file_name = ctx_.getSourceManager().getFilename(full_location).str();
+  auto line_num = full_location.getSpellingLineNumber();
+  auto column_num = full_location.getSpellingColumnNumber();
+  auto function_name = decl->getQualifiedNameAsString();
+  auto function_id = 
+    file_name + "#" + std::to_string(line_num) + ":" 
+    + std::to_string(column_num)  + "#" + function_name;
+  current_goto_info_ = &visitor_info_.function_info_[function_id];
+  stmt_ = decl->getBody();
   return true;
 }
 

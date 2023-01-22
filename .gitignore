@@ -1,5 +1,5 @@
 benchmarks/
 bazel-bin
-bazel-cc-ast-tool
+bazel-visit-ast-cpp
 bazel-out
 bazel-testlogs
