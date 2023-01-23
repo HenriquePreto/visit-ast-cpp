@@ -1,0 +1,4219 @@
+{
+    "functions": [],
+    "total": 0,
+    "visited": 0
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#750:1#mainSort",
+            "casts": 69,
+            "vars": 21,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 997,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 990,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 933,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 929,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 929,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 927,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 921,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 921,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 891,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 891,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 890,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 829,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 828,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 827,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 924,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 924,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 821,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 821,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 820,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 820,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 820,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 818,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 816,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 816,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 816,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 815,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 814,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 813,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 813,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 811,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 810,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 809,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 809,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 797,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 991,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 991,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 790,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 785,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 808,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 808,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 808,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 784,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 782,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 805,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 779,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 826,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 826,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 826,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 923,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 789,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 812,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 812,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 812,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 823,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 920,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 770,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 817,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 781,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 775,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 822,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 772,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 819,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 254
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#484:1#mainSimpleSort",
+            "casts": 9,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 543,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 543,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 543,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 529,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 515,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 515,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 515,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 63
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#211:1#fallbackSort",
+            "casts": 8,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 244,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 288,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 302,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 240,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 237,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 270,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 113
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#620:1#mainQSort3",
+            "casts": 8,
+            "vars": 31,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 686,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 659,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 669,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 657,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 679,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 667,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 89
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#345:1#mainGtU",
+            "casts": 142,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 457,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 457,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 457,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 457,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 457,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 455,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 451,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 443,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 437,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 433,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 431,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 421,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 415,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 408,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 393,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 377,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 373,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 369,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 361,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 361,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 361,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 361,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 361,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 117
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#581:1#mmed3",
+            "casts": 6,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 589,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 589,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 587,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 587,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 586,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 586,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#92:1#fallbackQSort3",
+            "casts": 10,
+            "vars": 25,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 129,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 140,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 151,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 128,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 127,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 126,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 159,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 84
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#30:1#fallbackSimpleSort",
+            "casts": 4,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 57,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 44,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 48,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 53,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/blocksort.c#1031:1#BZ2_blockSort",
+            "casts": 2,
+            "vars": 10,
+            "cast kinds": [
+                "IntegralCast",
+                "FloatingCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1073,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 1085,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 58
+        }
+    ],
+    "total": 9,
+    "visited": 9
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1384:1#bzopen_or_bzdopen",
+            "casts": 5,
+            "vars": 11,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1452,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1414,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1405,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1420,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1425,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 70
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1223:1#BZ2_bzReadGetUnused",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1239,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1238,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1145:1#BZ2_bzReadClose",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1158,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1089:1#BZ2_bzReadOpen",
+            "casts": 5,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1140,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1136,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1134,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1127,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1112,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 46
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#966:1#BZ2_bzWrite",
+            "casts": 5,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 999,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1004,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 998,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 987,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 986,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 37
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#918:1#BZ2_bzWriteOpen",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 960,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 958,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 956,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 939,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 38
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1301:1#BZ2_bzBuffToBuffDecompress",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1339,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 43
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#494:1#BZ2_bzDecompressInit",
+            "casts": 7,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 521,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 520,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 519,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 517,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 516,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 513,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 518,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 33
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1023:1#BZ2_bzWriteClose64",
+            "casts": 7,
+            "vars": 4,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1084,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1058,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1045,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1044,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1043,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1042,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1057,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 55
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#707:1#unRLE_obuf_to_output_SMALL",
+            "casts": 18,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 793,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 788,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 788,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 785,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 766,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 752,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 798,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 798,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 774,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 746,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 746,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 725,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 736,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 717,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 740,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 740,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 98
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#810:1#BZ2_bzDecompress",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 815,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 50
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#537:1#unRLE_obuf_to_output_FAST",
+            "casts": 18,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 653,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 653,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 644,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 642,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 582,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 582,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 615,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 576,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 576,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 645,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 555,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 547,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 570,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 570,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 625,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 146
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#92:1#bz_config_ok",
+            "casts": 3,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 97,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 96,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 95,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#335:1#copy_output_until_stop",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 343,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 349,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 354,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 22
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#470:1#BZ2_bzCompressEnd",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 474,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#150:1#BZ2_bzCompressInit",
+            "casts": 9,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 209,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 208,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 180,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 194,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 205,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 179,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#362:1#handle_compress",
+            "casts": 12,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 381,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 404,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 404,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 404,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 376,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 375,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 386,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 397,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 380,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 372,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 367,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 42
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#290:1#copy_input_until_stop",
+            "casts": 5,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 326,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 320,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 302,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 308,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 318,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 40
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#1163:1#BZ2_bzRead",
+            "casts": 12,
+            "vars": 3,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1213,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1212,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1212,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1184,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1207,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1197,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1192,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1192,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1191,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1183,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 52
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#253:1#flush_RL",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 256,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#140:1#isempty_RL",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 143,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#132:1#init_RL",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 135,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#864:1#BZ2_bzDecompressEnd",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 868,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#103:1#default_bzalloc",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 106,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzlib.c#409:1#BZ2_bzCompress",
+            "casts": 4,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 460,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 427,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 414,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 449,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 57
+        }
+    ],
+    "total": 41,
+    "visited": 25
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/decompress.c#106:1#BZ2_decompress",
+            "casts": 76,
+            "vars": 85,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 601,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 599,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 597,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 595,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 593,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 591,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 446,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 567,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 476,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 476,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 553,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 471,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 471,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 568,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 459,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 459,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 459,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 459,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 458,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 331,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 525,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 454,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 157,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 343,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 343,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 440,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 440,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 438,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 333,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 214,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 311,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 201,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 198,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 295,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 233,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 280,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 303,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 316,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 316,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 269,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 463,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 204,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 218,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 453,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 241,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 212,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 447,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 329,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 235,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 339,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 231,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 541
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/decompress.c#26:1#makeMaps_d",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 33,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 2,
+    "visited": 2
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/huffman.c#63:1#BZ2_hbMakeCodeLengths",
+            "casts": 1,
+            "vars": 21,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 119,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 82
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/huffman.c#170:1#BZ2_hbCreateDecodeTables",
+            "casts": 2,
+            "vars": 4,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 186,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 183,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 24
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/huffman.c#152:1#BZ2_hbAssignCodes",
+            "casts": 1,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 163,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        }
+    ],
+    "total": 3,
+    "visited": 3
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1767:1#main",
+            "casts": 30,
+            "vars": 7,
+            "cast kinds": [
+                "BitCast",
+                "NullToPointer",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 2018,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1975,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1975,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1865,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1959,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1959,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1930,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1864,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1863,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1863,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1853,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1994,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1994,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1922,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1852,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1851,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1848,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1778,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1847,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 1812,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1811,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1777,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1777,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1776,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1831,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1831,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 2019,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1854,
+                    "cast kind": "NullToPointer"
+                }
+            ],
+            "size": 257
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1719:1#snocString",
+            "casts": 3,
+            "vars": 2,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1725,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1724,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1724,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 13
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1123:1#compress",
+            "casts": 4,
+            "vars": 6,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1185,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1144,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1152,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1192,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 176
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1100:1#hasSuffix",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1104,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1103,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 7
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#988:1#countHardLinks",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 996,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#415:1#uncompressStream",
+            "casts": 10,
+            "vars": 13,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 462,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 448,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 492,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 492,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 492,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 439,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 494,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 494,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 445,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 116
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1304:1#uncompress",
+            "casts": 4,
+            "vars": 9,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1378,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1364,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1341,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1332,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 193
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#311:1#compressStream",
+            "casts": 5,
+            "vars": 17,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 365,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 98
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1110:1#mapSuffix",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1117,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 1116,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1706:1#mkCell",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1711,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1502:1#testf",
+            "casts": 2,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1521,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1585,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 84
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#259:1#uInt64_qrm10",
+            "casts": 7,
+            "vars": 3,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 268,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 267,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 264,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 266,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 11
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#536:1#testStream",
+            "casts": 3,
+            "vars": 11,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 576,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 557,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 563,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 88
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#220:1#uInt64_from_UInt32s",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 230,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 227,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 226,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 225,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 224,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 223,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 10
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#277:1#uInt64_toAscii",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 289,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 286,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 291,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 14
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#909:1#copyFileName",
+            "casts": 2,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 925,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 924,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 16
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#248:1#uInt64_isZero",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 254,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#930:1#fileExists",
+            "casts": 1,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 934,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#669:1#cleanUpAndFail",
+            "casts": 2,
+            "vars": 2,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 677,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 715,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 54
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#798:1#mySIGSEGVorSIGBUScatcher",
+            "casts": 12,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 850,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 849,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 847,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 847,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 846,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 842,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 841,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 840,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 840,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 851,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 851,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 845,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 59
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2.c#1737:1#addFlagsFromEnvVar",
+            "casts": 3,
+            "vars": 5,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 1756,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1748,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 1752,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 23
+        }
+    ],
+    "total": 44,
+    "visited": 21
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#601:1#BZ2_compressBlock",
+            "casts": 14,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 660,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 659,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 659,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 649,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 647,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 658,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 633,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 632,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 632,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 631,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 631,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 65
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#105:1#makeMaps_e",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 112,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#238:1#sendMTFValues",
+            "casts": 153,
+            "vars": 38,
+            "cast kinds": [
+                "IntegralCast",
+                "FloatingCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 586,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 585,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 565,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 552,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 537,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 536,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 536,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 338,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 338,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 338,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 535,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 535,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 522,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 522,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 520,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 519,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 510,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 505,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 505,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 336,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 533,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 476,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 523,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 469,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 566,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 464,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 404,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 391,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 532,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 362,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 385,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 356,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 384,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 337,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 383,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 383,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 383,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "FloatingCast"
+                },
+                {
+                    "cast line": 306,
+                    "cast kind": "FloatingCast"
+                }
+            ],
+            "size": 358
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#82:1#bsPutUInt32",
+            "casts": 8,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 88,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 87,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 87,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 86,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 85,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#119:1#generateMTFValues",
+            "casts": 9,
+            "vars": 14,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 206,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 228,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 205,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 197,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 170,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 166,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 111
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/compress.c#37:1#BZ2_bsInitWrite",
+            "casts": 1,
+            "vars": 0,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 40,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 4
+        }
+    ],
+    "total": 9,
+    "visited": 6
+}
+{
+    "functions": [
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#329:1#main",
+            "casts": 49,
+            "vars": 16,
+            "cast kinds": [
+                "NullToPointer",
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 532,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 532,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 512,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 501,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 500,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 485,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 471,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 422,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 419,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 514,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 417,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 464,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 414,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 511,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 511,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 511,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 416,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 416,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 413,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 510,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 462,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 462,
+                    "cast kind": "NullToPointer"
+                },
+                {
+                    "cast line": 412,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 509,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 355,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 402,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 378,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 425,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 472,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 392,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 389,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 486,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 390,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 484,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 484,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 531,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 531,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 401,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 342,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 530,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 341,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 482,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 351,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 420,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 340,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 209
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#268:1#endsInBz2",
+            "casts": 6,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 276,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 274,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 273,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 270,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 275,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#258:1#bsPutUInt32",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 263,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 263,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 6
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#249:1#bsPutUChar",
+            "casts": 2,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 253,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 5
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#187:1#bsPutBit",
+            "casts": 1,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 190,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 12
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#161:1#bsOpenReadStream",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 164,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 163,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 168,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#225:1#bsClose",
+            "casts": 4,
+            "vars": 1,
+            "cast kinds": [
+                "BitCast",
+                "IntegralCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 242,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 234,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 229,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 244,
+                    "cast kind": "BitCast"
+                }
+            ],
+            "size": 20
+        },
+        {
+            "id": "/Users/henriquepreto/Desktop/visit-ast-cpp/scripts/benchmarks/bzip2/bzip2recover.c#174:1#bsOpenWriteStream",
+            "casts": 3,
+            "vars": 1,
+            "cast kinds": [
+                "IntegralCast",
+                "BitCast"
+            ],
+            "cast lines": [
+                {
+                    "cast line": 177,
+                    "cast kind": "IntegralCast"
+                },
+                {
+                    "cast line": 176,
+                    "cast kind": "BitCast"
+                },
+                {
+                    "cast line": 181,
+                    "cast kind": "IntegralCast"
+                }
+            ],
+            "size": 9
+        }
+    ],
+    "total": 14,
+    "visited": 8
+}
+{
+    "functions": [],
+    "total": 0,
+    "visited": 0
+}

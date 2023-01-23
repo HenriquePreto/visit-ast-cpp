@@ -1,5 +1,0 @@
-{
-    "functions": [],
-    "total": 4,
-    "visited": 0
-}

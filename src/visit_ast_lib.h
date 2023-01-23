@@ -34,7 +34,7 @@ bool VisitASTOnCompilationDB(const std::string &build_dir) {
     return false;
   clang::tooling::ClangTool Tool(*cdb, cdb->getAllFiles());
   auto factory = clang::tooling::newFrontendActionFactory<FrontendAction<T>>();
-  return Tool.run(factory.get()) == 0;
+  return Tool.run(factory.get()) != 1;
 }
 
 #endif // CC_AST_TOOL_LIB_H_

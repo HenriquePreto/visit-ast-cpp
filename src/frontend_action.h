@@ -34,7 +34,7 @@ public:
   
 private:
   bool owner_;
-  Info* info_;
+  Info *info_;
 };
 
 template <typename T>

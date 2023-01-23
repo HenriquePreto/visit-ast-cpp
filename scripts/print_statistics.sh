@@ -9,16 +9,12 @@ function print_function_stats () {
   echo "-----------------------------------------" > "$output"
   printf "%s\t|\t%s\t|\t%s\t|\n" "LIBNAME" "ALL" "$tool" >> "$output"
   echo "-----------------------------------------" >> "$output"
-  for repository_path in "$tool_dir"/*; do
-    repository_name=$(basename $repository_path)
-    total=0
-    visited=0
-    for json_file in "$repository_path"/*; do
-      json_file_total=$(cat "$json_file" | jq .total)
-      json_file_visited=$(cat "$json_file" | jq .visited)
-      total=$((total + json_file_total))
-      visited=$((visited + json_file_visited))
-    done
+  for repository_file in "$tool_dir"/*; do
+    repository_name=$(basename "${repository_file%.*}")
+    total=$(cat "$repository_file" | \
+      jq -n '[inputs | .total] | reduce .[] as $num (0; .+$num)')
+    visited=$(cat "$repository_file" | \
+      jq -n '[inputs | .visited] | reduce .[] as $num (0; .+$num)')
     printf "%.*s\t|\t%s\t|\t%s\t|\n" 7 \
       ${repository_name} ${total} ${visited} >> "$output"
   done
@@ -68,14 +64,14 @@ print_function_stats "goto"&
 
 print_function_stats "nobreak"&
 
-print_best_stats "cast" ".casts, .size, .vars, .id" $MAX \
-  ".id + \" \" + (.casts | tostring) + \" \" + (.size | tostring) + \
-  \" \" + (.vars | tostring)"&
+# print_best_stats "cast" ".casts, .size, .vars, .id" $MAX \
+#   ".id + \" \" + (.casts | tostring) + \" \" + (.size | tostring) + \
+#   \" \" + (.vars | tostring)"&
 
-print_best_stats "goto" ".gotos, .labels, .id" $MAX \
-  ".id + \" \" + (.gotos | tostring) + \" \" + (.labels | tostring)"&
+# print_best_stats "goto" ".gotos, .labels, .id" $MAX \
+#   ".id + \" \" + (.gotos | tostring) + \" \" + (.labels | tostring)"&
 
-print_best_stats "nobreak" ".nobreaks, .id" $MAX \
-  ".id + \" \" + (.nobreaks | tostring)"&
+# print_best_stats "nobreak" ".nobreaks, .id" $MAX \
+#   ".id + \" \" + (.nobreaks | tostring)"&
 
 wait
