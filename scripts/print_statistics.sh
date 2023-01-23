@@ -27,19 +27,12 @@ function concat_array_files_json() {
   tool_dir="$OUTPUT_PATH"/"$tool"
   json_files=$(find "$tool_dir" -name "*.txt")
   IFS=$'\n' read -rd '' -a json_files_list <<< "$json_files"
-  output="$out_dir"/"$tool".json
-  echo '[' > "$output"
+  output="$out_dir"/"$tool".txt
+  rm "$output"
   for json_file in ${json_files[@]}; do
-    # length=$(cat "$json_file" | jq .functions | jq length)
-    length=$(cat "$json_file" | jq .visited)
-    if [ $length -gt 0 ]; then
-      arr_json=$(cat "$json_file" | jq .functions)
-      arr_json="${arr_json:2:-2}"
-      echo "$arr_json", >> "$output"
-    fi
+    arr_json=$(cat "$json_file" | jq '.functions | select(length > 0)')
+    echo "$arr_json" >> "$output"
   done
-  truncate -s -2 "$output"
-  echo ']' >> "$output"
   echo "$output"
 }
 
@@ -56,7 +49,7 @@ function print_best_stats () {
     > "$sorted_output"
 }
 
-MAX=1000
+MAX=15
 
 print_function_stats "cast"&
 
@@ -64,14 +57,14 @@ print_function_stats "goto"&
 
 print_function_stats "nobreak"&
 
-# print_best_stats "cast" ".casts, .size, .vars, .id" $MAX \
-#   ".id + \" \" + (.casts | tostring) + \" \" + (.size | tostring) + \
-#   \" \" + (.vars | tostring)"&
+print_best_stats "cast" ".casts, .size, .vars, .id" $MAX \
+  ".id + \" \" + (.casts | tostring) + \" \" + (.size | tostring) + \
+  \" \" + (.vars | tostring)"&
 
-# print_best_stats "goto" ".gotos, .labels, .id" $MAX \
-#   ".id + \" \" + (.gotos | tostring) + \" \" + (.labels | tostring)"&
+print_best_stats "goto" ".gotos, .labels, .id" $MAX \
+  ".id + \" \" + (.gotos | tostring) + \" \" + (.labels | tostring)"&
 
-# print_best_stats "nobreak" ".nobreaks, .id" $MAX \
-#   ".id + \" \" + (.nobreaks | tostring)"&
+print_best_stats "nobreak" ".nobreaks, .id" $MAX \
+  ".id + \" \" + (.nobreaks | tostring)"&
 
 wait
