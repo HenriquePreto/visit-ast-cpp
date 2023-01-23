@@ -6,16 +6,16 @@ function print_function_stats () {
   tool="$1"
   tool_dir="$OUTPUT_PATH"/"$tool"
   output="$out_dir"/"$tool"_table.txt
-  echo "-----------------------------------------" > "$output"
-  printf "%s\t|\t%s\t|\t%s\t|\n" "LIBNAME" "ALL" "$tool" >> "$output"
-  echo "-----------------------------------------" >> "$output"
+  echo "---------------------------------------------------" > "$output"
+  printf "%s\t|\t%s\t|\t%s\t|\n" "LIBNAME" "# func" "# visited" >> "$output"
+  echo "---------------------------------------------------" >> "$output"
   for repository_file in "$tool_dir"/*; do
     repository_name=$(basename "${repository_file%.*}")
     total=$(cat "$repository_file" | \
       jq -n '[inputs | .total] | reduce .[] as $num (0; .+$num)')
     visited=$(cat "$repository_file" | \
       jq -n '[inputs | .visited] | reduce .[] as $num (0; .+$num)')
-    printf "%.*s\t|\t%s\t|\t%s\t|\n" 7 \
+    printf "%.*s\t|\t%s\t|\t%s\t\t|\n" 7 \
       ${repository_name} ${total} ${visited} >> "$output"
   done
 }

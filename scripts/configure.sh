@@ -27,30 +27,34 @@ read -r -d '' BUILD_SQLITE3 <<- EOM
   bear -- make;
 EOM
 
-# z3: https://github.com/Z3Prover/z3.git
-GIT_Z3="https://github.com/Z3Prover/z3.git"
-read -r -d '' BUILD_Z3 <<- EOM
-  git clean -xfd;
-  mkdir build;
-  cd build;
-  CCFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include" CXXFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include" cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ../;
-  make -j$(nproc);
-EOM
+# redis: https://github.com/redis/redis
+# GIT_REDIS="https://github.com/redis/redis.git"
+# read -r -d '' BUILD_REDIS <<- EOM
+#   git clean -xfd;
+#   mkdir build;
+#   bear -- make CFLAGS="-std=c11 -I/usr/local/opt/lua/include/lua5.4 -I/Applications/CODE/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include" CPPFLAGS="-I/usr/local/opt/lua/include/lua5.4 -I/Applications/CODE/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include";
+#   mv compile_commands.json build/;
+# EOM
 
-# # libxml2: https://github.com/GNOME/libxml2
+# libxml2: https://github.com/GNOME/libxml2
 # PYTHON_CFLAGS="$(python3-config --cflags)"
 # PYTHON_CLIBS="$(python3-config --libs)"
 # GIT_LIBXML2="https://github.com/GNOME/libxml2.git"
 # read -r -d '' BUILD_LIBXML2 <<- EOM
 #   git clean -xfd;
-#   ./autogen.sh PYTHON_CFLAGS="${PYTHON_CFLAGS}" PYTHON_LIBS="${PYTHON_CLIBS}";
-#   make -j$(nproc);
+#   mkdir build;
+#   cd build;
+#   ../autogen.sh PYTHON_CFLAGS="${PYTHON_CFLAGS}" PYTHON_LIBS="${PYTHON_CLIBS}" CXXFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -Wno-nullability-completeness -Wno-nullability-extension -Wno-undef-prefix" CFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include -I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include -Wno-nullability-completeness -Wno-nullability-extension -Wno-undef-prefix";
+#   bear -- make;
 # EOM
 
-# # redis: https://github.com/redis/redis
-# GIT_REDIS="https://github.com/redis/redis.git"
-# read -r -d '' BUILD_REDIS <<- EOM
+# # z3: https://github.com/Z3Prover/z3.git
+# GIT_Z3="https://github.com/Z3Prover/z3.git"
+# read -r -d '' BUILD_Z3 <<- EOM
 #   git clean -xfd;
+#   mkdir build;
+#   cd build;
+#   CCFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include" CXXFLAGS="-I/Applications/CODE/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include" cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ../;
 #   make -j$(nproc);
 # EOM
 
@@ -86,10 +90,10 @@ EOM
 
 # Benchmark info stored in a list of tuples
 read -r -d '' BENCHMARKS_LIST <<- EOM
-  $GIT_Z3,$BUILD_Z3
+  $GIT_BZIP2,$BUILD_BZIP2#$GIT_SQLITE3,$BUILD_SQLITE3
 EOM
 export BENCHMARKS_LIST
-#$GIT_BZIP2,$BUILD_BZIP2#$GIT_SQLITE3,$BUILD_SQLITE3
+
 # PATH to store all git repositories
 export BENCHMARKS_PATH="$SCRIPT_PATH"/benchmarks
 export OUTPUT_PATH="$SCRIPT_PATH"/out
