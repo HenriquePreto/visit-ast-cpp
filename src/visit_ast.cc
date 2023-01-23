@@ -8,61 +8,37 @@
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
 #include "absl/flags/usage.h"
-#include "absl/status/statusor.h"
-#include "rapidjson/PrettyWriter.h"
 
-ABSL_FLAG(std::string, cc_tool, "",
-          "full class name for the cc abstract syntax tree tool");
-ABSL_FLAG(std::string, cc_in, "",
-          "input path for the C++ source file (it may or may not be a header)");
-ABSL_FLAG(bool, ignore_errors, true,
-          "boolean flag to ignore errors (such as missing include directives)");
+ABSL_FLAG(std::string, ast_tool, "",
+          "full class name for the cpp ast tool");
+ABSL_FLAG(std::string, build_dir, "",
+          "input path for the compilation database from a build directory");
 
 int main(int argc, char *argv[]) {
   absl::SetProgramUsageMessage(
-    "Usage: --cc_tool=cast --cc_in=hello_world.cc [--ignore_errors=false]");
+    "Usage: --ast_tool=cast --build_dir=/path/to/build/llvm");
   auto args = absl::ParseCommandLine(argc, argv);
 
-  auto cc_tool = absl::GetFlag(FLAGS_cc_tool);
-  if (cc_tool.empty()) {
-    std::cerr << "please specify --cc_tool" << std::endl;
+  auto ast_tool = absl::GetFlag(FLAGS_ast_tool);
+  if (ast_tool.empty()) {
+    std::cerr << "please specify --ast_tool" << std::endl;
     return 1;
   }
-  auto cc_in = absl::GetFlag(FLAGS_cc_in);
-  if (cc_in.empty()) {
-    std::cerr << "please specify --cc_in" << std::endl;
+  auto build_dir = absl::GetFlag(FLAGS_build_dir);
+  if (build_dir.empty()) {
+    std::cerr << "please specify --build_dir" << std::endl;
     return 1;
   }
-  auto ignore_errors = absl::GetFlag(FLAGS_ignore_errors);
-
-  auto status_or_cc_file_content = GetFileContents(cc_in);
-  CHECK(status_or_cc_file_content.ok());
-  auto cc_file_content = std::move(*status_or_cc_file_content);
-
-  std::vector<std::string> args_as_strings(argv + 1, argv + argc);
-
-  rapidjson::StringBuffer string_buffer;
-  rapidjson::PrettyWriter<rapidjson::StringBuffer> writer(string_buffer);
-  if (cc_tool == "cast") {
-    auto status_or_visitor = VisitASTOnCode<CastVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
-    CHECK(status_or_visitor.ok());
-    status_or_visitor->ToJson(writer);
-  } else if (cc_tool == "goto") {
-    auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
-    CHECK(status_or_visitor.ok());
-    status_or_visitor->ToJson(writer);
-  } else if (cc_tool == "nobreak") {
-    auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-      cc_file_content, args_as_strings, cc_in, cc_tool, ignore_errors);
-    CHECK(status_or_visitor.ok());
-    status_or_visitor->ToJson(writer);
-  } else {
-    CHECK(false && "Not supported tool.");
-    return 1;
+  
+  auto ok = false;
+  if (ast_tool == "cast") {
+    ok = VisitASTOnCompilationDB<CastVisitor>(build_dir);
+  } else if (ast_tool == "goto") {
+    ok = VisitASTOnCompilationDB<GotoVisitor>(build_dir);
+  } else if (ast_tool == "nobreak") {
+    ok = VisitASTOnCompilationDB<NoBreakVisitor>(build_dir);
   }
-  std::cout << string_buffer.GetString() << std::endl;
+  CHECK(ok);
 
   return 0;
 }

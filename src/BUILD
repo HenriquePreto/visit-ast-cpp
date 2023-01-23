@@ -13,8 +13,6 @@ cc_binary(
         "@absl//absl/flags:parse",
         "@absl//absl/flags:usage",
         "@absl//absl/log:check",
-        "@absl//absl/status:statusor",
-        "@rapidjson",
     ]
 )
 
@@ -38,15 +36,13 @@ cc_library(
 
 cc_library(
     name = "visit_ast_lib",
-    srcs = ["visit_ast_lib.cc"],
     hdrs = ["visit_ast_lib.h"],
     deps = [
         ":frontend_action",
         "@absl//absl/status",
         "@absl//absl/status:statusor",
         "@absl//absl/strings",
-        "@llvm-project//clang:ast",
-        "@llvm-project//llvm:Support",
         "@llvm-project//clang:tooling",
+        "@rapidjson",
     ],
 )

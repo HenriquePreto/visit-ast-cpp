@@ -6,8 +6,6 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
-std::vector<std::string> args;
-
 namespace {
 
 using ::testing::UnorderedElementsAre;
@@ -19,36 +17,35 @@ using ::testing::UnorderedElementsAre;
 // }
 
 TEST(VisitASTOnCodeTest, CastNoop) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>(" ", args);
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>(" ");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, CastComment) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>(
-    "// A comment in c++", args);
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>("// A comment in c++");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, CastEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>("void f() {}", args);
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
-  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
-  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre());
-  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
-  EXPECT_EQ(visitor.GetFunctionSize(function_id), 1);
+  EXPECT_EQ(visitor->GetNumCasts(function_id), 0);
+  EXPECT_EQ(visitor->GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor->GetCastLines(function_id), UnorderedElementsAre());
+  ASSERT_THAT(visitor->GetCastKinds(function_id), UnorderedElementsAre());
+  EXPECT_EQ(visitor->GetFunctionSize(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, CastFunctionValues) {
-  auto cc_file_content = "#include <ostream>\n"
+  auto cc_file_content = "\n"
     "\n"
     "int GLOB = 0.3 + 3.4;\n"
     "\n"
@@ -64,7 +61,7 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "    float y = 4.4f;\n"
     "    int z = x + y;\n" // 2
     "    double w = y + z;\n" // 2
-    "    printf(\"\%d\", x + y);\n" // 1
+    "    double ppp = p;\n" // 1
     "  }\n"
     "\n"
     "  int bar() {\n"
@@ -88,101 +85,100 @@ TEST(VisitASTOnCodeTest, CastFunctionValues) {
     "  int z = x + y;\n" // 2
     "  double w = y + z;\n" // 2
     "  hello_world::foo(10, 11);\n" // 0 function to pointer decay
-    "  printf(\"\%f\", x + y);\n" // 1
+    "  int ppp = x;\n" // 1
     "  return 0;\n"
     "}\n";
 
-  auto status_or_visitor = VisitASTOnCode<CastVisitor>(cc_file_content, args);
+  auto status_or_visitor = VisitASTOnCode<CastVisitor>(cc_file_content);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 4);
+  EXPECT_EQ(visitor->GetNumFunctions(), 4);
 
   auto function_id = "input.cc#32:1#main";
-  EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
-  EXPECT_EQ(visitor.GetNumVars(function_id), 7);
-  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+  EXPECT_EQ(visitor->GetNumCasts(function_id), 5);
+  EXPECT_EQ(visitor->GetNumVars(function_id), 8);
+  ASSERT_THAT(visitor->GetCastLines(function_id), UnorderedElementsAre(
     std::make_pair(38, clang::CastKind::CK_FloatingCast), 
     std::make_pair(38, clang::CastKind::CK_FloatingToIntegral),
     std::make_pair(39, clang::CastKind::CK_FloatingCast),
     std::make_pair(39, clang::CastKind::CK_IntegralToFloating),
-    std::make_pair(41, clang::CastKind::CK_FloatingCast)
+    std::make_pair(41, clang::CastKind::CK_FloatingToIntegral)
   ));
-  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
+  ASSERT_THAT(visitor->GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
   ));
-  EXPECT_EQ(visitor.GetFunctionSize(function_id), 12);
+  EXPECT_EQ(visitor->GetFunctionSize(function_id), 12);
 
   function_id = "input.cc#26:5#hello_world::mynamespace::foo";
-  EXPECT_EQ(visitor.GetNumCasts(function_id), 0);
-  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
-  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre());
-  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre());
-  EXPECT_EQ(visitor.GetFunctionSize(function_id), 3);
+  EXPECT_EQ(visitor->GetNumCasts(function_id), 0);
+  EXPECT_EQ(visitor->GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor->GetCastLines(function_id), UnorderedElementsAre());
+  ASSERT_THAT(visitor->GetCastKinds(function_id), UnorderedElementsAre());
+  EXPECT_EQ(visitor->GetFunctionSize(function_id), 3);
 
   function_id = "input.cc#20:3#hello_world::bar";
-  EXPECT_EQ(visitor.GetNumCasts(function_id), 1);
-  EXPECT_EQ(visitor.GetNumVars(function_id), 0);
-  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+  EXPECT_EQ(visitor->GetNumCasts(function_id), 1);
+  EXPECT_EQ(visitor->GetNumVars(function_id), 0);
+  ASSERT_THAT(visitor->GetCastLines(function_id), UnorderedElementsAre(
     std::make_pair(21, clang::CastKind::CK_FloatingToIntegral)
   ));
-  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
+  ASSERT_THAT(visitor->GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_FloatingToIntegral
   ));
-  EXPECT_EQ(visitor.GetFunctionSize(function_id), 3);
+  EXPECT_EQ(visitor->GetFunctionSize(function_id), 3);
 
   function_id = "input.cc#8:3#hello_world::foo";
-  EXPECT_EQ(visitor.GetNumCasts(function_id), 5);
-  EXPECT_EQ(visitor.GetNumVars(function_id), 8);
-  ASSERT_THAT(visitor.GetCastLines(function_id), UnorderedElementsAre(
+  EXPECT_EQ(visitor->GetNumCasts(function_id), 5);
+  EXPECT_EQ(visitor->GetNumVars(function_id), 9);
+  ASSERT_THAT(visitor->GetCastLines(function_id), UnorderedElementsAre(
     std::make_pair(15, clang::CastKind::CK_FloatingCast), 
     std::make_pair(15, clang::CastKind::CK_FloatingToIntegral),
     std::make_pair(16, clang::CastKind::CK_FloatingCast),
     std::make_pair(16, clang::CastKind::CK_IntegralToFloating),
-    std::make_pair(17, clang::CastKind::CK_FloatingCast)
+    std::make_pair(17, clang::CastKind::CK_IntegralToFloating)
   ));
-  ASSERT_THAT(visitor.GetCastKinds(function_id), UnorderedElementsAre(
+  ASSERT_THAT(visitor->GetCastKinds(function_id), UnorderedElementsAre(
     clang::CastKind::CK_IntegralToFloating,
     clang::CastKind::CK_FloatingCast,
     clang::CastKind::CK_FloatingToIntegral
   ));
-  EXPECT_EQ(visitor.GetFunctionSize(function_id), 11);
+  EXPECT_EQ(visitor->GetFunctionSize(function_id), 11);
 }
 
 TEST(VisitASTOnCodeTest, GotoNoop) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(" ", args);
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(" ");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoComment) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(
-    "// A comment in c++", args);
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("// A comment in c++");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("void f() {}", args);
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumGotos(function_id), 0);
-  EXPECT_EQ(visitor.GetNumLabels(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumGotos(function_id), 0);
+  EXPECT_EQ(visitor->GetNumLabels(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctionValues) {
-  auto cc_file_content = "#include <string>\n"
-    "#include <ostream>\n"
-    "int foo(int z, std::string s) {\n"
-    "   return s.size() + z;\n"
+  auto cc_file_content = "\n"
+    "\n"
+    "int foo(int z, int s) {\n"
+    "   return s + z;\n"
     "}\n"
     "\n"
     "void checkEvenOrNot(int num)\n"
@@ -195,11 +191,11 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
     "       goto odd;\n"
     "\n"
     "even:\n"
-    "   printf(\"\%d is even\", num);\n"
+    "   // printf(\"\%d is even\", num);\n"
     "   // return if even\n"
     "   return;\n"
     "odd:\n"
-    "   printf(\"\%d is odd\", num);\n"
+    "   return;\n"
     "}\n"
     "\n"
     "void switch_breaks(int c) {\n"
@@ -253,22 +249,22 @@ TEST(VisitASTOnCodeTest, GotoFunctionValues) {
     "\n"
     "int main() {\n"
     "  int x = 3;\n"
-    "  int y = foo(5, \"hello_world\");\n"
+    "  int y = foo(5, 1);\n"
     "  checkEvenOrNot(y);\n"
     "  int z = y + 5;\n"
     "  return 0;\n"
     "}";
 
-  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(cc_file_content, args);
+  auto status_or_visitor = VisitASTOnCode<GotoVisitor>(cc_file_content);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 5);
+  EXPECT_EQ(visitor->GetNumFunctions(), 5);
 
   auto function_id = "input.cc#7:1#checkEvenOrNot";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumGotos(function_id), 2);
-  EXPECT_EQ(visitor.GetNumLabels(function_id), 2);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumGotos(function_id), 2);
+  EXPECT_EQ(visitor->GetNumLabels(function_id), 2);
 }
 
 TEST(VisitASTOnCodeTest, GotoFunctions) {
@@ -288,54 +284,54 @@ TEST(VisitASTOnCodeTest, GotoFunctions) {
     "   return x - 1;\n"
     "g_goto:\n"
     "   return x + 1;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 2);
+  EXPECT_EQ(visitor->GetNumFunctions(), 2);
 
   auto function_id = "input.cc#2:1#foo::f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
-  EXPECT_EQ(visitor.GetNumLabels(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumGotos(function_id), 1);
+  EXPECT_EQ(visitor->GetNumLabels(function_id), 1);
 
   function_id = "input.cc#10:1#g";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumGotos(function_id), 1);
-  EXPECT_EQ(visitor.GetNumLabels(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumGotos(function_id), 1);
+  EXPECT_EQ(visitor->GetNumLabels(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoop) {
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ", args);
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(" ");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakComment) {
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-    "// A comment in c++", args);
+    "// A comment in c++");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 0);
+  EXPECT_EQ(visitor->GetNumFunctions(), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakEmptyFunction) {
-  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}", args);
+  auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>("void f() {}");
   EXPECT_TRUE(status_or_visitor.ok());
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
-  auto cc_file_content = "#include <string>\n"
-    "#include <ostream>\n"
-    "int foo(int z, std::string s) {\n"
-    "   return s.size() + z;\n"
+  auto cc_file_content = "\n"
+    "\n"
+    "int foo(int z, int s) {\n"
+    "   return s + z;\n"
     "}\n"
     "\n"
     "void checkEvenOrNot(int num)\n"
@@ -348,11 +344,11 @@ TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
     "       goto odd;\n"
     "\n"
     "even:\n"
-    "   printf(\"\%d is even\", num);\n"
+    "   // printf(\"\%d is even\", num);\n"
     "   // return if even\n"
     "   return;\n"
     "odd:\n"
-    "   printf(\"\%d is odd\", num);\n"
+    "   return;\n"
     "}\n"
     "\n"
     "void switch_breaks(int c) {\n"
@@ -409,38 +405,38 @@ TEST(VisitASTOnCodeTest, NoBreakFunctionValues) {
     "\n"
     "int main() {\n"
     "  int x = 3;\n"
-    "  int y = foo(5, \"hello_world\");\n"
+    "  int y = foo(5, 2);\n"
     "  checkEvenOrNot(y);\n"
     "  int z = y + 5;\n"
     "  return 0;\n"
     "}";
 
   auto status_or_visitor = VisitASTOnCode<NoBreakVisitor>(
-    cc_file_content, args);
+    cc_file_content);
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 5);
+  EXPECT_EQ(visitor->GetNumFunctions(), 5);
 
   auto function_id = "input.cc#3:1#foo";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 
   function_id = "input.cc#7:1#checkEvenOrNot";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 
   function_id = "input.cc#24:1#switch_breaks";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 
   function_id = "input.cc#60:1#switch_nobreaks";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 1);
 
   function_id = "input.cc#76:1#main";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
@@ -455,15 +451,15 @@ TEST(VisitASTOnCodeTest, NoBreakReturnChild) {
     "       return x + x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
@@ -481,15 +477,15 @@ TEST(VisitASTOnCodeTest, NoBreakReturnBelow) {
     "       return x + x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakDefault) {
@@ -508,15 +504,15 @@ TEST(VisitASTOnCodeTest, NoBreakDefault) {
     "     default:\n"
     "       return x;\n"
     "   }\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
@@ -536,15 +532,15 @@ TEST(VisitASTOnCodeTest, NoBreakDefaultNoStop) {
     "       x = x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
@@ -564,15 +560,15 @@ TEST(VisitASTOnCodeTest, NoBreakIgnoreLast) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
@@ -591,15 +587,15 @@ TEST(VisitASTOnCodeTest, NoBreakFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
@@ -616,15 +612,15 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughAll) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
@@ -642,15 +638,15 @@ TEST(VisitASTOnCodeTest, NoBreakComplexFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
@@ -668,15 +664,15 @@ TEST(VisitASTOnCodeTest, NoBreakNoFallThrough) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
@@ -708,15 +704,15 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtOK) {
     "       x = x * x;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
@@ -766,19 +762,19 @@ TEST(VisitASTOnCodeTest, NoBreakCompoundStmtNOK) {
     "         return -1;\n"
     "     }\n"
     "   }\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 2);
+  EXPECT_EQ(visitor->GetNumFunctions(), 2);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 1);
 
   function_id = "input.cc#27:1#g";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 1);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 1);
 }
 
 TEST(VisitASTOnCodeTest, NoBreakThrow) {
@@ -801,15 +797,15 @@ TEST(VisitASTOnCodeTest, NoBreakThrow) {
     "       x = x - 1;\n"
     "   }\n"
     "   return x;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 // TEST(VisitASTOnCodeTest, NoBreakFallUntilEnd) {
@@ -830,7 +826,7 @@ TEST(VisitASTOnCodeTest, NoBreakThrow) {
 //   EXPECT_TRUE(status_or_visitor.ok());
 
 //   auto visitor = std::move(*status_or_visitor);
-//   EXPECT_EQ(visitor.GetNumFunctions(), 0);
+//   EXPECT_EQ(visitor->GetNumFunctions(), 0);
 // }
 
 TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
@@ -864,21 +860,20 @@ TEST(VisitASTOnCodeTest, NoBreakFallThroughCompoundStmt) {
     "       ;    \n"
     "   }\n"
     "   return x + 1;\n"
-    "}\n", args);
+    "}\n");
   EXPECT_TRUE(status_or_visitor.ok());
 
   auto visitor = std::move(*status_or_visitor);
-  EXPECT_EQ(visitor.GetNumFunctions(), 1);
+  EXPECT_EQ(visitor->GetNumFunctions(), 1);
 
   auto function_id = "input.cc#1:1#f";
-  EXPECT_TRUE(visitor.ContainsFunction(function_id));
-  EXPECT_EQ(visitor.GetNumNoBreaks(function_id), 0);
+  EXPECT_TRUE(visitor->ContainsFunction(function_id));
+  EXPECT_EQ(visitor->GetNumNoBreaks(function_id), 0);
 }
 
 }
 
 int main(int argc, char *argv[]) {
   testing::InitGoogleTest(&argc, argv);
-  args = std::vector<std::string>(argv + 1, argv + argc);
   return RUN_ALL_TESTS();
 }

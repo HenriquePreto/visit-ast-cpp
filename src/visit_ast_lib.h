@@ -4,45 +4,37 @@
 #include "frontend_action.h"
 
 #include <string>
-#include <algorithm>
+#include <memory>
 
 #include "absl/strings/string_view.h"
 #include "absl/status/status.h"
 #include "absl/status/statusor.h"
 #include "clang/Tooling/Tooling.h"
-
-absl::StatusOr<std::string> GetFileContents(absl::string_view path);
+#include "clang/Tooling/CompilationDatabase.h"
 
 template <typename T>
-absl::StatusOr<typename T::Info> VisitASTOnCode(
+absl::StatusOr<std::unique_ptr<typename T::Info>> VisitASTOnCode(
     const absl::string_view &cc_file_content,
-    std::vector<std::string> &args_as_strings,
-    const std::string &cc_in = "input.cc",
-    const std::string &tool_name = "clang-tool",
-    const bool &ignore_errors = true) {
-  typename T::Info info;
-
-  if (ignore_errors) {
-    args_as_strings.clear();
-  } else {
-    auto ebegin = std::remove_if(
-      args_as_strings.begin(), args_as_strings.end(), 
-      [](auto &arg) {
-        return arg == "--undefok" ||
-              arg.starts_with("--cc_in=") ||
-              arg.starts_with("--cc_tool=") ||
-              arg.starts_with("--ignore_errors=");
-      });
-    args_as_strings.erase(ebegin, args_as_strings.end());
-  }
-
-  if (clang::tooling::runToolOnCodeWithArgs(
-          std::make_unique<FrontendAction<T>>(info, ignore_errors),
-          cc_file_content, args_as_strings, cc_in, tool_name)) {
-    return info;
+    const std::string &cc_in = "input.cc") {
+  typename T::Info *info = new typename T::Info();;
+  if (clang::tooling::runToolOnCode(
+        std::make_unique<FrontendAction<T>>(info), cc_file_content, cc_in)) {
+    return std::unique_ptr<typename T::Info>(info);
   }
   return absl::Status(absl::StatusCode::kInvalidArgument, 
                       "Could not compile source file contents");
+}
+
+template <typename T>
+bool VisitASTOnCompilationDB(const std::string &build_dir) {
+  std::string error_message = "Invalid build directory: " + build_dir;
+  auto cdb = clang::tooling::CompilationDatabase::loadFromDirectory(
+    build_dir, error_message);
+  if (!cdb)
+    return false;
+  clang::tooling::ClangTool Tool(*cdb, cdb->getAllFiles());
+  auto factory = clang::tooling::newFrontendActionFactory<FrontendAction<T>>();
+  return Tool.run(factory.get()) == 0;
 }
 
 #endif // CC_AST_TOOL_LIB_H_

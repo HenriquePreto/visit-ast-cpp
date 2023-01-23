@@ -5,15 +5,14 @@
 #define RAPIDJSON_HAS_STDSTRING 1
 #endif
 
-#include "visitor.h"
-
 #include <string>
 #include <unordered_map>
 #include <unordered_set>
 
+#include "clang/AST/RecursiveASTVisitor.h"
 #include "rapidjson/PrettyWriter.h"
 
-class CastVisitor : public Visitor<CastVisitor> {
+class CastVisitor : public clang::RecursiveASTVisitor<CastVisitor> {
 public:
   struct FunctionInfo {
     unsigned num_vars_ = 0;
@@ -57,7 +56,7 @@ public:
   };
 
   explicit CastVisitor(clang::ASTContext &ctx, Info &info)
-    : Visitor(ctx), info_(info),
+    : ctx_(ctx), info_(info),
       current_function_info_(&info.function_info_[""]) {}
 
   bool VisitFunctionDecl(const clang::FunctionDecl *decl);
@@ -71,6 +70,7 @@ public:
   bool IsLocalStmt(const clang::Stmt *stmt) const;
 
 private:
+  clang::ASTContext &ctx_;
   Info &info_;
   FunctionInfo *current_function_info_;
 };
